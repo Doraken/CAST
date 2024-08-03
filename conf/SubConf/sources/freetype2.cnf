@@ -1,0 +1,24 @@
+###############################################################################
+# Package configuratio file                                                   #
+#                                                                             #
+# Creation Date : 16/05/2021                                                  #
+# Author        : Arnaud Crampet          Support mail  : doraken@doraken.net  #
+###############################################################################
+####
+# INFO
+
+GLB_D_PRODUCTS_FREETYPE2="${GLB_D_PRODUCTS}/freetype2"
+
+#################### FREETYPE2  ##############################
+PKG_FREETYPE2_EXTEND="tar.xz"
+MSG_DISPLAY "Config" "1" "Package PKG_FREETYPE2_EXTEND defined to  : [ ${PKG_FREETYPE2_EXTEND} ] "
+
+PKG_FREETYPE2="freetype-2.10.4.tar.xz"
+MSG_DISPLAY "Config" "1" "Package PKG_FREETYPE2 defined to  : [ ${PKG_FREETYPE2} ] "
+
+URL_FREETYPE2="http://download.savannah.gnu.org/releases/freetype"
+MSG_DISPLAY "Config" "1" "Url FREETYPE2 defined to  : [ ${URL_FREETYPE2} ] "
+
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

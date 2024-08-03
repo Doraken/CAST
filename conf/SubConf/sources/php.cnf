@@ -1,0 +1,23 @@
+###############################################################################
+# Package configuratio file                                                   #
+#                                                                             #
+# Creation Date : 16/05/2021                                                  #
+# Author        : Arnaud Crampet          Support mail  : doraken@doraken.net  #
+###############################################################################
+####
+# INFO
+
+GLB_D_PRODUCTS_PHP="${GLB_D_PRODUCTS}/php"
+
+################  PHP      ###########################
+PKG_PHP_EXTEND=".tar.xz"
+MSG_DISPLAY "Config" "1" "Package PKG_PHP_EXTEND defined to  : [ ${PKG_PHP_EXTEND} ] "
+
+PKG_PHP="php-8.0.6"
+MSG_DISPLAY "Config" "1" "Package PKG_PHP defined to  : [ ${PKG_PHP} ] "
+
+URL_PHP="https://www.php.net/distributions/"
+MSG_DISPLAY "Config" "1" "URL_PHP defined to  : [ ${URL_PHP} ] "
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

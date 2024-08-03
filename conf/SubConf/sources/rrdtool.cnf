@@ -1,0 +1,23 @@
+###############################################################################
+# Package configuratio file                                                   #
+#                                                                             #
+# Creation Date : 16/05/2021                                                  #
+# Author        : Arnaud Crampet          Support mail  : doraken@doraken.net  #
+###############################################################################
+####
+# INFO
+
+GLB_D_PRODUCTS_RRDTOOL="${GLB_D_PRODUCTS}/rrd"
+
+#################### RRDTOOLS  ##############################
+PKG_RRDTOOLS_EXTEND="tar.gz"
+MSG_DISPLAY "Config" "1" "Package PKG_RRDTOOLS_EXTEND defined to  : [ ${PKG_RRDTOOLS_EXTEND} ] "
+
+PKG_RRDTOOLS="rrdtool-1.7.2"
+MSG_DISPLAY "Config" "1" "Package PKG_RRDTOOLS defined to  : [ ${PKG_RRDTOOLS} ] "
+
+URL_RRDTOOLS="http://oss.oetiker.ch/rrdtool/pub/"
+MSG_DISPLAY "Config" "1" "Url RRDTOOLS defined to  : [ ${URL_RRDTOOLS} ] "
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

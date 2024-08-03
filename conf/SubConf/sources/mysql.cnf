@@ -1,0 +1,21 @@
+###############################################################################
+# Package configuratio file                                                   #
+#                                                                             #
+# Creation Date : 16/05/2021                                                  #
+# Author        : Arnaud Crampet          Support mail  : doraken@doraken.net  #
+###############################################################################
+####
+# INFO
+
+GLB_D_PRODUCTS_MYSQL="${GLB_D_PRODUCTS}/mysql"
+
+##################  MYSQL 5.0.51   #####################
+PKG_MYSQL="mysql-5.0.51"
+MSG_DISPLAY "Config" "1" "Package PKG_MYSQL defined to  : [ ${PKG_MYSQL} ] "
+
+URL_MYSQL="ftp://ftp.inria.fr/pub/MySQL/Downloads/MySQL-5.0"
+MSG_DISPLAY "Config" "1" "Url MYSQL defined to  : [ ${URL_MYSQL} ] "
+
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

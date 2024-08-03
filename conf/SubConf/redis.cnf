@@ -1,0 +1,18 @@
+###############################################################################
+# redis.cnf                                                                   #
+#                                                                             #
+# Creation Date : 27/08/2022                                                  #
+# Support mail  : doraken@doraken.net                                         #
+# Author        : Arnaud Crampet                                              #
+#                                                                             #
+# Subject : This file containe all genrics vars used in for redis in CAST     #
+#                                                                             #
+###############################################################################
+####
+# INFO
+
+GLB_CP_REDIS_SERVERPort="6379"
+GLB_CP_REDIS_SERVERHost="127.0.0.1"
+GLB_CP_REDIS_SERVERDb="0"
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

@@ -1,0 +1,23 @@
+###############################################################################
+# Package configuratio file                                                   #
+#                                                                             #
+# Creation Date : 16/05/2021                                                  #
+# Author        : Arnaud Crampet          Support mail  : doraken@doraken.net  #
+###############################################################################
+####
+# INFO
+GLB_D_PRODUCTS_BIND="${GLB_D_PRODUCTS}/bind"
+
+#################### GLB_D_PRODUCTS_BIND  ##############################
+PKG_BIND_EXTEND="tar.xz"
+MSG_DISPLAY "Config" "1" "Package PKG_BIND_EXTEND defined to  : [ ${PKG_BIND_EXTEND} ] "
+
+PKG_BIND="bind-9.17.12"
+MSG_DISPLAY "Config" "1" "Package PKG_BIND defined to  : [ ${PKG_BIND} ] "
+
+URL_BIND="http://ftp.isc.org/isc/bind9/9.17.12"
+MSG_DISPLAY "Config" "1" "Url BIND defined to  : [ ${URL_BIND} ] "
+
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

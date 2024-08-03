@@ -1,0 +1,24 @@
+###############################################################################
+# Package configuratio file                                                   #
+#                                                                             #
+# Creation Date : 16/05/2021                                                  #
+# Author        : Arnaud Crampet          Support mail  : doraken@doraken.net  #
+###############################################################################
+####
+# INFO
+
+GLB_D_PRODUCTS_RE2C="${GLB_D_PRODUCTS}/re2c"
+
+################# Re2C 0.10.6 ##############################
+PKG_RE2C_EXTEND="tar.xz"
+MSG_DISPLAY "Config" "1" "Package PKG_RE2C_EXTEND defined to  : [ ${PKG_RE2C_EXTEND} ] "
+
+PKG_RE2C="re2c-2.1.1"
+MSG_DISPLAY "Config" "1" "Package PKG_RE2C defined to  : [ ${PKG_RE2C} ] "
+
+URL_RE2C="https://github.com/skvadrik/re2c/releases/download/2.1.1"
+MSG_DISPLAY "Config" "1" "URL_RE2C defined to  : [ ${URL_RE2C} ] "
+
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

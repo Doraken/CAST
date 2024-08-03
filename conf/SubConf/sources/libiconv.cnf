@@ -1,0 +1,24 @@
+###############################################################################
+# Package configuratio file                                                   #
+#                                                                             #
+# Creation Date : 16/05/2021                                                  #
+# Author        : Arnaud Crampet          Support mail  : doraken@doraken.net  #
+###############################################################################
+####
+# INFO
+
+GLB_D_PRODUCTS_LIBICONV="${GLB_D_PRODUCTS}/lib_iconv"
+
+#################### GLB_D_PRODUCTS_LIBICONV  ##############################
+PKG_LIBICONV_EXTEND="tar.gz"
+MSG_DISPLAY "Config" "1" "Package PKG_LIBICONV_EXTEND defined to  : [ ${PKG_LIBICONV_EXTEND} ] "
+
+PKG_LIBICONV="libiconv-1.16"
+MSG_DISPLAY "Config" "1" "Package PKG_LIBICONV defined to  : [ ${PKG_LIBICONV} ] "
+
+URL_LIBICONV="http://ftp.gnu.org/pub/gnu/libiconv"
+MSG_DISPLAY "Config" "1" "Url LIBICONV defined to  : [ ${URL_LIBICONV} ] "
+
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

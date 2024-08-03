@@ -1,0 +1,24 @@
+###############################################################################
+# Package configuratio file                                                   #
+#                                                                             #
+# Creation Date : 16/05/2021                                                  #
+# Author        : Arnaud Crampet          Support mail  : doraken@doraken.net  #
+###############################################################################
+####
+# INFO
+
+GLB_D_PRODUCTS_LIBART="${GLB_D_PRODUCTS}/libart"
+
+################ libart ####################################
+PKG_LIBART_EXTEND=".tar.gz"
+MSG_DISPLAY "Config" "1" "Package PKG_LIBART_EXTEND defined to  : [ ${PKG_LIBART_EXTEND} ] "
+
+PKG_LIBART="libart_lgpl-2.3.21"
+MSG_DISPLAY "Config" "1" "Package PKG_LIBART defined to  : [ ${PKG_LIBART} ] "
+
+URL_LIBART="https://download.gnome.org/sources/libart_lgpl/2.3"
+MSG_DISPLAY "Config" "1" "URL_LIBART defined to  : [ ${URL_LIBART} ] "
+
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

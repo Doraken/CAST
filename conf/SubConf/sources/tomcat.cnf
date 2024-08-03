@@ -1,0 +1,24 @@
+###############################################################################
+# Package configuratio file                                                   #
+#                                                                             #
+# Creation Date : 16/05/2021                                                  #
+# Author        : Arnaud Crampet          Support mail  : doraken@doraken.net  #
+###############################################################################
+####
+# INFO
+
+GLB_D_PRODUCTS_TOMCAT="${GLB_D_PRODUCTS}/tomcat"
+
+#################### GLB_D_PRODUCTS_TOMCAT  ##############################
+PKG_TOMCAT_EXTEND="tar.gz"
+MSG_DISPLAY "Config" "1" "Package PKG_TOMCAT_EXTEND defined to  : [ ${PKG_TOMCAT_EXTEND} ] "
+
+PKG_TOMCAT="apache-tomcat-10.0.6-src.tar.gz"
+MSG_DISPLAY "Config" "1" "Package PKG_TOMCAT defined to  : [ ${PKG_TOMCAT} ] "
+
+URL_TOMCAT="https://downloads.apache.org/tomcat/tomcat-10/v10.0.6/src"
+MSG_DISPLAY "Config" "1" "Url TOMCAT defined to  : [ ${URL_TOMCAT} ] "
+
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

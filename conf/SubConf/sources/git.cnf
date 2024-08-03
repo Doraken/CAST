@@ -1,0 +1,24 @@
+###############################################################################
+# Package configuratio file                                                   #
+#                                                                             #
+# Creation Date : 16/05/2021                                                  #
+# Author        : Arnaud Crampet          Support mail  : doraken@doraken.net  #
+###############################################################################
+####
+# INFO
+
+GLB_D_PRODUCTS_GIT="${GLB_D_PRODUCTS}/git"
+
+################# GIT #############################
+PKG_GIT_EXTEND=".tar.xz"
+MSG_DISPLAY "Config" "1" "Package PKG_GIT_EXTEND defined to  : [ ${PKG_GIT_EXTEND} ] "
+
+PKG_GIT="git-2.28.1"
+MSG_DISPLAY "Config" "1" "Package PKG_GIT defined to  : [ ${PKG_GIT} ] "
+
+URL_GIT="https://mirrors.edge.kernel.org/pub/software/scm/git"
+MSG_DISPLAY "Config" "1" "URL_GIT defined to  : [ ${URL_GIT} ] "
+
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

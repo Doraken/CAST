@@ -1,0 +1,23 @@
+###############################################################################
+# Package configuratio file                                                   #
+#                                                                             #
+# Creation Date : 16/05/2021                                                  #
+# Author        : Arnaud Crampet          Support mail  : doraken@doraken.net  #
+###############################################################################
+####
+# INFO
+
+GLB_D_PRODUCTS_TK="${GLB_D_PRODUCTS}/tk"
+
+################# TK 8.4 #############################
+PKG_TK_EXTEND="tar.gz"
+MSG_DISPLAY "Config" "1" "Package PKG_TK_EXTEND defined to  : [ ${PKG_TK_EXTEND} ] "
+
+PKG_TK="tk8.6.11.1-src"
+MSG_DISPLAY "Config" "1" "Package PKG_TK defined to  : [ ${PKG_TK} ] "
+
+URL_TK="https://prdownloads.sourceforge.net/tcl/"
+MSG_DISPLAY "Config" "1" "Url TK defined to  : [ ${URL_TK} ] "
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

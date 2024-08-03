@@ -1,0 +1,24 @@
+###############################################################################
+# Package configuratio file                                                   #
+#                                                                             #
+# Creation Date : 16/05/2021                                                  #
+# Author        : Arnaud Crampet          Support mail  : doraken@doraken.net  #
+###############################################################################
+####
+# INFO
+
+GLB_D_PRODUCTS_NCURSES="${GLB_D_PRODUCTS}/ncurses"
+
+################## ncurses-5.6 #########################
+PKG_NCURSES_EXTEND="tar.gz"
+MSG_DISPLAY "Config" "1" "Package PKG_NCURSES_EXTEND defined to  : [ ${PKG_NCURSES_EXTEND} ] "
+
+PKG_NCURSES="ncurses-6.2"
+MSG_DISPLAY "Config" "1" "Package PKG_NCURSES defined to  : [ ${PKG_NCURSES} ] "
+
+URL_NCURSES="https://ftp.gnu.org/gnu/ncurses"
+MSG_DISPLAY "Config" "1" "PKG_NCURSES defined to  : [ ${URL_NCURSES} ] "
+
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

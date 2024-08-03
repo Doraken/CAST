@@ -1,0 +1,24 @@
+###############################################################################
+# Package configuratio file                                                   #
+#                                                                             #
+# Creation Date : 16/05/2021                                                  #
+# Author        : Arnaud Crampet          Support mail  : doraken@doraken.net  #
+###############################################################################
+####
+# INFO
+
+GLB_D_PRODUCTS_OPENSSL="${GLB_D_PRODUCTS}/openssl"
+
+################# OpenSSL 0.9.7 ############################
+PKG_OPENSSL_EXTEND="tar.gz"
+MSG_DISPLAY "Config" "1" "Package PKG_OPENSSL_EXTEND defined to  : [ ${PKG_OPENSSL_EXTEND} ] "
+
+PKG_OPENSSL="OpenSSL_1_1_1k"
+MSG_DISPLAY "Config" "1" "Package PKG_OPENSSL defined to  : [ ${PKG_OPENSSL} ] "
+
+URL_OPENSSL="https://github.com/openssl/openssl/archive/refs/tags"
+MSG_DISPLAY "Config" "1" "URL_OPENSSL defined to  : [ ${URL_OPENSSL} ] "
+
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

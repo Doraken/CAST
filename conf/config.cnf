@@ -1,0 +1,347 @@
+#!/bin/bash
+#############
+# Author  :  Arnaud Crampet 
+# Date    :  25/06/2024
+# Determine the current directory of the script
+DEBUG_STATE="0"
+current_date="$(date +"%Y_%m_%d-%H-%M-%S")"
+GLB_PRINTCOL_4="%-70s %-1s %-2s %-2s\n"
+GLB_PRINTCOL_2_NE="%-100s %-10s"
+GLB_PRINTCOL_1_NE="%-150s %-10s\n"
+Base_Dir_Scripts=$(dirname "$(realpath "$0")")
+Runned="0"
+init_azure_devops="0"
+GLB_default_package_manager="apt"
+
+#### create somme array for bug sourcing please be sure that all liste array are declared here before populaties them
+declare -A COUNTRIES=()
+#AZure object type
+declare -A AZURE_OBJECTS=()
+# Azure objet acégories
+declare -A CATEGORIES=()
+# enviroment categories
+declare -A ENVIRONMENTS_AZ=()
+
+
+
+
+# Define paths based on the current directory
+function set_paths() 
+{
+############ STACK_TRACE_BUILDER #####################
+Function_Name="${FUNCNAME[0]}"
+Function_PATH="${Function_Name}"
+######################################################
+    set_bpath
+    #|# [Base_Dir_Scripts_Bin] define Directory for executable scripts
+    Base_Dir_Scripts_Bin="${Base_Dir_Scripts}/bin" ###_ DIR_To_CHECK
+    printf "${GLB_PRINTCOL_4}" "default bin directory set to" ": [" "${Base_Dir_Scripts_Bin}" "]"
+
+    #|# [Base_Dir_Scripts_Lib] define Directory for library scripts
+    Base_Dir_Scripts_Lib="${Base_Dir_Scripts}/lib" ###_ DIR_To_CHECK
+    printf "${GLB_PRINTCOL_4}" "default lib directory set to" ": [" "${Base_Dir_Scripts_Lib}" "]"
+    
+    #|# [Base_Dir_Scripts_CNF] define Directory for configuration files
+    Base_Dir_Scripts_CNF="${Base_Dir_Scripts}/conf" ###_ DIR_To_CHECK
+    printf "${GLB_PRINTCOL_4}" "default configuration directory set to" ": [" "${Base_Dir_Scripts_CNF}" "]"
+    
+    #|# [Base_Dir_Scripts_CNF_Dir] define Directory for specific configuration files
+    Base_Dir_Scripts_CNF_Dir="${Base_Dir_Scripts_CNF}/directory_conf" ###_ DIR_To_CHECK
+    
+    #|# [Base_Dir_Scripts_Bin] define Directory for executable scripts
+    Base_Dir_Scripts_cred="${Base_Dir_Scripts}/.cred" ###_ DIR_To_CHECK
+    printf "${GLB_PRINTCOL_4}" "default bin directory set to" ": [" "${Base_Dir_Scripts_cred}" "]"
+
+    #|# [Base_Dir_Scripts_CNF_spec] define Directory for special configuration files
+    Base_Dir_Scripts_CNF_spec="${Base_Dir_Scripts_CNF}/special_conf" ###_ DIR_To_CHECK
+    
+    #|# [Base_Dir_Scripts_CNF_Subs] define Directory for sub-configuration files
+    Base_Dir_Scripts_CNF_Subs="${Base_Dir_Scripts_CNF}/SubConf" ###_ DIR_To_CHECK
+    
+    #|# [Base_Dir_Scripts_LOG] define Directory for log files
+    Base_Dir_Scripts_LOG="${Base_Dir_Scripts}/logs" ###_ DIR_To_CHECK_TMP
+    printf  "${GLB_PRINTCOL_4}" "default log directory set to" ": [" "${Base_Dir_Scripts_LOG}" "]"
+    
+    #|# [Base_Dir_Scripts_Tmp] define Directory for temporary files
+    Base_Dir_Scripts_Tmp="${Base_Dir_Scripts}/tmp" ###_ DIR_To_CHECK_TMP
+     printf  "${GLB_PRINTCOL_4}" "default tmp directory set to" ": ["  "${Base_Dir_Scripts_CNF}" "]"
+    
+    #|# [Base_Dir_Scripts_BCK] define Directory for backup files
+    Base_Dir_Scripts_BCK="${Base_Dir_Scripts}/backup" ###_ DIR_To_CHECK_TMP
+    printf  "${GLB_PRINTCOL_4}" "default beckup directory set to" ": ["  "${Base_Dir_Scripts_BCK}" "]"
+    
+    #|# [Base_Dir_Scripts_Data] define Main directory for data files
+    Base_Dir_Scripts_Data="${Base_Dir_Scripts}/data" ###_ DIR_To_CHECK_TMP
+    printf  "${GLB_PRINTCOL_4}" "default data directory set to" ": [" "${Base_Dir_Scripts_Data}" "]"
+    
+    #|# [Base_Dir_Scripts_SQL] define Directory for SQL files
+    Base_Dir_Scripts_SQL="${Base_Dir_Scripts_Data}/sql" ###_ DIR_To_CHECK
+
+    #|# [Base_Dir_Scripts_GIT] define Directory for git files
+    Base_Dir_Scripts_GIT="${Base_Dir_Scripts_Data}/git" ###_ DIR_To_CHECK
+
+    #|# [Base_Dir_Scripts_GIT_devops_azure] define Directory for git azure devops files
+    Base_Dir_Scripts_GIT_devops_azure="${Base_Dir_Scripts_GIT}/azure" ###_ DIR_To_CHECK
+    
+    #|# [Base_Dir_Scripts_Tmp_Auto_Lib] define Temporary directory for auto library scripts
+    Base_Dir_Scripts_Tmp_Auto_Lib="${Base_Dir_Scripts_Tmp}/auto_lib" ###_ DIR_To_CHECK_TMP
+    
+    #|# [Base_Dir_Scripts_Fifo] define Temporary directory for FIFO files
+    Base_Dir_Scripts_Fifo="${Base_Dir_Scripts_Tmp}/fifo" ###_ DIR_To_CHECK_TMP
+    
+    #|# [Base_Dir_Conf_Rec] define Temporary directory for received config files
+    Base_Dir_Conf_Rec="${Base_Dir_Scripts_Tmp}/conf_file_rec" ###_ DIR_To_CHECK_TMP
+    
+    #|# [Base_Dir_Conf_Gen] define Temporary directory for generated config files
+    Base_Dir_Conf_Gen="${Base_Dir_Scripts_Tmp}/conf_file_gen" ###_ DIR_To_CHECK_TMP
+    
+    #|# [Base_Dir_Scripts_data_Expect] define Directory for expect scripts
+    Base_Dir_Scripts_data_Expect="${Base_Dir_Scripts_Data}/expect" ###_ DIR_To_CHECK
+    
+    #|# [Base_Dir_Scripts_data_Expect_Uploads] define Directory for uploaded expect scripts
+    Base_Dir_Scripts_data_Expect_Uploads="${Base_Dir_Scripts_data_Expect}/uploaded_scripts" ###_ DIR_To_CHECK
+    
+    #|# [Base_Dir_Scripts_data_Expects_cmd] define Directory for expect command scripts
+    Base_Dir_Scripts_data_Expects_cmd="${Base_Dir_Scripts_data_Expect}/cmd" ###_ DIR_To_CHECK
+    
+    #|# [Base_Dir_Scripts_Data_Def] define Directory for definition files
+    Base_Dir_Scripts_Data_Def="${Base_Dir_Scripts_Data}/def" ###_ DIR_To_CHECK
+    
+    #|# [Base_Dir_Scripts_Data_Def_pf] define Directory for specific platform definitions
+    Base_Dir_Scripts_Data_Def_pf="${Base_Dir_Scripts_Data_Def}/pf" ###_ DIR_To_CHECK
+    
+    #|# [Base_Dir_Scripts_Data_Templates] define Directory for template files
+    Base_Dir_Scripts_Data_Templates="${Base_Dir_Scripts_Data}/templates" ###_ DIR_To_CHECK
+    
+    #|# [Base_Dir_Scripts_Data_Templates_sql] define Directory for SQL templates
+    Base_Dir_Scripts_Data_Templates_sql="${Base_Dir_Scripts_Data_Templates}/sql" ###_ DIR_To_CHECK
+    
+    #|# [Base_Dir_Scripts_Data_Templates_xml] define Directory for XML templates
+    Base_Dir_Scripts_Data_Templates_xml="${Base_Dir_Scripts_Data_Templates}/xml" ###_ DIR_To_CHECK
+    
+    #|# [Base_Dir_Scripts_Data_Templates_html] define Directory for HTML templates
+    Base_Dir_Scripts_Data_Templates_html="${Base_Dir_Scripts_Data_Templates}/html" ###_ DIR_To_CHECK
+    
+    #|# [Base_Dir_Scripts_Data_Templates_mail] define Directory for email templates
+    Base_Dir_Scripts_Data_Templates_mail="${Base_Dir_Scripts_Data_Templates}/mail" ###_ DIR_To_CHECK
+    
+    #|# [Base_Dir_Scripts_Data_Catalogs] define Directory for catalog files
+    Base_Dir_Scripts_Data_Catalogs="${Base_Dir_Scripts_Data}/catalogue" ###_ DIR_To_CHECK
+    
+    #|# [Base_Dir_Scripts_Data_Packages] define Directory for packages
+    Base_Dir_Scripts_Data_Packages="${Base_Dir_Scripts_Data}/packages" ###_ DIR_To_CHECK_TMP
+    
+    #|# [Base_Dir_Scripts_Data_Packages_inits] define Directory for package initialization files
+    Base_Dir_Scripts_Data_Packages_inits="${Base_Dir_Scripts_Data_Packages}/inits" ###_ DIR_To_CHECK_TMP
+    
+    #|# [Base_Dir_Scripts_Data_Xml] define Directory for XML files
+    Base_Dir_Scripts_Data_Xml="${Base_Dir_Scripts_Data}/xml" ###_ DIR_To_CHECK_TMP
+    
+    #|# [Base_Dir_Scripts_Data_Xml_DEF] define Directory for XML definitions
+    Base_Dir_Scripts_Data_Xml_DEF="${Base_Dir_Scripts_Data_Xml}/xml_def" ###_ DIR_To_CHECK
+    
+    #|# [Base_Dir_Scripts_Data_Web] define Directory for web files
+    Base_Dir_Scripts_Data_Web="${Base_Dir_Scripts_Data}/web" ###_ DIR_To_CHECK
+    
+    #|# [Base_Dir_Scripts_Data_Web_Php] define Directory for PHP web files
+    Base_Dir_Scripts_Data_Web_Php="${Base_Dir_Scripts_Data_Web}/php" ###_ DIR_To_CHECK
+    
+    #|# [Base_Dir_Scripts_Data_Web_Html] define Directory for HTML web files
+    Base_Dir_Scripts_Data_Web_Html="${Base_Dir_Scripts_Data_Web}/html" ###_ DIR_To_CHECK
+    
+    #|# [Base_Dir_Scripts_Data_Doc] define Directory for documentation files
+    Base_Dir_Scripts_Data_Doc="${Base_Dir_Scripts_Data}/doc" ###_ DIR_To_CHECK_TMP
+    
+    #|# [Base_Dir_Scripts_Data_doc_xml] define Directory for XML documentation files
+    Base_Dir_Scripts_Data_doc_xml="${Base_Dir_Scripts_Data_Doc}/xml" ###_ DIR_To_CHECK_TMP
+    
+    #|# [Base_Dir_Scripts_Data_doc_txt] define Directory for text documentation files
+    Base_Dir_Scripts_Data_doc_txt="${Base_Dir_Scripts_Data_Doc}/txt" ###_ DIR_To_CHECK_TMP
+    
+    #|# [Base_Dir_Scripts_Data_doc_man_html] define Directory for HTML manual files
+    Base_Dir_Scripts_Data_doc_man_html="${Base_Dir_Scripts_Data_Doc}/man-html" ###_ DIR_To_CHECK_TMP
+    
+    #|# [Base_Dir_Scripts_Data_Reports] define Directory for report files
+    Base_Dir_Scripts_Data_Reports="${Base_Dir_Scripts_Data}/reports" ###_ DIR_To_CHECK_TMP
+    
+    #|# [Base_Dir_Scripts_Data_Reports_txt] define Directory for text report files
+    Base_Dir_Scripts_Data_Reports_txt="${Base_Dir_Scripts_Data_Reports}/txt" ###_ DIR_To_CHECK_TMP
+    
+    #|# [Base_Dir_Scripts_Data_Reports_html] define Directory for HTML report files
+    Base_Dir_Scripts_Data_Reports_html="${Base_Dir_Scripts_Data_Reports}/html" ###_ DIR_To_CHECK_TMP
+    
+    #|# [Base_Dir_Scripts_Data_Get_From_PF] define Directory for pulled data files
+    Base_Dir_Scripts_Data_Get_From_PF="${Base_Dir_Scripts_Data}/pull" ###_ DIR_To_CHECK_TMP
+    
+    #|# [Base_Dir_Scripts_Data_Html] define Directory for HTML files in reports
+    Base_Dir_Scripts_Data_Html="${Base_Dir_Scripts_Data_Reports}/html" ###_ DIR_To_CHECK_TMP
+    
+    #|# [Base_Dir_Scripts_Data_PKI] define Directory for PKI files
+    Base_Dir_Scripts_Data_PKI="${Base_Dir_Scripts_Data}/pki" ###_ DIR_To_CHECK_TMP
+    
+    #|# [Base_Dir_Scripts_Data_PKI_config] define Directory for PKI configuration files
+    Base_Dir_Scripts_Data_PKI_config="${Base_Dir_Scripts_Data_PKI}/etc" ###_ DIR_To_CHECK_TMP
+    
+    #|# [Base_Dir_Scripts_Data_PKI_certificate] define Directory for PKI certificates
+    Base_Dir_Scripts_Data_PKI_certificate="${Base_Dir_Scripts_Data_PKI}/certificate" ###_ DIR_To_CHECK_TMP
+    
+    #|# [Base_Dir_Scripts_Data_PKI_certificate_root] define Directory for root CA certificates
+    Base_Dir_Scripts_Data_PKI_certificate_root="${Base_Dir_Scripts_Data_PKI_certificate}/root-ca" ###_ DIR_To_CHECK_TMP
+    
+    #|# [Base_Dir_Scripts_Data_PKI_certificate_intermediate] define Directory for intermediate CA certificates
+    Base_Dir_Scripts_Data_PKI_certificate_intermediate="${Base_Dir_Scripts_Data_PKI}/intermediate" ###_ DIR_To_CHECK_TMP
+    
+    #|# [Base_Dir_Scripts_Data_PKI_certificate_server] define Directory for server certificates
+    Base_Dir_Scripts_Data_PKI_certificate_server="${Base_Dir_Scripts_Data_PKI}/servers" ###_ DIR_To_CHECK_TMP
+    source_sub_config 
+    set_vars_env
+    get_resources
+    load_core_lib
+    init_all
+############### Stack_TRACE_BUILDER ################
+Function_PATH="$( dirname ${Function_PATH} )"
+####################################################
+}    
+
+# check and set path directory for conf files
+function set_bpath()
+{
+############ STACK_TRACE_BUILDER #####################
+Function_Name="${FUNCNAME[0]}"
+Function_PATH="${Function_Name}"
+######################################################
+    if [[ ${Runned} -ge 2  ]]
+        then 
+            printf "Error during path configuration "
+            printf "${GLB_PRINTCOL_4}" "default base directory set to" ": [" "${Base_Dir_Scripts}" "]"
+            exit 1
+        else 
+            if [[ ! -d ${Base_Dir_Scripts}/conf ]] 
+                then 
+                    Base_Dir_Scripts=$(dirname  ${Base_Dir_Scripts}   )
+                    Runned=$(expr ${Runned} + 1 )
+                    set_bpath
+                else 
+                    printf "${GLB_PRINTCOL_4}" "default base directory set to" ": [" "${Base_Dir_Scripts}" "]"
+            fi 
+    fi
+############### Stack_TRACE_BUILDER ################
+Function_PATH="$( dirname ${Function_PATH} )"
+####################################################
+}
+
+# source and check configuration files in the config folder
+function source_sub_config() 
+{
+############ STACK_TRACE_BUILDER #####################
+Function_Name="${FUNCNAME[0]}"
+Function_PATH="${Function_Name}"
+######################################################
+    # Source the configuration file if available
+    ConfigState=""
+    for configuration_file in $(ls ${Base_Dir_Scripts_CNF_Subs}/*.cnf -1)
+    do 
+            if [[ -f ${configuration_file}  ]]
+                then 
+                    . ${configuration_file}  2> /dev/null  
+                    if [[ ${ConfigState} = "OK" ]]
+                        then 
+                            printf "${GLB_PRINTCOL_4}" "Sourcing base configuration file ${configuration_file}" ": [" "SUCCESS" "]"
+                            ConfigState=""
+                        else
+                            printf "${GLB_PRINTCOL_4}" "Sourcing base configuration file ${configuration_file} " ": [" "ERROR" "]"
+                            exit 1
+                    fi 
+                else 
+                    printf "${GLB_PRINTCOL_4}" "Sourcing base configuration file ${configuration_file}" ": [" "File NOT FOUND"  "]"
+                    exit 1
+            fi 
+    done 
+ 
+############### Stack_TRACE_BUILDER ################
+Function_PATH="$( dirname ${Function_PATH} )"
+####################################################
+} 
+
+# get ressources from git if path configuration set error
+function get_resources ()
+{
+############ STACK_TRACE_BUILDER #####################
+Function_Name="${FUNCNAME[0]}"
+Function_PATH="${Function_Name}"
+######################################################
+ if [[ ${runned} -ge 2 ]]
+    then 
+        printf "Error during path configuration "
+        printf "${GLB_PRINTCOL_4}" "default base directory set to" ": [" "${Base_Dir_Scripts}" "]"
+        exit 1
+    else 
+        if [[ -d ${Base_Dir_Scripts_Lib} ]]   
+            then 
+                 printf "${GLB_PRINTCOL_4}" "default ressource directory dowload" ": [" "SUCCESS" "]"
+                 runned="0"
+            else 
+                cd ${Base_Dir_Scripts}
+                git clone git@${GIT_SSH_URL}:v3/${GIT_GLB_ORGANISATION}/${GIT_GLB_PROJECT}/lib
+                runned="$(expr ${runned} + 1 )"
+                get_resources
+        fi 
+fi 
+############### Stack_TRACE_BUILDER ################
+Function_PATH="$( dirname ${Function_PATH} )"
+####################################################
+}
+
+# check and load file core.sh (Very Important File)
+function load_core_lib ()
+{
+############ STACK_TRACE_BUILDER #####################
+Function_Name="${FUNCNAME[0]}"
+Function_PATH="${Function_Name}"
+######################################################
+CoreState=""
+printf  "Sourcing core lib file " 
+if [[ -f ${Base_Dir_Scripts_Lib}/core.sh  ]]
+   then 
+       . ${Base_Dir_Scripts_Lib}/core.sh 2> /dev/null  
+       if [[  ${?} -ge 1 ]] && [[ ! ${CoreState} = "OK" ]]
+          then 
+              printf "                                                : [ ERROR ] \n" 
+              exit 1
+          else
+              printf "                                                : [ SUCCESS ] \n" 
+      fi 
+    else 
+      printf " ERROR FILE NOT FOUND \n"
+fi 
+
+Do_source_all_libs "${Base_Dir_Scripts_Lib}"
+############### Stack_TRACE_BUILDER ################
+Function_PATH="$( dirname ${Function_PATH} )"
+####################################################
+}
+
+GLB_GIT_ressources=${GIT_HTTPS_URL}/lib
+
+# generique connection to Azure DevOps project
+function login_azure ()
+{
+############ STACK_TRACE_BUILDER #####################
+Function_Name="${FUNCNAME[0]}"
+Function_PATH="${Function_Name}"
+######################################################
+
+az login 
+az devops configure --defaults organization=${organization} project=${GIT_GLB_PROJECT}
+az account set --subscription "${subscriptionId}"
+
+############### Stack_TRACE_BUILDER ################
+Function_PATH="$( dirname ${Function_PATH} )"
+####################################################
+}
+git config --global init.defaultBranch main
+
+
+
+
+

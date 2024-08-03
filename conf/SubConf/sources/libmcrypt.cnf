@@ -1,0 +1,24 @@
+###############################################################################
+# Package configuratio file                                                   #
+#                                                                             #
+# Creation Date : 16/05/2021                                                  #
+# Author        : Arnaud Crampet          Support mail  : doraken@doraken.net  #
+###############################################################################
+####
+# INFO
+
+GLB_D_PRODUCTS_LIBMCRYPT="${GLB_D_PRODUCTS}/libmcrypt"
+
+################# LibMCrypt 2.5.7 ##########################
+PKG_LIB_MCRYPT_EXTEND="tar.gz"
+MSG_DISPLAY "Config" "1" "Package PKG_LIB_MCRYPT_EXTEND defined to  : [ ${PKG_LIB_MCRYPT_EXTEND} ] "
+
+PKG_LIB_MCRYPT="libmcrypt-2.5.8"
+MSG_DISPLAY "Config" "1" "Package PKG_LIB_MCRYPT defined to  : [ ${PKG_LIB_MCRYPT} ] "
+
+URL_LIB_MCRYPT="https://sourceforge.net/projects/mcrypt/files/Libmcrypt/2.5.8"
+MSG_DISPLAY "Config" "1" "URL_LIB_MCRYPT defined to  : [ ${URL_LIB_MCRYPT} ] "
+
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

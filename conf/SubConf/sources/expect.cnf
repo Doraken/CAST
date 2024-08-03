@@ -1,0 +1,24 @@
+###############################################################################
+# Package configuratio file                                                   #
+#                                                                             #
+# Creation Date : 16/05/2021                                                  #
+# Author        : Arnaud Crampet          Support mail  : doraken@doraken.net  #
+###############################################################################
+####
+# INFO
+
+GLB_D_PRODUCTS_EXPECT="${GLB_D_PRODUCTS}/expect"
+
+################## expect ##############################
+PKG_EXPECT_EXTEND="tar.gz"
+MSG_DISPLAY "Config" "1" "Package PKG_EXPECT_EXTEND defined to  : [ ${PKG_EXPECT_EXTEND} ] "
+
+PKG_EXPECT="expect5.45.4"
+MSG_DISPLAY "Config" "1" "Package PKG_EXPECT defined to  : [ ${PKG_EXPECT} ] "
+
+URL_EXPECT="https://sourceforge.net/projects/expect/files/Expect/5.45.4"
+MSG_DISPLAY "Config" "1" "Url expect defined to  : [ ${URL_EXPECT} ] "
+
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

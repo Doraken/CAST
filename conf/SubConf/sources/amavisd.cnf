@@ -1,0 +1,23 @@
+###############################################################################
+# Package configuratio file                                                   #
+#                                                                             #
+# Creation Date : 16/05/2021                                                  #
+# Author        : Arnaud Crampet          Support mail  : doraken@doraken.net  #
+###############################################################################
+####
+# INFO
+
+GLB_D_PRODUCTS_AMAVISD="${GLB_D_PRODUCTS}/amavisd"
+
+#################### GLB_D_PRODUCTS_AMAVISD  ##############################
+PKG_AMAVISD_EXTEND="tar.gz"
+MSG_DISPLAY "Config" "1" "Package PKG_AMAVISD_EXTEND defined to  : [ ${PKG_AMAVISD_EXTEND} ] "
+
+PKG_AMAVISD="amavisd-new-2.11.1"
+MSG_DISPLAY "Config" "1" "Package PKG_AMAVISD defined to  : [ ${PKG_AMAVISD} ] "
+
+URL_AMAVISD="http://www.ijs.si/software/amavisd"
+MSG_DISPLAY "Config" "1" "Url AMAVISD defined to  : [ ${URL_AMAVISD} ] "
+
+
+ConfigState="OK"

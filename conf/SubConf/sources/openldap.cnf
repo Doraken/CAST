@@ -1,0 +1,24 @@
+###############################################################################
+# Package configuratio file                                                   #
+#                                                                             #
+# Creation Date : 16/05/2021                                                  #
+# Author        : Arnaud Crampet          Support mail  : doraken@doraken.net  #
+###############################################################################
+####
+# INFO
+
+GLB_D_PRODUCTS_OPENLDAP="${GLB_D_PRODUCTS}/openLDAP"
+
+################  OPEN LDAP 2.3.27 ###########################
+PKG_OPEN_LDAP_EXTEND="tgz"
+MSG_DISPLAY "Config" "1" "Package PKG_OPEN_LDAP_EXTEND defined to  : [ ${PKG_OPEN_LDAP_EXTEND} ] "
+
+PKG_OPEN_LDAP="openldap-2.5.4"
+MSG_DISPLAY "Config" "1" "Package PKG_OPEN_LDAP defined to  : [ ${PKG_OPEN_LDAP} ] "
+
+URL_OPEN_LDAP="https://www.openldap.org/software/download/OpenLDAP/openldap-release"
+MSG_DISPLAY "Config" "1" "URL_OPEN_LDAP defined to  : [ ${URL_OPEN_LDAP} ] "
+
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

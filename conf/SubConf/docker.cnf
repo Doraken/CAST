@@ -1,0 +1,27 @@
+###############################################################################
+# docker.cnf                                                                  #       
+#                                                                             #
+# Creation Date : 19/01/2015                                                  #
+# Team          : Arnaud Crampt Automation Service                            #
+# Support mail  : doraken@doraken.net                                          #
+# Author        : XXXXXXX XXXXXXXX                                            #
+#                                                                             #
+# Subject : This file containe all genrics vars used in docker installation   #
+#                                                                             #
+###############################################################################
+####
+# INFO
+
+
+
+Docker_Supported_img_local=('fr' 'us')
+Docker_supported_img_system=('alpine' 'debian' 'ubuntu' 'alpine')
+
+
+
+
+
+
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

@@ -1,0 +1,23 @@
+###############################################################################
+# Package configuratio file                                                   #
+#                                                                             #
+# Creation Date : 16/05/2021                                                  #
+# Author        : Arnaud Crampet          Support mail  : doraken@doraken.net  #
+###############################################################################
+####
+# INFO
+
+GLB_D_PRODUCTS_TCL="${GLB_D_PRODUCTS}/tcl"
+
+################# TCL  ##################################
+PKG_TCL_EXTEND="tar.gz"
+MSG_DISPLAY "Config" "1" "Package PKG_TCL_EXTEND defined to  : [ ${PKG_TCL_EXTEND} ] "
+
+PKG_TCL="tcl8.6.11-src"
+MSG_DISPLAY "Config" "1" "Package PKG_TCL defined to  : [ ${PKG_TCL} ] "
+
+URL_TCL="https://prdownloads.sourceforge.net/tcl"
+MSG_DISPLAY "Config" "1" "Url TCL defined to  : [ ${URL_TCL} ] "
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

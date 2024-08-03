@@ -1,0 +1,71 @@
+###############################################################################
+# Apache.cnf                                                                  #
+#                                                                             #
+# Creation Date : 30/07/2007                                                  #
+# Team          : Only me after all                                           #
+# Support mail  : doraken@doraken.net                                          #
+# Author        : Arnaud Crampet                                              #
+#                                                                             #
+# Subject : This conf file provide all base parameters apache interactions    #
+#                                                                             #
+###############################################################################
+####
+# INFO
+
+BASE_supportmail="arnaud@crampet.net"
+BASE_support_team="Only ME"
+Base_Author="Arnaud Crampet"
+
+function CAST_SUPPORT_MSG 
+{
+#|# 
+#|# Base usage : CAST_SUPPORT_MSG
+#|# Comment : No parameter needed 
+############ STACK_TRACE_BUILDER #####################
+Function_Name="${FUNCNAME[0]}"
+Function_PATH="${Function_PATH}/${Function_Name}"
+######################################################
+MSG_DISPLAY "debug" "0" "current function path : [ ${Function_PATH} ]  | function Name [ ${Function_Name} ] "
+ 
+CAST_SUPPORT_LOGO
+echo "you can contact ${Base_Author} at this mail : ${BASE_supportmail}"
+
+############### Stack_TRACE_BUILDER ################
+Function_PATH="$( dirname ${Function_PATH} )"
+#################################################### 
+}
+
+
+function CAST_SUPPORT_LOGO 
+{
+#|# 
+#|# Base usage : CAST_SUPPORT_MSG
+#|# Comment : No parameter needed 
+############ STACK_TRACE_BUILDER #####################
+Function_Name="${FUNCNAME[0]}"
+Function_PATH="${Function_PATH}/${Function_Name}"
+######################################################
+MSG_DISPLAY "debug" "0" "current function path : [ ${Function_PATH} ]  | function Name [ ${Function_Name} ] "
+ 
+echo ""
+echo "│         │              ┌────────────"
+echo "│         │              │         ┌──"
+echo "│         │              ▼         │  "
+echo "│      ┌──▼──┐   ┌──────────────┐  │  "
+echo "└─────►│  C  ├──►│ Common       │◄─┘  "
+echo "       │  A  │──►│  Application │     "
+echo "       │  S  │◄──┤   Scripting  │◄────"
+echo "   ┌──►│  T  │──►│    Toolkit   │     "
+echo "   │   └─────┘   └──────────────┘◄┐   "
+echo "   │    BY : ${Base_Author}       │   "
+echo "   │    Mail : ${BASE_supportmail}   │   "
+echo "" 
+sleep 4
+############### Stack_TRACE_BUILDER ################
+Function_PATH="$( dirname ${Function_PATH} )"
+#################################################### 
+}
+
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

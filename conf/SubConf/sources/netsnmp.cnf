@@ -1,0 +1,24 @@
+###############################################################################
+# Package configuratio file                                                   #
+#                                                                             #
+# Creation Date : 16/05/2021                                                  #
+# Author        : Arnaud Crampet          Support mail  : doraken@doraken.net  #
+###############################################################################
+####
+# INFO
+
+GLB_D_PRODUCTS_NETSNMP="${GLB_D_PRODUCTS}/NetSNMP"
+
+#################### GLB_D_PRODUCTS_NETSNMP  ##############################
+PKG_NETSNMP_EXTEND="tar.xz"
+MSG_DISPLAY "Config" "1" "Package PKG_NETSNMP_EXTEND defined to  : [ ${PKG_NETSNMP_EXTEND} ] "
+
+PKG_NETSNMP="net-snmp-5.9"
+MSG_DISPLAY "Config" "1" "Package PKG_NETSNMP defined to  : [ ${PKG_NETSNMP} ] "
+
+URL_NETSNMP="https://sourceforge.net/projects/net-snmp/files/net-snmp/5.9"
+MSG_DISPLAY "Config" "1" "Url NETSNMP defined to  : [ ${URL_NETSNMP} ] "
+
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

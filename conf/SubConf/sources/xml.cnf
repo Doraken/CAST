@@ -1,0 +1,24 @@
+###############################################################################
+# Package configuratio file                                                   #
+#                                                                             #
+# Creation Date : 16/05/2021                                                  #
+# Author        : Arnaud Crampet          Support mail  : doraken@doraken.net  #
+###############################################################################
+####
+# INFO
+
+GLB_D_PRODUCTS_XML="${GLB_D_PRODUCTS}/xml"
+
+#################  xml -2.6.27   #####################
+PKG_XML_EXTEND="tar.gz"
+MSG_DISPLAY "Config" "1" "Package PKG_XML_EXTEND defined to  : [ ${PKG_XML_EXTEND} ] "
+
+PKG_XML="libxml2-v2.9.12"
+MSG_DISPLAY "Config" "1" "Package PKG_XML defined to  : [ ${PKG_XML} ] "
+
+URL_XML="https://gitlab.gnome.org/GNOME/libxml2/-/archive/v2.9.12"
+MSG_DISPLAY "Config" "1" "Url XML defined to  : [ ${URL_XML} ] "
+
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

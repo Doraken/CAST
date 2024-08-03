@@ -1,0 +1,23 @@
+###############################################################################
+# Package configuratio file                                                   #
+#                                                                             #
+# Creation Date : 16/05/2021                                                  #
+# Author        : Arnaud Crampet          Support mail  : doraken@doraken.net  #
+###############################################################################
+####
+# INFO
+
+GLB_D_PRODUCTS_GD="${GLB_D_PRODUCTS}/gd"
+
+################  GD 2.0.33         ###########################
+PKG_GD_EXTEND=".tar.gz"
+MSG_DISPLAY "Config" "1" "Package PKG_GD_EXTEND defined to  : [ ${PKG_GD_EXTEND} ] "
+
+PKG_GD="libgd-2.3.1"
+MSG_DISPLAY "Config" "1" "Package PKG_GD defined to  : [ ${PKG_GD} ] "
+
+URL_GD="https://github.com/libgd/libgd/releases/download/gd-2.3.1"
+MSG_DISPLAY "Config" "1" "URL_GD defined to  : [ ${URL_GD} ] "
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

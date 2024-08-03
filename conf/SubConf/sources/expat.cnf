@@ -1,0 +1,24 @@
+###############################################################################
+# Package configuratio file                                                   #
+#                                                                             #
+# Creation Date : 16/05/2021                                                  #
+# Author        : Arnaud Crampet          Support mail  : doraken@doraken.net  #
+###############################################################################
+####
+# INFO
+
+GLB_D_PRODUCTS_EXPAT="${GLB_D_PRODUCTS}/expat"
+
+################# expat  ##################################
+PKG_EXPAT_EXTEND="tar.gz"
+MSG_DISPLAY "Config" "1" "Package PKG_EXPAT_EXTEND defined to  : [ ${PKG_EXPAT_EXTEND} ] "
+
+PKG_EXPAT="expat-2.3.0"
+MSG_DISPLAY "Config" "1" "Package PKG_EXPAT defined to  : [ ${PKG_EXPAT} ] "
+
+URL_EXPAT="https://github.com/libexpat/libexpat/releases/download/R_2_3_0"
+MSG_DISPLAY "Config" "1" "Url EXPAT defined to  : [ ${URL_EXPAT} ] "
+
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

@@ -1,0 +1,68 @@
+###############################################################################
+# SSH_params.cnf                                       Version : 1.1.2.5      #
+#                                                                             #
+# Creation Date : 21/02/2016                                                  #
+# Team          : Only me after all                                           #
+# Support mail  : doraken@doraken.net                                          #
+# Author        : Arnaud Crampet                                              #
+#                                                                             #
+# Subject : This file containe all sshd configuration parameters              #
+#                                                                             #
+###############################################################################
+####
+# INFO
+
+###############################################################################
+####
+# Generics variables
+# Here you find all generic information variable used for scripts
+# all theses parameters are standadized
+#|#
+
+
+GLB_C_SSHD_Port="22"
+GLB_C_SSHD_AddressFamily="any"
+GLB_C_SSHD_Address="0.0.0.0"
+GLB_C_SSHD_Protocol="2"
+GLB_C_SSHD_HostKey="/etc/ssh/ssh_host_rsa_key"
+GLB_C_SSHD_HostKey="/etc/ssh/ssh_host_ecdsa_key"
+GLB_C_SSHD_HostKey="/etc/ssh/ssh_host_ed25519_key"
+GLB_C_SSHD_SyslogFacility="AUTHPRIV"
+GLB_C_SSHD_LogLevel="INFO"
+GLB_C_SSHD_LoginGraceTime="2m"
+GLB_C_SSHD_PermitRootLogin="no"
+GLB_C_SSHD_StrictModes="yes"
+GLB_C_SSHD_MaxAuthTries="6"
+GLB_C_SSHD_MaxSessions="10"
+GLB_C_SSHD_RSAAuthentication="No"
+GLB_C_SSHD_PubkeyAuthentication="yes"
+GLB_C_SSHD_AuthorizedKeysFile=".ssh/authorized_keys"
+GLB_C_SSHD_RhostsRSAAuthentication="no"
+GLB_C_SSHD_HostbasedAuthentication="no"
+GLB_C_SSHD_PasswordAuthentication="no"
+GLB_C_SSHD_PermitEmptyPasswords="no"
+GLB_C_SSHD_ChallengeResponseAuthentication="no"
+GLB_C_SSHD_UsePAM="yes"
+GLB_C_SSHD_AllowAgentForwarding="yes"
+GLB_C_SSHD_AllowTcpForwarding="yes"
+GLB_C_SSHD_X11Forwarding="yes"
+GLB_C_SSHD_X11DisplayOffset="0"
+GLB_C_SSHD_X11UseLocalhost="yes"
+GLB_C_SSHD_PermitTTY="yes"
+GLB_C_SSHD_PrintMotd="yes"
+GLB_C_SSHD_PrintLastLog="yes"
+GLB_C_SSHD_TCPKeepAlive="yes"
+GLB_C_SSHD_UseLogin="no"
+GLB_C_SSHD_UsePrivilegeSeparation="sandbox"   
+GLB_C_SSHD_PermitUserEnvironment="no"
+GLB_C_SSHD_PidFile="/var/run/sshd.pid"
+GLB_C_SSHD_PermitTunnel="no"
+GLB_C_SSHD_AcceptEnv="LANG LC_CTYPE LC_NUMERIC LC_TIME LC_COLLATE LC_MONETARY LC_MESSAGES"
+GLB_C_SSHD_AcceptEnv="LC_PAPER LC_NAME LC_ADDRESS LC_TELEPHONE LC_MEASUREMENT"
+GLB_C_SSHD_AcceptEnv="LC_IDENTIFICATION LC_ALL LANGUAGE"
+GLB_C_SSHD_AcceptEnv="XMODIFIERS"
+GLB_C_SSHD_Subsystem="sftp    /usr/libexec/openssh/sftp-server"
+
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

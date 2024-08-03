@@ -1,0 +1,24 @@
+###############################################################################
+# Package configuratio file                                                   #
+#                                                                             #
+# Creation Date : 16/05/2021                                                  #
+# Author        : Arnaud Crampet          Support mail  : doraken@doraken.net  #
+###############################################################################
+####
+# INFO
+
+GLB_D_PRODUCTS_PNG="${GLB_D_PRODUCTS}/png"
+
+#################### png  ##############################
+PKG_PNG_EXTEND="tar.xz"
+MSG_DISPLAY "Config" "1" "Package PKG_PNG_EXTEND defined to  : [ ${PKG_PNG_EXTEND} ] "
+
+PKG_PNG="libpng-1.6.37"
+MSG_DISPLAY "Config" "1" "Package PKG_PNG defined to  : [ ${PKG_PNG} ] "
+
+URL_PNG="http://prdownloads.sourceforge.net/libpng"
+MSG_DISPLAY "Config" "1" "Url PNG defined to  : [ ${URL_PNG} ] "
+
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

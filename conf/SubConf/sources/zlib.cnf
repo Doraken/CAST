@@ -1,0 +1,24 @@
+###############################################################################
+# Package configuratio file                                                   #
+#                                                                             #
+# Creation Date : 16/05/2021                                                  #
+# Author        : Arnaud Crampet          Support mail  : doraken@doraken.net  #
+###############################################################################
+####
+# INFO
+
+GLB_D_PRODUCTS_ZLIB="${GLB_D_PRODUCTS}/zlib"
+
+##################  ZLIB 1.2.3   #####################
+PKG_ZLIB_EXTEND="tar.gz"
+MSG_DISPLAY "Config" "1" "Package PKG_ZLIB_EXTEND defined to  : [ ${PKG_ZLIB_EXTEND} ] "
+
+PKG_ZLIB="zlib-1.2.11"
+MSG_DISPLAY "Config" "1" "Package PKG_ZLIB defined to  : [ ${PKG_ZLIB} ] "
+
+URL_ZLIB="http://www.zlib.net"
+MSG_DISPLAY "Config" "1" "Url ZLIB defined to  : [ ${URL_ZLIB} ] "
+
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

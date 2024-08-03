@@ -1,0 +1,24 @@
+###############################################################################
+# Package configuratio file                                                   #
+#                                                                             #
+# Creation Date : 16/05/2021                                                  #
+# Author        : Arnaud Crampet          Support mail  : doraken@doraken.net  #
+###############################################################################
+####
+# INFO
+
+GLB_D_PRODUCTS_POSTFIX="${GLB_D_PRODUCTS}/postfix"
+
+#################### GLB_D_PRODUCTS_POSTFIX  ##############################
+PKG_POSTFIX_EXTEND="tar.gz"
+MSG_DISPLAY "Config" "1" "Package PKG_POSTFIX defined to  : [ ${PKG_POSTFIX} ] "
+
+PKG_POSTFIX="postfix-3.6.0"
+MSG_DISPLAY "Config" "1" "Package PKG_POSTFIX defined to  : [ ${PKG_POSTFIX} ] "
+
+URL_POSTFIX="http://postfix.mirrors.ovh.net/postfix-release/official/"
+MSG_DISPLAY "Config" "1" "Url POSTFIX defined to  : [ ${URL_POSTFIX} ] "
+
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

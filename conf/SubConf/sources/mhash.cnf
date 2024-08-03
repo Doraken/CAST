@@ -1,0 +1,24 @@
+###############################################################################
+# Package configuratio file                                                   #
+#                                                                             #
+# Creation Date : 16/05/2021                                                  #
+# Author        : Arnaud Crampet          Support mail  : doraken@doraken.net  #
+###############################################################################
+####
+# INFO
+
+GLB_D_PRODUCTS_MHASH="${GLB_D_PRODUCTS}/mhash"
+
+################# MHASH 0.3.7.1 ##########################
+PKG_MHASH_EXTEND="tar.gz"
+MSG_DISPLAY "Config" "1" "Package PKG_MHASH_EXTEND defined to  : [ ${PKG_MHASH_EXTEND} ] "
+
+PKG_MHASH="mhash-0.9.9.9"
+MSG_DISPLAY "Config" "1" "Package PKG_MHASH defined to  : [ ${PKG_MHASH} ] "
+
+URL_MHASH="https://sourceforge.net/projects/mhash/files/mhash/0.9.9.9"
+MSG_DISPLAY "Config" "1" "URL_MHASH defined to  : [ ${URL_MHASH} ] "
+
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

@@ -1,0 +1,29 @@
+#!/bin/bash
+#############
+# Author  :  Arnaud Crampet 
+# Date    :  25/06/2024
+# Determine the current directory of the script
+
+GIT_SSH_URL="Dummy"
+GIT_GLB_ORGANISATION="Dummy"
+GIT_GLB_PROJECT="azure-tenant"
+GIT_HTTPS_URL="https://${GIT_GLB_ORGANISATION}@dev.azure.com/${GIT_GLB_ORGANISATION}/${GIT_GLB_PROJECT}/_git/"
+organization=https://dev.azure.com/${GIT_GLB_ORGANISATION} 
+
+function show_actual_git_config ()
+{
+printf "\n \n"
+printf "#----------------------------------------------------------------------------------------------#\n"
+printf "|------                                git configuration :                              -------|\n"
+printf "#----------------------------------------------------------------------------------------------#\n" 
+printf "${GLB_PRINTCOL_4}" "default ssh url set to" ": [" "${GIT_SSH_URL}" "]"
+printf "${GLB_PRINTCOL_4}" "default organization set to" ": [" "${GIT_GLB_ORGANISATION}" "]"
+printf "${GLB_PRINTCOL_4}" "default globale project set to" ": [" "${GIT_GLB_PROJECT}" "]"
+printf "${GLB_PRINTCOL_4}" "default https URL set to" ": [" "${GIT_HTTPS_URL}" "]"
+printf "#----------------------------------------------------------------------------------------------#\n"
+printf "\n \n"
+}
+
+show_actual_git_config
+
+ConfigState="OK"

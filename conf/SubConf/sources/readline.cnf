@@ -1,0 +1,24 @@
+###############################################################################
+# Package configuratio file                                                   #
+#                                                                             #
+# Creation Date : 16/05/2021                                                  #
+# Author        : Arnaud Crampet          Support mail  : doraken@doraken.net  #
+###############################################################################
+####
+# INFO
+
+GLB_D_PRODUCTS_READLINE="${GLB_D_PRODUCTS}/readline"
+
+##################  READLINE 5.2   #####################
+PKG_READLINE_EXTEND="tar.gz"
+MSG_DISPLAY "Config" "1" "Package PKG_READLINE_EXTEND defined to  : [ ${PKG_READLINE_EXTEND} ] "
+
+PKG_READLINE="readline-8.1"
+MSG_DISPLAY "Config" "1" "Package PKG_READLINE defined to  : [ ${PKG_READLINE} ] "
+
+URL_READLINE="https://ftp.gnu.org/gnu/readline"
+MSG_DISPLAY "Config" "1" "URL_READLINE defined to  : [ ${URL_READLINE} ] "
+
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

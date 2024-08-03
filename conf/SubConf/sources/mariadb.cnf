@@ -1,0 +1,24 @@
+###############################################################################
+# Package configuratio file                                                   #
+#                                                                             #
+# Creation Date : 16/05/2021                                                  #
+# Author        : Arnaud Crampet          Support mail  : doraken@doraken.net  #
+###############################################################################
+####
+# INFO
+
+GLB_D_PRODUCTS_MARIADB="${GLB_D_PRODUCTS}/mariadb"
+
+##################  MariaDB    #####################
+PKG_MARIADB_EXTEND="tar.gz"
+MSG_DISPLAY "Config" "1" "Package PKG_MARIADB_EXTEND defined to  : [ ${PKG_MARIADB_EXTEND} ] "
+
+PKG_MARIADB="mariadb-10.5.10"
+MSG_DISPLAY "Config" "1" "Package PKG_MARIADB defined to  : [ ${PKG_MARIADB} ] "
+
+URL_MARIADB="https://ftp.igh.cnrs.fr/pub/mariadb/mariadb-10.5.10/source"
+MSG_DISPLAY "Config" "1" "Url URL_MARIADB defined to  : [ ${URL_MARIADB} ] "
+
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

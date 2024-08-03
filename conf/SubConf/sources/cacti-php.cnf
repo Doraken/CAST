@@ -1,0 +1,23 @@
+###############################################################################
+# Package configuratio file                                                   #
+#                                                                             #
+# Creation Date : 16/05/2021                                                  #
+# Author        : Arnaud Crampet          Support mail  : doraken@doraken.net  #
+###############################################################################
+####
+# INFO
+
+GLB_D_PRODUCTS_CACTI="${GLB_D_PRODUCTS}/cacti"
+
+################# cacti php #############################
+PKG_CACTI_PHP_EXTEND=".tar.gz"
+MSG_DISPLAY "Config" "1" "Package PKG_CACTI_PHP_EXTEND defined to  : [ ${PKG_CACTI_PHP_EXTEND} ] "
+
+PKG_CACTI_PHP="cacti-1.2.17"
+MSG_DISPLAY "Config" "1" "Package PKG_CACTI_PHP defined to  : [ ${PKG_CACTI_PHP} ] "
+
+URL_CACTI_PHP="http://www.cacti.net/downloads"
+MSG_DISPLAY "Config" "1" "URL_CACTI_PHP defined to  : [ ${URL_CACTI_PHP} ] "
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

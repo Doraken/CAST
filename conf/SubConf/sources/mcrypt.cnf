@@ -1,0 +1,24 @@
+###############################################################################
+# Package configuratio file                                                   #
+#                                                                             #
+# Creation Date : 16/05/2021                                                  #
+# Author        : Arnaud Crampet          Support mail  : doraken@doraken.net  #
+###############################################################################
+####
+# INFO
+
+GLB_D_PRODUCTS_MCRYPT="${GLB_D_PRODUCTS}/mcrypt"
+
+################# Mcrypt 2.6.4  ############################
+PKG_MCRYPT_EXTEND="tar.gz"
+MSG_DISPLAY "Config" "1" "Package PKG_MCRYPT_EXTEND defined to  : [ ${PKG_MCRYPT_EXTEND} ] "
+
+PKG_MCRYPT="mcrypt-2.6.8"
+MSG_DISPLAY "Config" "1" "Package PKG_MCRYPT defined to  : [ ${PKG_MCRYPT} ] "
+
+URL_MCRYPT="https://sourceforge.net/projects/mcrypt/files/MCrypt/2.6.8"
+MSG_DISPLAY "Config" "1" "URL_MCRYPT defined to  : [ ${URL_MCRYPT} ] "
+
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

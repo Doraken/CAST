@@ -1,0 +1,23 @@
+###############################################################################
+# Package configuratio file                                                   #
+#                                                                             #
+# Creation Date : 16/05/2021                                                  #
+# Author        : Arnaud Crampet          Support mail  : doraken@doraken.net  #
+###############################################################################
+####
+# INFO
+
+GLB_D_PRODUCTS_LIBIDN="${GLB_D_PRODUCTS}/libidn"
+
+#################  libidn-0.6.11   #####################
+PKG_LIBIDN_EXTEND="tar.gz"
+MSG_DISPLAY "Config" "1" "Package PKG_LIBIDN_EXTEND defined to  : [ ${PKG_LIBIDNT_EXTEND} ] "
+
+PKG_LIBIDN="libidn2-2.3.0"
+MSG_DISPLAY "Config" "1" "Package PKG_LIBIDN defined to  : [ ${PKG_LIBIDN} ] "
+
+URL_LIBIDN="https://gitlab.com/libidn/libidn2/-/archive/2.3.0"
+MSG_DISPLAY "Config" "1" "Url Lib IDN defined to  : [ ${URL_LIBIDN} ] "
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

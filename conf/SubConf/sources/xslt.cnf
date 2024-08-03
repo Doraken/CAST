@@ -1,0 +1,24 @@
+###############################################################################
+# Package configuratio file                                                   #
+#                                                                             #
+# Creation Date : 16/05/2021                                                  #
+# Author        : Arnaud Crampet          Support mail  : doraken@doraken.net  #
+###############################################################################
+####
+# INFO
+
+GLB_D_PRODUCTS_XSL="${GLB_D_PRODUCTS}/xsl"
+
+#################  xslt 1.1.20  #####################
+PKG_XSL_EXTEND="tar.gz"
+MSG_DISPLAY "Config" "1" "Package PKG_XSL_EXTEND defined to  : [ ${PKG_XSL_EXTEND} ] "
+
+PKG_XSL="libxslt-v1.1.34"
+MSG_DISPLAY "Config" "1" "Package PKG_XML defined to  : [ ${PKG_XSL} ] "
+
+URL_XSL="https://gitlab.gnome.org/GNOME/libxslt/-/archive/v1.1.34"
+MSG_DISPLAY "Config" "1" "Url XML defined to  : [ ${URL_XSL} ] "
+
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

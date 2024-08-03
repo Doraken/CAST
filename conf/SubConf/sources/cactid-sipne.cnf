@@ -1,0 +1,23 @@
+###############################################################################
+# Package configuratio file                                                   #
+#                                                                             #
+# Creation Date : 16/05/2021                                                  #
+# Author        : Arnaud Crampet          Support mail  : doraken@doraken.net  #
+###############################################################################
+####
+# INFO
+
+GLB_D_PRODUCTS_CACTID="${GLB_D_PRODUCTS}/cactid"
+
+############### cactid  -- spine       ###########################
+PKG_CACTID_EXTEND=".tar.gz"
+MSG_DISPLAY "Config" "1" "Package PKG_CACTID_EXTEND defined to  : [ ${PKG_CACTID_EXTEND} ] "
+
+PKG_CACTID="cacti-spine-1.2.17"
+MSG_DISPLAY "Config" "1" "Package PKG_CACTID defined to  : [ ${PKG_CACTID} ] "
+
+URL_CACTID="https://www.cacti.net/downloads/spine"
+MSG_DISPLAY "Config" "1" "URL_CACTID defined to  : [ ${URL_CACTID} ] "
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"

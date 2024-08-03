@@ -1,0 +1,40 @@
+###############################################################################
+# Generics.cnf                                         Version : 1.1.2.5      #
+#                                                                             #
+# Creation Date : 03/09/2006                                                  #
+# Team          : Only me after all                                           #
+# Support mail  : doraken@doraken.net                                          #
+# Author        : Arnaud Crampet                                              #
+#                                                                             #
+# Subject : This file containe all genrics vars used in CAST                  #
+#                                                                             #
+###############################################################################
+####
+# INFO
+
+
+# The imjournal module bellow is now used as a message source instead of imuxsock.
+GLB_C_RSYSLOG_ModLoad="imuxsock"
+GLB_C_RSYSLOG_ModLoad="imjournal"
+GLB_C_RSYSLOG_ModLoad="imklog"
+GLB_C_RSYSLOG_ModLoad="immark"
+GLB_C_RSYSLOG_ModLoad="imudp"
+GLB_C_RSYSLOG_UDPServerRun="514"
+GLB_C_RSYSLOG_ModLoad="imtcp"
+GLB_C_RSYSLOG_InputTCPServerRun="514"
+GLB_C_RSYSLOG_WorkDirectory="/var/lib/rsyslog"
+GLB_C_RSYSLOG_ActionFileDefaultTemplate="RSYSLOG_TraditionalFileFormat"
+GLB_C_RSYSLOG_IncludeConfig="/etc/rsyslog.d/*.conf"
+GLB_C_RSYSLOG_OmitLocalLogging="on"
+GLB_C_RSYSLOG_IMJournalStateFile="imjournal.state"
+GLB_C_RSYSLOG_Messages="*.info;mail.none;authpriv.none;cron.none                ${GLB_P_ROOT_LOG_DIR}/messages"
+GLB_C_RSYSLOG_Secure="authpriv.*                                              ${GLB_P_ROOT_LOG_DIR}/secure"
+GLB_C_RSYSLOG_MAil="mail.*                                                  -${GLB_P_ROOT_LOG_DIR}/maillog"
+GLB_C_RSYSLOG_Cron="cron.*                                                  ${GLB_P_ROOT_LOG_DIR}/cron"
+GLB_C_RSYSLOG_Emerge="*.emerg                                                 :omusrmsg:*"
+GLB_C_RSYSLOG_Spooler="uucp,news.crit                                          ${GLB_P_ROOT_LOG_DIR}/spooler"
+GLB_C_RSYSLOG_Boot="local7.*                                                ${GLB_P_ROOT_LOG_DIR}/boot.log"
+
+
+#|# used for control sourcing keep it a last line 
+ConfigState="OK"
