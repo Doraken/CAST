@@ -1,0 +1,3 @@
+[submodule "CAST-lib"]
+	path = CAST-lib
+	url = https://github.com/Doraken/CAST-lib.git
