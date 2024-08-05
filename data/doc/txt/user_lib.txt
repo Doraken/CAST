@@ -1,0 +1,30 @@
+ Used lib : [ user_lib.sh   ] 
+ Information for function : [ USER_Generic_continue_or_exit ]
+ This function depend on : 
+ How to use this function  
+  
+     BASE_MSG_FOR_CHOICE : use this var to set the display message ( in warning mode only )
+     BASE_MSG_FOR_MENU : use this var to set the menu message
+     ${1} : use this var to set BASE_MSG_FOR_CHOICE
+     ${2} : use this var to set BASE_MSG_FOR_MENU
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ USER_Continue_ON_ERR ]
+ This function depend on : 
+                            Menu_Build Found in lib : /lib/user_interaction/menu_lib.sh
+                             Found in lib : 
+ How to use this function  
+  
+     MSG_TO_Display : use this var to set the displayed message when an user action is needed
+     MSG_TO_Display : use this var to set the displayed message when an user action is needed
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ User_Hit_a_key ]
+ This function depend on : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 

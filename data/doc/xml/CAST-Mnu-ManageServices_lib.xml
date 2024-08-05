@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="autodoc.xsl"?>
+ <Library>
+ <LibraryName>CAST-Mnu-ManageServices_lib.sh</LibraryName>
+<Function>
+<FunctionName>Services_Status</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : Change_Specific_Configuration
+    
+     Description : This function manage the specific configuration file name.
+    
+     Send Back : None
+     Var to set : None
+    
+     Base usage : Change_Specific_Configuration
+    
+     Description : This function manage the specific configuration file name.
+    
+     Send Back : None
+</DocText>
+</Function>
+<Function>
+<FunctionName>Service_activate</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : Change_Specific_Configuration
+    
+     Description : This function manage the specific configuration file name.
+    
+     Send Back : None
+     Var to set : None
+    
+     Base usage : Change_Specific_Configuration
+    
+     Description : This function manage the specific configuration file name.
+    
+     Send Back : None
+</DocText>
+</Function>
+<Function>
+<FunctionName>Service_start_mode</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : Change_Specific_Configuration
+    
+     Description : This function manage the specific configuration file name.
+    
+     Send Back : None
+     Var to set : None
+    
+     Base usage : Change_Specific_Configuration
+    
+     Description : This function manage the specific configuration file name.
+    
+     Send Back : None
+</DocText>
+</Function>
+ </Library>

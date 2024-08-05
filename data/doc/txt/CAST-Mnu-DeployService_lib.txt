@@ -1,0 +1,46 @@
+ Used lib : [ CAST-Mnu-DeployService_lib.sh   ] 
+ Information for function : [ Deploy_Chroot ]
+ This function depend on : 
+                            Menu_Get_items Found in lib : /lib/user_interaction/menu_lib.sh
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Change_Specific_Configuration
+    
+     Description : This function manage the specific configuration file name.
+    
+     Send Back : None
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Deploy_openstack ]
+ This function depend on : 
+                            Menu_Get_items Found in lib : /lib/user_interaction/menu_lib.sh
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Change_Specific_Configuration
+    
+     Description : This function manage the specific configuration file name.
+    
+     Send Back : None
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Deploy_Compiled_Package ]
+ This function depend on : 
+                            Menu_Get_items Found in lib : /lib/user_interaction/menu_lib.sh
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Change_Specific_Configuration
+    
+     Description : This function manage the specific configuration file name.
+    
+     Send Back : None
+                                                 
+ ----------------------------------------------- 
+                                                 

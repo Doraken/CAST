@@ -1,0 +1,16 @@
+ Used lib : [ azure_webapp_lib.sh   ] 
+ Information for function : [ set_webapp_docker_image ]
+ This function depend on : 
+                             Found in lib : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ get_ssh_webapp ]
+ This function depend on : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 

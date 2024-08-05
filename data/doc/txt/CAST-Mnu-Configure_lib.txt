@@ -1,0 +1,16 @@
+ Used lib : [ CAST-Mnu-Configure_lib.sh   ] 
+ Information for function : [ Change_Specific_Configuration ]
+ This function depend on : 
+                            Menu_Change_Conf_item Found in lib : /lib/user_interaction/menu_lib.sh
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Change_Specific_Configuration
+    
+     Description : This function manage the specific configuration file name.
+    
+     Send Back : None
+                                                 
+ ----------------------------------------------- 
+                                                 

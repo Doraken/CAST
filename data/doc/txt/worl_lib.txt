@@ -1,0 +1,71 @@
+ Used lib : [ worl_lib.sh   ] 
+ Information for function : [ set_word_title() ]
+ This function depend on : 
+                             Found in lib : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ set_word_text_chapter() ]
+ This function depend on : 
+                             Found in lib : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ do_add_table_columns() ]
+ This function depend on : 
+                             Found in lib : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ do_add_start_table_row() ]
+ This function depend on : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ do_add_end_table_row() ]
+ This function depend on : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ do_add_cell() ]
+ This function depend on : 
+                             Found in lib : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ do_add_start_table() ]
+ This function depend on : 
+                             Found in lib : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ do_add_end_table() ]
+ This function depend on : 
+                             Found in lib : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Set_word_neutral_table_test() ]
+ This function depend on : 
+                             Found in lib : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 

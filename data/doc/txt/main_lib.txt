@@ -1,0 +1,261 @@
+ Used lib : [ main_lib.sh   ] 
+ Information for function : [ Main_Menu ]
+ This function depend on : 
+                            Menu_Get_items Found in lib : /lib/user_interaction/menu_lib.sh
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Main_Menu
+    
+     Description : This function is used to launche Main menu
+    
+     Send Back : Menu
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Install_Menu ]
+ This function depend on : 
+                            Menu_Get_items Found in lib : /lib/user_interaction/menu_lib.sh
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Install_packages
+    
+     Description : This function is used to launche install env menu
+    
+     Send Back : Menu
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Install_packages ]
+ This function depend on : 
+                            Menu_Get_items Found in lib : /lib/user_interaction/menu_lib.sh
+                            Menu_Get_items Found in lib : /lib/user_interaction/menu_lib.sh
+                            Menu_Get_items Found in lib : /lib/user_interaction/menu_lib.sh
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Install_packages
+    
+     Description : This function is used to launche install env menu
+    
+     Send Back : Menu
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Install_packages_in_chroot ]
+ This function depend on : 
+                            Menu_Get_items Found in lib : /lib/user_interaction/menu_lib.sh
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Install_packages_chroot
+    
+     Description : This function is used to launche install env menu in a chroot
+    
+     Send Back : Menu
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Install_packages_in_system ]
+ This function depend on : 
+                            Menu_Get_items Found in lib : /lib/user_interaction/menu_lib.sh
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Install_packages_env
+    
+     Description : This function is used to launche install env menu out of an chroot
+    
+     Send Back : Menu
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Install_chroot ]
+ This function depend on : 
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Install_chroot
+    
+     Description : This function is used to launche install env menu in a chroot
+    
+     Send Back : Menu
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Install_chroot_from_tarball ]
+ This function depend on : 
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Install_chroot_from_tarball
+    
+     Description : This function is used to launche install env menu in a chroot
+    
+     Send Back : Menu
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Install_chroot_from_system ]
+ This function depend on : 
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Install_chroot_from_system
+    
+     Description : This function is used to launche install env menu in a chroot
+    
+     Send Back : Menu
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Main_Sources_server ]
+ This function depend on : 
+                            Menu_Get_items Found in lib : /lib/user_interaction/menu_lib.sh
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Main_Sources_server
+    
+     Description : This function is used to sources server manager
+     menu out of an chroot
+    
+     Send Back : Menu
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Main_CVS ]
+ This function depend on : 
+                            Menu_Get_items Found in lib : /lib/user_interaction/menu_lib.sh
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Main_CVS
+    
+     Description : This function is used to launche CVS manager menu
+    
+     Send Back : Menu
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Main_SVN ]
+ This function depend on : 
+                            Menu_Get_items Found in lib : /lib/user_interaction/menu_lib.sh
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Main_SVN
+    
+     Description : This function is used to launche svn server menu
+    
+     Send Back : Menu
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Dummy_function ]
+ This function depend on : 
+ How to use this function  
+  
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+                                                 
+ ----------------------------------------------- 
+                                                 

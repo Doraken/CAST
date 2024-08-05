@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="autodoc.xsl"?>
+ <Library>
+ <LibraryName>DateTime_lib.sh</LibraryName>
+<Function>
+<FunctionName>Get_horodate</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Update GLB_HORODATE with the current date and time
+     Usage:
+     Get_horodate
+</DocText>
+</Function>
+<Function>
+<FunctionName>Get_dateDay()</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Update GLB_DATEDAY with the current date and time
+     Usage:
+     Get_dateDay
+</DocText>
+</Function>
+<Function>
+<FunctionName>Get_UseDate()</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Update GLB_USE_DATE with the current date and time
+     Usage:
+     Get_UseDate
+</DocText>
+</Function>
+ </Library>

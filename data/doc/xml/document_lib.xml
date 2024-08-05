@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="autodoc.xsl"?>
+ <Library>
+ <LibraryName>document_lib.sh</LibraryName>
+<Function>
+<FunctionName>Get_all_function_names_to_document</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName>Do_file_remove</FunctionName>
+<FunctionLib>/lib/system_base/file/file_lib.sh</FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>File_Read</FunctionName>
+<FunctionLib>/lib/system_base/file/file_lib.sh</FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>Get_all_function_dep_to_document</FunctionName>
+<FunctionLib>/lib/doc/document_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+    
+</DocText>
+</Function>
+<Function>
+<FunctionName>Get_all_function_core_to_document</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName></FunctionName>
+<FunctionLib></FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+</DocText>
+</Function>
+<Function>
+<FunctionName>Get_all_function_dep_to_document</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName>Set_system_counter</FunctionName>
+<FunctionLib>/lib/system_base/system_lib.sh</FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>document_filter_dep_tmp_cat</FunctionName>
+<FunctionLib>/lib/doc/Filters/autodoc_filters_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+</DocText>
+</Function>
+<Function>
+<FunctionName>Get_all_function_call_to_document</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName></FunctionName>
+<FunctionLib></FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Internal_item_checked : Use this var to set the item to check if it s a function call
+     ${1} : Use this var to set Internal_item_checked
+</DocText>
+</Function>
+<Function>
+<FunctionName>Do_document_catalogue_refine</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName></FunctionName>
+<FunctionLib></FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>Do_document_catalogue_parsing</FunctionName>
+<FunctionLib>/lib/doc/document_lib.sh</FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>Get_system_random_,number</FunctionName>
+<FunctionLib>/lib/system_base/system_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1}
+     ${2}
+    
+     Base usage : None
+    
+     Description : This function is used to refine and sort all catalogs
+    
+     Send Back : None
+</DocText>
+</Function>
+<Function>
+<FunctionName>Do_document_catalogue_parsing</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1}
+     ${2}
+    
+     Base usage : None
+    
+     Description : This function is used to refine and sort all catalogs
+    
+     Send Back : None
+</DocText>
+</Function>
+<Function>
+<FunctionName>Do_document_catalogue_to_xml</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName>File_Read</FunctionName>
+<FunctionLib>/lib/system_base/file/file_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+</DocText>
+</Function>
+<Function>
+<FunctionName>Get_document_function_by_file</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName></FunctionName>
+<FunctionLib></FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>File_Read</FunctionName>
+<FunctionLib>/lib/system_base/file/file_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+</DocText>
+</Function>
+<Function>
+<FunctionName>Do_document_generate</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName></FunctionName>
+<FunctionLib></FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>Document_Print_function_man_page</FunctionName>
+<FunctionLib>/lib/doc/sub/document_html_sub_lib.sh</FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>Document_Print_global_Print_txt</FunctionName>
+<FunctionLib>/lib/doc/sub/document_txt_sub_lib.sh</FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>Document_Print_global_Print_xml</FunctionName>
+<FunctionLib>/lib/doc/sub/document_xml_sub_lib.sh</FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>autodoc_filter_line_BASE_PATH</FunctionName>
+<FunctionLib>/lib/doc/Filters/autodoc_filters_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Var to set : None
+     TOPrintFormat : Use this var to set Output format of the Documentation
+     ${1} : Use this var to set [ TOPrintFormat ]
+    
+     Base usage : Do_document_generate "format"
+    
+     Description : This function change type of output from txt to XML
+    
+     Send Back : XML MANHTML or TXT function
+</DocText>
+</Function>
+ </Library>

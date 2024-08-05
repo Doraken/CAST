@@ -1,0 +1,54 @@
+ Used lib : [ md5check_lib.sh   ] 
+ Information for function : [ MD5_Lib_Switch ]
+ This function depend on : 
+ How to use this function  
+  
+     Var to set : None
+     Var used : Global_Tool_MD5_Status
+    
+     Base usage : MD5_Lib_Switch
+    
+     Description : this function for exit when md5sum bin is not present on the operating system
+    
+     Send Back : None
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Do_md5_create_sum ]
+ This function depend on : 
+                            MD5_Lib_Switch Found in lib : /lib/system_base/md5check_lib.sh
+                            Test_file_presence Found in lib : /lib/system_base/file/file_lib.sh
+ How to use this function  
+  
+     Var to set :
+     ${1} : is used to store scaned file name
+     ${2} : is used to store ouput Type ( File to send md5 ouput to a file any other to keep it on console )
+     Var used : Global_Tool_MD5_Status
+    
+     Base usage : Do_md5_create_sum "My_File" "Ouput_type" "Ouput_Target"
+    
+     Description : this function launch md5sum to generate file hash
+    
+     Send Back : Console ouput or file ouput
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Test_md5_sum ]
+ This function depend on : 
+                            MD5_Lib_Switch Found in lib : /lib/system_base/md5check_lib.sh
+                            Test_file_presence Found in lib : /lib/system_base/file/file_lib.sh
+ How to use this function  
+  
+     Var to set :
+     ${1} : is used to store scaned file name
+     ${2} : is used to store ouput Type ( File to send md5 ouput to a file any other to keep it on console )
+     Var used : Global_Tool_MD5_Status
+    
+     Base usage : Do_md5_create_sum "inputFile"
+    
+     Description : this function launch md5sum to check hass of a file
+    
+     Send Back : Console ouput or file ouput
+                                                 
+ ----------------------------------------------- 
+                                                 

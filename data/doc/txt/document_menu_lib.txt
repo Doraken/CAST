@@ -1,0 +1,76 @@
+ Used lib : [ document_menu_lib.sh   ] 
+ Information for function : [ document_Base_menu ]
+ This function depend on : 
+                            Menu_Get_items Found in lib : /lib/user_interaction/menu_lib.sh
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : document_Base_menu
+    
+     Description : This function generate menu to manage autodoc functions
+    
+     Send Back : Menu
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Document_generate_XML ]
+ This function depend on : 
+                            Do_document_generate Found in lib : /lib/doc/document_lib.sh
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Document_generate_XML
+    
+     Description : This function generate autodoc in XML format by calling
+     Do_document_generate
+     Send Back : function call with parameter
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Document_generate_Text ]
+ This function depend on : 
+                            Do_document_generate Found in lib : /lib/doc/document_lib.sh
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Document_generate_Text
+    
+     Description : This function generate autodoc in txt format by calling
+     Do_document_generate
+     Send Back : function call with parameter
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Document_generate_HTML ]
+ This function depend on : 
+                            Do_document_generate Found in lib : /lib/doc/document_lib.sh
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Document_generate_HTML
+    
+     Description : This function generate autodoc in HTML format by calling
+     Do_document_generate
+     Send Back : function call with parameter
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Document_Generate_Catalogues ]
+ This function depend on : 
+                            Get_all_function_names_to_document Found in lib : /lib/doc/document_lib.sh
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Document_Generate_Catalogues
+    
+     Description : This function generate autodoc cata by callilogues by calling
+     Get_all_function_names_to_document
+     Send Back : function call with parameter
+                                                 
+ ----------------------------------------------- 
+                                                 

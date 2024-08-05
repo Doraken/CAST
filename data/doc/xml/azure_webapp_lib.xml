@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="autodoc.xsl"?>
+ <Library>
+ <LibraryName>azure_webapp_lib.sh</LibraryName>
+<Function>
+<FunctionName>set_webapp_docker_image</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName></FunctionName>
+<FunctionLib></FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+</DocText>
+</Function>
+<Function>
+<FunctionName>get_ssh_webapp</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+</DocText>
+</Function>
+ </Library>

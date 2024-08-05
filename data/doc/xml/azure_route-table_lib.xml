@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="autodoc.xsl"?>
+ <Library>
+ <LibraryName>azure_route-table_lib.sh</LibraryName>
+<Function>
+<FunctionName>generate_route_config_file()</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName></FunctionName>
+<FunctionLib></FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+</DocText>
+</Function>
+<Function>
+<FunctionName>process_route_table()</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName></FunctionName>
+<FunctionLib></FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+</DocText>
+</Function>
+ </Library>

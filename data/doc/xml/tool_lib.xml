@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="autodoc.xsl"?>
+ <Library>
+ <LibraryName>tool_lib.sh</LibraryName>
+<Function>
+<FunctionName>Get_tool_logger_status</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : Get_tool_logger_status
+    
+     Description : This function is used to check if logger bin is present
+    
+     Send Back : vars
+</DocText>
+</Function>
+<Function>
+<FunctionName>Get_tool_cvs_status</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : Get_tool_cvs_status
+    
+     Description : This function is used to check if md5sum bin is present
+    
+     Send Back : vars
+</DocText>
+</Function>
+<Function>
+<FunctionName>Get_tool_md5um_status</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : Tool_md5sum_Get
+    
+     Description : This function is used to check if md5sum bin is present
+    
+     Send Back : vars
+</DocText>
+</Function>
+<Function>
+<FunctionName>Get_tool_perl_status</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : Get_tool_perl_status
+    
+     Description : This function is used to check if perl bin is present
+    
+     Send Back : vars
+</DocText>
+</Function>
+<Function>
+<FunctionName>Get_tool_wget_status</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : Get_tool_wget_status
+    
+     Description : This function is used to check if wget bin is present
+    
+     Send Back : vars
+</DocText>
+</Function>
+<Function>
+<FunctionName>Get_tool_awk_status</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : Get_tool_awk_status
+    
+     Description : This function is used to check if awk bin is present
+    
+     Send Back : vars
+</DocText>
+</Function>
+<Function>
+<FunctionName>Get_tool_wc_status</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : Get_tool_wc_status
+    
+     Description : This function is used to check if wc bin is present
+    
+     Send Back : vars
+</DocText>
+</Function>
+<Function>
+<FunctionName>Get_tool_tail_status</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : Get_tool_tail_status
+    
+     Description : This function is used to check if tail bin is present
+    
+     Send Back : vars
+</DocText>
+</Function>
+<Function>
+<FunctionName>Get_tool_head_status</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : Get_tool_head_status
+    
+     Description : This function is used to check if head bin is present
+    
+     Send Back : vars
+</DocText>
+</Function>
+<Function>
+<FunctionName>Get_tool_grep_status</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : Get_tool_grep_status
+    
+     Description : This function is used to check if grep bin is present
+    
+     Send Back : vars
+</DocText>
+</Function>
+<Function>
+<FunctionName>Get_tool_uuencode_status</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : Get_tool_uuencode_status
+    
+     Description : This function is used to check if uuencode bin is present
+    
+     Send Back : Vars
+</DocText>
+</Function>
+<Function>
+<FunctionName>Get_tool_mail_status</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : Get_tool_mail_status
+    
+     Description : This function is used to check if mail bin is present
+    
+     Send Back : Vars
+</DocText>
+</Function>
+<Function>
+<FunctionName>Get_tool_mailx_status</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : Get_tool_mailx_status
+    
+     Description : This function is used to check if mailx bin is present
+    
+     Send Back : Vars
+</DocText>
+</Function>
+<Function>
+<FunctionName>Get_tool_mutt_status</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : Get_tool_mutt_status
+    
+     Description : This function is used to check if mutt bin is present
+    
+     Send Back : Vars
+</DocText>
+</Function>
+<Function>
+<FunctionName>Set_tool_global_status</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName>Get_tool_items_exe</FunctionName>
+<FunctionLib>/lib/system_base/tool_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : Get_tool_perl_status
+    
+     Description : This function is used to check if perl bin is present
+    
+     Send Back : vars
+</DocText>
+</Function>
+<Function>
+<FunctionName>Get_tool_items_exe</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName></FunctionName>
+<FunctionLib></FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Var to set :
+     TGITE_get_Tag : use this var to set the tag to find to builde var aray ( Mandatory )
+     TGITE_Level_Item_Info : Use this var to set which geted item part to keep ( Mandatory )
+     TGITE_file_to_parse : use this var to set which file to parse to get items ( Mandatory )
+     ${1} : use this var to set [ TGITE_get_Tag ]
+     ${2} : use this var to set [ TGITE_Level_Item_Info ]
+     ${3} : use this var to set [ TGITE_file_to_parse ]
+    
+     Base usage : Get_tool_items_exe "TGITE_get_Tag" "TGITE_Level_Item_Info" "TGITE_file_to_parse" [ "TGITE_Field_Serpparator" ]
+     Description : This function scan a file to creat a array of function to execute
+    
+     Send Back : function execution
+</DocText>
+</Function>
+ </Library>

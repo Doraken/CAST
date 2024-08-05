@@ -1,0 +1,154 @@
+ Used lib : [ sql_lib.sh   ] 
+ Information for function : [ SQL_Server_Connect ]
+ This function depend on : 
+                            Do_SQL_Sub_connect_Server Found in lib : /lib/sgbd/sub/sql_sub_lib.sh
+                            Get_system_random_,number Found in lib : /lib/system_base/system_lib.sh
+                            Set_new_fifo Found in lib : /lib/system_base/file/fifo_lib.sh
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ SQL_Server_Disconnect ]
+ This function depend on : 
+                            UnSet_fifo Found in lib : /lib/system_base/file/fifo_lib.sh
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ SQL_DATABASE_connect ]
+ This function depend on : 
+ How to use this function  
+  
+     DATABASE_To_connect : Use this var to set on witch database yuou want to connect
+     ${1} : use this var to set DATABASE_To_connect
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ SQL_CONNECT_CHECK ]
+ This function depend on : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ SQL_GET_PKG_liste ]
+ This function depend on : 
+                            Get_system_random_,number Found in lib : /lib/system_base/system_lib.sh
+                            SQL_Server_Disconnect Found in lib : /lib/sgbd/sql_lib.sh
+ How to use this function  
+  
+     Base_Database_Type
+     Base_Database_Host
+     Base_Database_Port
+     Base_Database_proc_Username
+     Base_Database_TempDir
+     Base_Database_Default
+     packageTable="ARPCOM_PKG_CAT"
+     typePackageTable="ARPCOM_PKG_TYPE_CAT"
+     omImportTable="ARPCOM_OM_IMPORT"
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ SQL_USE_PKG_liste ]
+ This function depend on : 
+                            SQL_DATABASE_connect Found in lib : /lib/sgbd/sql_lib.sh
+                            SQL_GENERATE_PROCS_OM_PKG_KEY_CATALOGUE Found in lib : /lib/sgbd/sql_lib.sh
+                            SQL_Server_Disconnect Found in lib : /lib/sgbd/sql_lib.sh
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ TITI ]
+ This function depend on : 
+                             Found in lib : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ SQL_GENERATE_PROCS_OM_PKG_KEY_CATALOGUE ]
+ This function depend on : 
+                            SQL_Sub_GENERATE_PROCS_OM_PKG_KEY_CATALOGUE_1 Found in lib : /lib/sgbd/sql_lib.sh
+                            SQL_Sub_GENERATE_PROCS_OM_PKG_KEY_CATALOGUE_2 Found in lib : /lib/sgbd/sql_lib.sh
+ How to use this function  
+  
+     Base_Database_Type
+     Base_Database_Host
+     Base_Database_Port
+     Base_Database_proc_Username
+     Base_Database_TempDir
+     Base_Database_Default
+     packageTable="ARPCOM_PKG_CAT"
+     typePackageTable="ARPCOM_PKG_TYPE_CAT"
+     omImportTable="ARPCOM_OM_IMPORT"
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ SQL_Sub_GENERATE_PROCS_OM_PKG_KEY_CATALOGUE_1 ]
+ This function depend on : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ SQL_Sub_GENERATE_PROCS_OM_PKG_KEY_CATALOGUE_2 ]
+ This function depend on : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ SQL_Run_ALL_PROCS_GEN_SUB ]
+ This function depend on : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ SQL_Run_ALL_PROCS ]
+ This function depend on : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ SQL_GET_ALL_INFO_FOR_PROCS ]
+ This function depend on : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Do_mysql_init ]
+ This function depend on : 
+ How to use this function  
+  
+     Base_Mysql_Install_PATH : Use this var to set where Mysql is installed
+     BASE_Mysql_USER : Use this var to set which user to run any commande on Mysql
+     BASE_Mysql_DATA_DIR : Use this var to set Where Mysql store all DDB DATAS
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Do_mysql_start ]
+ This function depend on : 
+ How to use this function  
+  
+     Base_Mysql_Install_PATH : Use this var to set where Mysql is installed
+     BASE_Mysql_USER : Use this var to set which user to run any commande on Mysql
+     BASE_Mysql_DATA_DIR : Use this var to set Where Mysql store all DDB DATAS
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Do_mysql_stop ]
+ This function depend on : 
+ How to use this function  
+  
+     Base_Mysql_Install_PATH : Use this var to set where Mysql is installed
+     BASE_Mysql_USER : Use this var to set which user to run any commande on Mysql
+     BASE_Mysql_DATA_DIR : Use this var to set Where Mysql store all DDB DATAS
+                                                 
+ ----------------------------------------------- 
+                                                 

@@ -1,0 +1,100 @@
+ Used lib : [ sanity_check_lib.sh   ] 
+ Information for function : [ SANITY_CHECK_Base_env_directory_check ]
+ This function depend on : 
+                            Set_new_directory Found in lib : /lib/system_base/directory_lib.sh
+                            Set_new_directory Found in lib : /lib/system_base/directory_lib.sh
+                             Found in lib : 
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : SANITY_CHECK_Base_env_directory_check
+    
+     Description : This function check and create all mandatory directories needed for CAST execution
+    
+     Send Back : Directory
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ SANITY_CHECK_Base_env_directory_check_specs ]
+ This function depend on : 
+                            Set_new_directory Found in lib : /lib/system_base/directory_lib.sh
+                             Found in lib : 
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : SANITY_CHECK_Base_env_directory_check
+    
+     Description : This function check and create all mandatory directories needed for CAST execution
+    
+     Send Back : Directory
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ SANITY_CHECK_Base_root_exec_check ]
+ This function depend on : 
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : SANITY_CHECK_Base_root_exec_check
+    
+     Description : This function check if you are using root to execute CAST
+     If active it will prompt for user confirmation and send back execution in root mode in system log
+    
+     Send Back : User Check
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ SANITY_CHECK_Check_TMP_Directory ]
+ This function depend on : 
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : SANITY_CHECK_Check_TMP_Directory
+    
+     Description : This function check and create all mandatory writable directories needed for CAST execution
+    
+     Send Back : writables Directory
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ SANITY_CHECK_Check_Language ]
+ This function depend on : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ SANITY_CHECK_cnf_file ]
+ This function depend on : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ SANITY_CHECK_tools ]
+ This function depend on : 
+                            Fil_Get_Items Found in lib : /lib/system_base/file/file_lib.sh
+                            Set_tool_global_status Found in lib : /lib/system_base/tool_lib.sh
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ SANITY_CHECK_Base_env_Users_And_Group ]
+ This function depend on : 
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : SANITY_CHECK_Base_env_Users_And_Group
+    
+     Description : This function check and create all mandatory directories needed for CAST execution
+    
+     Send Back : Directory
+                                                 
+ ----------------------------------------------- 
+                                                 

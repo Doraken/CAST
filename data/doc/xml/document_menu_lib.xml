@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="autodoc.xsl"?>
+ <Library>
+ <LibraryName>document_menu_lib.sh</LibraryName>
+<Function>
+<FunctionName>document_Base_menu</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName>Menu_Get_items</FunctionName>
+<FunctionLib>/lib/user_interaction/menu_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : document_Base_menu
+    
+     Description : This function generate menu to manage autodoc functions
+    
+     Send Back : Menu
+</DocText>
+</Function>
+<Function>
+<FunctionName>Document_generate_XML</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName>Do_document_generate</FunctionName>
+<FunctionLib>/lib/doc/document_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : Document_generate_XML
+    
+     Description : This function generate autodoc in XML format by calling
+     Do_document_generate
+     Send Back : function call with parameter
+</DocText>
+</Function>
+<Function>
+<FunctionName>Document_generate_Text</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName>Do_document_generate</FunctionName>
+<FunctionLib>/lib/doc/document_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : Document_generate_Text
+    
+     Description : This function generate autodoc in txt format by calling
+     Do_document_generate
+     Send Back : function call with parameter
+</DocText>
+</Function>
+<Function>
+<FunctionName>Document_generate_HTML</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName>Do_document_generate</FunctionName>
+<FunctionLib>/lib/doc/document_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : Document_generate_HTML
+    
+     Description : This function generate autodoc in HTML format by calling
+     Do_document_generate
+     Send Back : function call with parameter
+</DocText>
+</Function>
+<Function>
+<FunctionName>Document_Generate_Catalogues</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName>Get_all_function_names_to_document</FunctionName>
+<FunctionLib>/lib/doc/document_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : Document_Generate_Catalogues
+    
+     Description : This function generate autodoc cata by callilogues by calling
+     Get_all_function_names_to_document
+     Send Back : function call with parameter
+</DocText>
+</Function>
+ </Library>

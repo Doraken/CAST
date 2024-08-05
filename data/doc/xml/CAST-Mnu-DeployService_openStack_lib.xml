@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="autodoc.xsl"?>
+ <Library>
+ <LibraryName>CAST-Mnu-DeployService_openStack_lib.sh</LibraryName>
+<Function>
+<FunctionName>Install_Base_Services</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName>Menu_Get_items</FunctionName>
+<FunctionLib>/lib/user_interaction/menu_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : Change_Specific_Configuration
+    
+     Description : This function manage the specific configuration file name.
+    
+     Send Back : None
+</DocText>
+</Function>
+<Function>
+<FunctionName>yum_InstalledList_Init</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName>Test_yum_package_presence</FunctionName>
+<FunctionLib>/lib/system_base/install/yum_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : Change_Specific_Configuration
+    
+     Description : This function manage the specific configuration file name.
+    
+     Send Back : None
+</DocText>
+</Function>
+ </Library>

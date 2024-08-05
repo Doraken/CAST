@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="autodoc.xsl"?>
+ <Library>
+ <LibraryName>CAST-Mnu_Main_lib.sh</LibraryName>
+<Function>
+<FunctionName>certificates_managment</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName>Menu_Get_items</FunctionName>
+<FunctionLib>/lib/user_interaction/menu_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : certificates_managment
+    
+     Description : this function launche the certificate managment sytem
+    
+     Send Back : Menu
+</DocText>
+</Function>
+ </Library>

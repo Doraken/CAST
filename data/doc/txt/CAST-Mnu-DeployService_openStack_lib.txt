@@ -1,0 +1,31 @@
+ Used lib : [ CAST-Mnu-DeployService_openStack_lib.sh   ] 
+ Information for function : [ Install_Base_Services ]
+ This function depend on : 
+                            Menu_Get_items Found in lib : /lib/user_interaction/menu_lib.sh
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Change_Specific_Configuration
+    
+     Description : This function manage the specific configuration file name.
+    
+     Send Back : None
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ yum_InstalledList_Init ]
+ This function depend on : 
+                            Test_yum_package_presence Found in lib : /lib/system_base/install/yum_lib.sh
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Change_Specific_Configuration
+    
+     Description : This function manage the specific configuration file name.
+    
+     Send Back : None
+                                                 
+ ----------------------------------------------- 
+                                                 

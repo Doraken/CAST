@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="autodoc.xsl"?>
+ <Library>
+ <LibraryName>CAST-Mnu-Chroot_Parameters_lib.sh</LibraryName>
+<Function>
+<FunctionName>CHROOT_base_size</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName>Banner</FunctionName>
+<FunctionLib>/lib/user_interaction/sub/CAST-Mnu-Chroot_Parameters_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : CHROOT_base
+    
+     Description : This function manage the specific configuration file name.
+    
+     Send Back : None
+</DocText>
+</Function>
+<Function>
+<FunctionName>CHROOT_Medium_size</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName>Banner</FunctionName>
+<FunctionLib>/lib/user_interaction/sub/CAST-Mnu-Chroot_Parameters_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : CHROOT_Medium
+    
+     Description : This function manage the specific configuration file name.
+    
+     Send Back : None
+</DocText>
+</Function>
+<Function>
+<FunctionName>CHROOT_big_size</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName>Banner</FunctionName>
+<FunctionLib>/lib/user_interaction/sub/CAST-Mnu-Chroot_Parameters_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : CHROOT_big
+    
+     Description : This function manage the specific configuration file name.
+    
+     Send Back : None
+</DocText>
+</Function>
+<Function>
+<FunctionName>Banner</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : CHROOT_big
+    
+     Description : This function manage the specific configuration file name.
+    
+     Send Back : None
+</DocText>
+</Function>
+ </Library>

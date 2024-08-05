@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="autodoc.xsl"?>
+ <Library>
+ <LibraryName>azure_name-generator_lib.sh</LibraryName>
+<Function>
+<FunctionName>get_app_code</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+</DocText>
+</Function>
+<Function>
+<FunctionName>gen_env_code</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+</DocText>
+</Function>
+<Function>
+<FunctionName>get_localisation</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+</DocText>
+</Function>
+<Function>
+<FunctionName>get_object_type</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+</DocText>
+</Function>
+<Function>
+<FunctionName>get_index()</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+</DocText>
+</Function>
+<Function>
+<FunctionName>ask_questions()</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName></FunctionName>
+<FunctionLib></FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>gen_env_code</FunctionName>
+<FunctionLib>/lib/azure/azure_name-generator_lib.sh</FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>get_app_code</FunctionName>
+<FunctionLib>/lib/azure/azure_name-generator_lib.sh</FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>get_localisation</FunctionName>
+<FunctionLib>/lib/azure/azure_name-generator_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+</DocText>
+</Function>
+ </Library>

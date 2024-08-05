@@ -1,0 +1,77 @@
+ Used lib : [ rebuider_lib.sh   ] 
+ Information for function : [ rebuild_catalogue ]
+ This function depend on : 
+                             Found in lib : 
+                            rebuild_catalogue_File Found in lib : /lib/automated_check/rebuider_lib.sh
+                            SUB_rebuild_catalogue_File_Global_Consystency_check Found in lib : /lib/automated_check/rebuider_lib.sh
+                            Test_file_presence Found in lib : /lib/system_base/file/file_lib.sh
+ How to use this function  
+  
+     Catalogue_type : Use this var to set which type of catalogue to rebuild | rebuild_catalogue_INF
+     ${1} : use this var to set ${Catalogue_type} | rebuild_catalogue_INF
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ rebuild_catalogue_File ]
+ This function depend on : 
+                            SUB_rebuild_catalogue_File_Global_Consystency_check Found in lib : /lib/automated_check/rebuider_lib.sh
+                            Test_file_presence Found in lib : /lib/system_base/file/file_lib.sh
+ How to use this function  
+  
+     Base_Source_Catalogue : use this var to set source file catalogue
+     ${1} : Use this var to set Base_Source_Catalogue
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ SUB_rebuild_catalogue_File_Global_Consystency_check ]
+ This function depend on : 
+                            SUB_rebuild_catalogue_File_Global_cat Found in lib : /lib/automated_check/rebuider_lib.sh
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ SUB_rebuild_catalogue_File_Global_cat_menu ]
+ This function depend on : 
+                            SUB_rebuild_catalogue_File_SPEC_cat Found in lib : /lib/automated_check/rebuider_lib.sh
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ SUB_rebuild_catalogue_File_Global_cat ]
+ This function depend on : 
+                             Found in lib : 
+                            SUB_rebuild_catalogue_File_SPEC_cat Found in lib : /lib/automated_check/rebuider_lib.sh
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ SUB_rebuild_catalogue_File_SPEC_cat ]
+ This function depend on : 
+                            File_Backup Found in lib : /lib/system_base/file/file_lib.sh
+                            Get_file_type Found in lib : /lib/system_base/file/file_lib.sh
+                            Get_system_random_,number Found in lib : /lib/system_base/system_lib.sh
+                             Found in lib : 
+                            USER_Generic_continue_or_exit Found in lib : /lib/user_interaction/user_lib.sh
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ SUB_rebuild_catalogue_get_file ]
+ This function depend on : 
+                             Found in lib : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ SUB_rebuild_catalogue_put_file ]
+ This function depend on : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 

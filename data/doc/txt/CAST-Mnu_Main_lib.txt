@@ -1,0 +1,16 @@
+ Used lib : [ CAST-Mnu_Main_lib.sh   ] 
+ Information for function : [ certificates_managment ]
+ This function depend on : 
+                            Menu_Get_items Found in lib : /lib/user_interaction/menu_lib.sh
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : certificates_managment
+    
+     Description : this function launche the certificate managment sytem
+    
+     Send Back : Menu
+                                                 
+ ----------------------------------------------- 
+                                                 

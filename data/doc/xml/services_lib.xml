@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="autodoc.xsl"?>
+ <Library>
+ <LibraryName>services_lib.sh</LibraryName>
+<Function>
+<FunctionName>Do_service_enable_bootstart</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName></FunctionName>
+<FunctionLib></FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>CTRL_Result_func</FunctionName>
+<FunctionLib>/lib/control_lib.sh</FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>Test_service_ststus</FunctionName>
+<FunctionLib>/lib/system_base/services_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Var to set :
+     AcivateServiceName : Use this var to set service name to activate at boot time
+     ${1} : Use this var to set [ AcivateServiceName ]
+    
+     Base usage : Do_service_enable_bootstart "ServiceNAme"
+    
+     Description : This function is used to activate service at boot time.
+    
+     Send Back : None
+</DocText>
+</Function>
+<Function>
+<FunctionName>Do_service_disable_bootstart</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName></FunctionName>
+<FunctionLib></FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>CTRL_Result_func</FunctionName>
+<FunctionLib>/lib/control_lib.sh</FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>Test_service_ststus</FunctionName>
+<FunctionLib>/lib/system_base/services_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Var to set :
+     AcivateServiceName : Use this var to set service name to activate at boot time
+     ${1} : Use this var to set [ AcivateServiceName ]
+    
+     Base usage : Do_service_disable_bootstart "ServiceNAme"
+    
+     Description : This function is used to activate service at boot time.
+    
+     Send Back : None
+</DocText>
+</Function>
+<Function>
+<FunctionName>Test_service_ststus</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName></FunctionName>
+<FunctionLib></FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+</DocText>
+</Function>
+<Function>
+<FunctionName>Get_service_liste</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : Get_service_liste
+    
+     Description : this function generate or regenerate list of all installed services
+    
+     Send Back : _activated_service as service array
+</DocText>
+</Function>
+<Function>
+<FunctionName>Get_service_status</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName></FunctionName>
+<FunctionLib></FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Var to set : _ServiceNAme
+    
+     Base usage : Get_service_liste
+    
+     Description : this function generate or regenerate list of all installed services
+    
+     Send Back : _activated_service as service array
+</DocText>
+</Function>
+<Function>
+<FunctionName>Do_service_stop</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : Get_service_liste
+    
+     Description : this function generate or regenerate list of all installed services
+    
+     Send Back : _activated_service as service array
+</DocText>
+</Function>
+<Function>
+<FunctionName>Do_service_start</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : Get_service_liste
+    
+     Description : this function generate or regenerate list of all installed services
+    
+     Send Back : _activated_service as service array
+</DocText>
+</Function>
+<Function>
+<FunctionName>Dummy_function</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+</DocText>
+</Function>
+ </Library>

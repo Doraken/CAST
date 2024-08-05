@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="autodoc.xsl"?>
+ <Library>
+ <LibraryName>NetConsoleCfg_lib.sh</LibraryName>
+<Function>
+<FunctionName>Do_configure_NetConsole</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName></FunctionName>
+<FunctionLib></FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>File_Backup</FunctionName>
+<FunctionLib>/lib/system_base/file/file_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+</DocText>
+</Function>
+<Function>
+<FunctionName>Dummy_function</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+</DocText>
+</Function>
+ </Library>

@@ -1,0 +1,32 @@
+ Used lib : [ xml_lib.sh   ] 
+ Information for function : [ XML_Get_Model ]
+ This function depend on : 
+                            Do_file_sourcing_control Found in lib : /lib/system_base/file/file_lib.sh
+                            Set_system_counter Found in lib : /lib/system_base/system_lib.sh
+                            XML_Get_Model_Sub_feeder_NOPOS Found in lib : /lib/doc/xml_lib.sh
+                             Found in lib : 
+ How to use this function  
+  
+     XML_Model_To_Use : Use this var to set which XML base model to use to generate XML CODE
+     ${1} : Use this var to set XML_Model_To_Use
+     XML_ARRAY_DATA : Use this var to set which liste of data to fiil in
+     ${2} : Use this var to set XML_ARRAY_DATA
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ XML_Get_Model_Sub_feeder_POS ]
+ This function depend on : 
+ How to use this function  
+  
+     Sub function of XML_Get_Model_Sub_feeder Do not call directly
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ XML_Get_Model_Sub_feeder_NOPOS ]
+ This function depend on : 
+ How to use this function  
+  
+     Sub function of XML_Get_Model_Sub_feeder Do not call directly
+                                                 
+ ----------------------------------------------- 
+                                                 

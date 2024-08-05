@@ -1,0 +1,51 @@
+ Used lib : [ azure_name-generator_lib.sh   ] 
+ Information for function : [ get_app_code ]
+ This function depend on : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ gen_env_code ]
+ This function depend on : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ get_localisation ]
+ This function depend on : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ get_object_type ]
+ This function depend on : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ get_index() ]
+ This function depend on : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ ask_questions() ]
+ This function depend on : 
+                            gen_env_code Found in lib : /lib/azure/azure_name-generator_lib.sh
+                            get_app_code Found in lib : /lib/azure/azure_name-generator_lib.sh
+                            get_localisation Found in lib : /lib/azure/azure_name-generator_lib.sh
+                             Found in lib : 
+                            gen_env_code Found in lib : /lib/azure/azure_name-generator_lib.sh
+                            get_app_code Found in lib : /lib/azure/azure_name-generator_lib.sh
+                            get_localisation Found in lib : /lib/azure/azure_name-generator_lib.sh
+                             Found in lib : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 

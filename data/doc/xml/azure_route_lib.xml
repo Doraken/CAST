@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="autodoc.xsl"?>
+ <Library>
+ <LibraryName>azure_route_lib.sh</LibraryName>
+<Function>
+<FunctionName>do_create_route_table()</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName></FunctionName>
+<FunctionLib></FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh create_route_table
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @description Creates a route table in the specified resource group.
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @param route_table_name The name of the route table.
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @param resource_group The resource group for the route table.
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @param location The location (region) for the route table.
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @usage create_route_table "route_table_name" "resource_group" "location"
+</DocText>
+</Function>
+<Function>
+<FunctionName>do_add_route</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName></FunctionName>
+<FunctionLib></FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>do_add_route</FunctionName>
+<FunctionLib>/lib/azure/azure_route_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     /Docker /alpine-en-3.20.0-1-tunned.log /bin /boot /dev /etc /home /init /lib /lib32 /lib64 /libx32 /lost+found /media /mnt /opt /proc /root /run /sbin /snap /sources /srv /sys /tmp /tools /usr /var
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh set_vm_properties
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @description Sets the properties of a VM based on provided variables.
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @param vm_name The name of the VM.
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @param resource_group The resource group of the VM.
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @param property_name The name of the property to set.
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @param property_value The value to set for the property.
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @usage set_vm_properties "vm_name" "resource_group" "property_name" "property_value"
+     */
+</DocText>
+</Function>
+<Function>
+<FunctionName>do_remove_root</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName></FunctionName>
+<FunctionLib></FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     /Docker /alpine-en-3.20.0-1-tunned.log /bin /boot /dev /etc /home /init /lib /lib32 /lib64 /libx32 /lost+found /media /mnt /opt /proc /root /run /sbin /snap /sources /srv /sys /tmp /tools /usr /var
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh do_vm_create
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @description Creates a VM based on provided variables.
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @param vm_name The name of the VM.
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @param vm_template The template to use for VM creation.
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @usage do_vm_create "vm_name" "vm_template"
+     */
+</DocText>
+</Function>
+<Function>
+<FunctionName>get_route_liste</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName></FunctionName>
+<FunctionLib></FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     /Docker /alpine-en-3.20.0-1-tunned.log /bin /boot /dev /etc /home /init /lib /lib32 /lib64 /libx32 /lost+found /media /mnt /opt /proc /root /run /sbin /snap /sources /srv /sys /tmp /tools /usr /var
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh do_vm_remove
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @description Removes a VM based on provided variables.
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @param vm_name The name of the VM.
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @param resource_group The resource group of the VM.
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @usage do_vm_remove "vm_name" "resource_group"
+     */
+</DocText>
+</Function>
+ </Library>

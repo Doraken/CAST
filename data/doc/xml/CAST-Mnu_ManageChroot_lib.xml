@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="autodoc.xsl"?>
+ <Library>
+ <LibraryName>CAST-Mnu_ManageChroot_lib.sh</LibraryName>
+<Function>
+<FunctionName>Display_Chroot_configuration</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName>Menu_Get_items</FunctionName>
+<FunctionLib>/lib/user_interaction/menu_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : Change_Specific_Configuration
+    
+     Description : This function manage the specific configuration file name.
+    
+     Send Back : None
+</DocText>
+</Function>
+<Function>
+<FunctionName>Select_Chroot_Size</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName>Menu_Get_items</FunctionName>
+<FunctionLib>/lib/user_interaction/menu_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : Change_Specific_Configuration
+    
+     Description : This function manage the specific configuration file name.
+    
+     Send Back : None
+</DocText>
+</Function>
+ </Library>

@@ -1,0 +1,98 @@
+ Used lib : [ apt_lib.sh   ] 
+ Information for function : [ Do_apt_autoupdate ]
+ This function depend on : 
+                            CTRL_Result_func Found in lib : /lib/control_lib.sh
+ How to use this function  
+  
+     Description : This function is used to update all package definition on debian like system.
+    
+     Var to set : none
+    
+     Base usage : Do_apt_autoupdate "
+    
+     Send Back : system updated package catalogue
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Do_apt_install_package ]
+ This function depend on : 
+                            CTRL_Result_func Found in lib : /lib/control_lib.sh
+                            Test_apt_package_presence Found in lib : /lib/system_base/install/apt_lib.sh
+                             Found in lib : 
+ How to use this function  
+  
+     Description : This function is used to manage installation of apt packages on system.
+    
+     Var to set :
+     aptPackageToInstall : Use this var to set wiche package to install with apt
+     ${1} : Use this var to set [ aptPackageToInstall ]
+    
+     Base usage : Do_apt_install_package "My_package_to_install"
+    
+     Send Back : Installed package
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Do_apt_uninstall_package ]
+ This function depend on : 
+                            CTRL_Result_func Found in lib : /lib/control_lib.sh
+                            Test_apt_package_presence Found in lib : /lib/system_base/install/apt_lib.sh
+                             Found in lib : 
+ How to use this function  
+  
+     Description : This function is used to manage uninstallation of apt packages on system.
+    
+     Var to set :
+     aptPackageToUnInstall Use this var to set which package to uninstall
+     ${1} : use this var to set aptPackageToUnInstall
+    
+     Basic use : Do_apt_install_package "My_package_to_uninstall"
+    
+     Send Back : Unsinstalled package
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Test_apt_package_presence ]
+ This function depend on : 
+                            CTRL_Result_func Found in lib : /lib/control_lib.sh
+                             Found in lib : 
+ How to use this function  
+  
+     Var to set : aptPackageToCheck
+    
+     Base usage : CTest_apt_package_presence PackageName
+    
+     Description : This function Check package instalation status.
+    
+     Send Back : Info and action ( execution of other fcntion to set many information about the system)
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Test_apt_package_presence_sub_i ]
+ This function depend on : 
+ How to use this function  
+  
+     Description : This function is used with CTRL_Result_func as success or error result
+    
+     Var to set : None
+    
+     Base usage : Test_apt_package_presence_sub_i
+    
+     Send Back : aptPackageStatus seted at INSTALLED
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Test_apt_package_presence_sub_u ]
+ This function depend on : 
+ How to use this function  
+  
+     Description : This function is used with CTRL_Result_func as success or error result
+    
+     Var to set : None
+    
+     Base usage : Test_apt_package_presence_sub_u
+    
+     Send Back : aptPackageStatus seted at NOT INSTALLED
+                                                 
+ ----------------------------------------------- 
+                                                 

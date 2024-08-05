@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="autodoc.xsl"?>
+ <Library>
+ <LibraryName>internet_lib.sh</LibraryName>
+<Function>
+<FunctionName>Internet_Http_Get</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName></FunctionName>
+<FunctionLib></FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>Set_new_directory</FunctionName>
+<FunctionLib>/lib/system_base/directory_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Base_Param_URL : Use this var to set the base URL tu use for WGET
+     Base_Param_File_To_Get : Use this var to set the file to download with WGET
+     PWD_Recept_PKG : Use this var to set the directory for reception of file downloaded
+     Base use :
+     Internet_Http_Get "My_pkg_URL" "My_pkg" "My_pkg_repository"
+     Base_Param_URL : Use this var to set the base URL tu use for WGET
+     Base_Param_File_To_Get : Use this var to set the file to download with WGET
+     PWD_Recept_PKG : Use this var to set the directory for reception of file downloaded
+     Base use :
+     Internet_Http_Get "My_pkg_URL" "My_pkg" "My_pkg_repository"
+</DocText>
+</Function>
+<Function>
+<FunctionName>Internet_Http_Get</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName></FunctionName>
+<FunctionLib></FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>Set_new_directory</FunctionName>
+<FunctionLib>/lib/system_base/directory_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Base_Param_URL : Use this var to set the base URL tu use for WGET
+     Base_Param_File_To_Get : Use this var to set the file to download with WGET
+     PWD_Recept_PKG : Use this var to set the directory for reception of file downloaded
+     Base use :
+     Internet_Http_Get "My_pkg_URL" "My_pkg" "My_pkg_repository"
+     Base_Param_URL : Use this var to set the base URL tu use for WGET
+     Base_Param_File_To_Get : Use this var to set the file to download with WGET
+     PWD_Recept_PKG : Use this var to set the directory for reception of file downloaded
+     Base use :
+     Internet_Http_Get "My_pkg_URL" "My_pkg" "My_pkg_repository"
+</DocText>
+</Function>
+ </Library>

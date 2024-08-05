@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="autodoc.xsl"?>
+ <Library>
+ <LibraryName>system_lib.sh</LibraryName>
+<Function>
+<FunctionName>Get_system_tunning</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName>Get_linux_distro</FunctionName>
+<FunctionLib>/lib/system_base/system_lib.sh</FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>Get_system_tunning_SUB_AIX</FunctionName>
+<FunctionLib>/lib/system_base/system_lib.sh</FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>Get_system_tunning_SUB_LINUX</FunctionName>
+<FunctionLib>/lib/system_base/system_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Var to set :
+     SYSTEM_NAME : use this var to set system name of the current operation system
+    
+     Base usage : Get_system_tunning
+    
+     Returne : Function execution
+</DocText>
+</Function>
+<Function>
+<FunctionName>Get_system_tunning_SUB_LINUX</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName>Get_linux_distro</FunctionName>
+<FunctionLib>/lib/system_base/system_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+</DocText>
+</Function>
+<Function>
+<FunctionName>Get_linux_distro</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     /Docker /alpine-en-3.20.0-1-tunned.log /bin /boot /dev /etc /home /init /lib /lib32 /lib64 /libx32 /lost+found /media /mnt /opt /proc /root /run /sbin /snap /sources /srv /sys /tmp /tools /usr /var
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh detect_linux_distro
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @desc Determines the Linux distribution type
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @return Prints the type of Linux distribution: Debian, Ubuntu, Red Hat, or others
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh Usage:
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh detect_linux_distro
+     **/
+</DocText>
+</Function>
+<Function>
+<FunctionName>Get_system_tunning_SUB_AIX</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+</DocText>
+</Function>
+<Function>
+<FunctionName>Get_system_random_,number</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+</DocText>
+</Function>
+<Function>
+<FunctionName>Set_system_counter</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName></FunctionName>
+<FunctionLib></FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Set_system_counter_TO_init : use this var to init counter to 0
+     ${1} : use this var to set Set_system_counter_TO_init
+     External_Return_Counter : is used to returne counter value
+     Basic use : Set_system_counter_TO_init "[ To init ]"
+</DocText>
+</Function>
+ </Library>

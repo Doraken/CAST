@@ -1,0 +1,64 @@
+ Used lib : [ CAST-Mnu-DiagnoseServer_lib.sh   ] 
+ Information for function : [ Services_Status ]
+ This function depend on : 
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Change_Specific_Configuration
+    
+     Description : This function manage the specific configuration file name.
+    
+     Send Back : None
+     Var to set : None
+    
+     Base usage : Change_Specific_Configuration
+    
+     Description : This function manage the specific configuration file name.
+    
+     Send Back : None
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Service_activate ]
+ This function depend on : 
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Change_Specific_Configuration
+    
+     Description : This function manage the specific configuration file name.
+    
+     Send Back : None
+     Var to set : None
+    
+     Base usage : Change_Specific_Configuration
+    
+     Description : This function manage the specific configuration file name.
+    
+     Send Back : None
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Service_start_mode ]
+ This function depend on : 
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Change_Specific_Configuration
+    
+     Description : This function manage the specific configuration file name.
+    
+     Send Back : None
+     Var to set : None
+    
+     Base usage : Change_Specific_Configuration
+    
+     Description : This function manage the specific configuration file name.
+    
+     Send Back : None
+                                                 
+ ----------------------------------------------- 
+                                                 

@@ -22,6 +22,9 @@ declare -A CATEGORIES=()
 # enviroment categories
 declare -A ENVIRONMENTS_AZ=()
 
+# Add menu array declaration 
+declare -A Selected_Menu_items=()
+declare -a Selected_Menu_items_index=()
 
 
 
@@ -194,7 +197,7 @@ Function_PATH="${Function_Name}"
     #|# [Base_Dir_Scripts_Data_PKI_certificate_server] define Directory for server certificates
     Base_Dir_Scripts_Data_PKI_certificate_server="${Base_Dir_Scripts_Data_PKI}/servers" ###_ DIR_To_CHECK_TMP
     source_sub_config 
-    set_vars_env
+    #set_vars_env
     get_resources
     load_core_lib
     init_all

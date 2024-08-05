@@ -1,0 +1,128 @@
+ Used lib : [ Sys_Bakup_lib.sh   ] 
+ Information for function : [ Do_passwd_backup ]
+ This function depend on : 
+                            File_Backup Found in lib : /lib/system_base/file/file_lib.sh
+ How to use this function  
+  
+     Var to set : None
+     Base usage : Do_passwd_backup
+    
+     Description : This function is used tu générate a day dated backup of
+     passwd , shadows and group file . This may prevent any
+     risk of user data loose
+    
+     Send Back : None
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Do_group_backup ]
+ This function depend on : 
+                            File_Backup Found in lib : /lib/system_base/file/file_lib.sh
+ How to use this function  
+  
+     Var to set : None
+     Base usage : Backup_groupDef
+    
+     Description : This function is used to create a spécifica backup of
+     passwd , shadows and group file . This may prevent any
+     risk of user data loose
+    
+     Send Back : None
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Dummy_function ]
+ This function depend on : 
+ How to use this function  
+  
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+                                                 
+ ----------------------------------------------- 
+                                                 

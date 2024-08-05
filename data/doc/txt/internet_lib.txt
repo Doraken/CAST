@@ -1,0 +1,43 @@
+ Used lib : [ internet_lib.sh   ] 
+ Information for function : [ Internet_Http_Get ]
+ This function depend on : 
+                            Set_new_directory Found in lib : /lib/system_base/directory_lib.sh
+                             Found in lib : 
+                            Set_new_directory Found in lib : /lib/system_base/directory_lib.sh
+                             Found in lib : 
+ How to use this function  
+  
+     Base_Param_URL : Use this var to set the base URL tu use for WGET
+     Base_Param_File_To_Get : Use this var to set the file to download with WGET
+     PWD_Recept_PKG : Use this var to set the directory for reception of file downloaded
+     Base use :
+     Internet_Http_Get "My_pkg_URL" "My_pkg" "My_pkg_repository"
+     Base_Param_URL : Use this var to set the base URL tu use for WGET
+     Base_Param_File_To_Get : Use this var to set the file to download with WGET
+     PWD_Recept_PKG : Use this var to set the directory for reception of file downloaded
+     Base use :
+     Internet_Http_Get "My_pkg_URL" "My_pkg" "My_pkg_repository"
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Internet_Http_Get ]
+ This function depend on : 
+                            Set_new_directory Found in lib : /lib/system_base/directory_lib.sh
+                             Found in lib : 
+                            Set_new_directory Found in lib : /lib/system_base/directory_lib.sh
+                             Found in lib : 
+ How to use this function  
+  
+     Base_Param_URL : Use this var to set the base URL tu use for WGET
+     Base_Param_File_To_Get : Use this var to set the file to download with WGET
+     PWD_Recept_PKG : Use this var to set the directory for reception of file downloaded
+     Base use :
+     Internet_Http_Get "My_pkg_URL" "My_pkg" "My_pkg_repository"
+     Base_Param_URL : Use this var to set the base URL tu use for WGET
+     Base_Param_File_To_Get : Use this var to set the file to download with WGET
+     PWD_Recept_PKG : Use this var to set the directory for reception of file downloaded
+     Base use :
+     Internet_Http_Get "My_pkg_URL" "My_pkg" "My_pkg_repository"
+                                                 
+ ----------------------------------------------- 
+                                                 

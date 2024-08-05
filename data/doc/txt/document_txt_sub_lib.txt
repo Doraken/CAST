@@ -1,0 +1,143 @@
+ Used lib : [ document_txt_sub_lib.sh   ] 
+ Information for function : [ Document_Print_global_Print_txt ]
+ This function depend on : 
+                            Document_Print_function_txt Found in lib : /lib/doc/sub/document_txt_sub_lib.sh
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Document_Print_global_Print_txt
+    
+     Description : This fuction generate documentation txt output
+    
+     Send Back : TXT flow
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Document_Print_function_txt ]
+ This function depend on : 
+                            Document_Print_Dependences_txt Found in lib : /lib/doc/sub/document_txt_sub_lib.sh
+                             Found in lib : 
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Document_Print_function_txt
+    
+     Description : 
+     Document_Print_global_Print_txt
+    
+     Send Back : txt flow
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Document_Print_Dependences_txt ]
+ This function depend on : 
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Document_Print_Dependences_txt
+    
+     Description : This function is used whithout parameter and can only be called by
+     Document_Print_function_txt
+    
+     Send Back : txt flow
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Dummy_function ]
+ This function depend on : 
+ How to use this function  
+  
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+                                                 
+ ----------------------------------------------- 
+                                                 

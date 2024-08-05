@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="autodoc.xsl"?>
+ <Library>
+ <LibraryName>postgres_lib.sh</LibraryName>
+<Function>
+<FunctionName>Do_postgres_init</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName>Set_new_directory</FunctionName>
+<FunctionLib>/lib/system_base/directory_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     BASE_Postgres_Install_PATH : Use this var to set where postgres is installed
+     BASE_Postgres_USER : Use this var to set which user to run any commande on Postgres
+     BASE_Postgres_DATA_DIR : Use this var to set Where postgres store all DDB DATAS
+     Basic Use :
+     Base_Postgres_Install_PATH="Myspath"
+     BASE_Postgres_USER="postgres_username"
+     BASE_Postgres_DATA_DIR="My_dataDir"
+     BDD_Do_postgres_init
+</DocText>
+</Function>
+<Function>
+<FunctionName>Do_postgres_start</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Base_Postgres_Install_PATH : Use this var to set where postgres is installed
+     BASE_Postgres_USER : Use this var to set which user to run any commande on Postgres
+     BASE_Postgres_DATA_DIR : Use this var to set Where postgres store all DDB DATAS
+     Base use :
+</DocText>
+</Function>
+<Function>
+<FunctionName>Do_postgres_stop</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Base_Postgres_Install_PATH : Use this var to set where postgres is installed
+     BASE_Postgres_USER : Use this var to set which user to run any commande on Postgres
+     BASE_Postgres_DATA_DIR : Use this var to set Where postgres store all DDB DATAS
+</DocText>
+</Function>
+ </Library>

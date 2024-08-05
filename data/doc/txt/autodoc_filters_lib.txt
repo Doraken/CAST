@@ -1,0 +1,41 @@
+ Used lib : [ autodoc_filters_lib.sh   ] 
+ Information for function : [ autodoc_filter_line_Printer ]
+ This function depend on : 
+ How to use this function  
+  
+     Internal_Geted_line : use this var to set the line to parse
+     ${1} : Use this var to set Internal_Geted_line
+     Basic usage : Do_document_catalogue_to_xml_sub_line_parser "Line to parse"
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ autodoc_filter_line_BASE_PATH ]
+ This function depend on : 
+                            Filter_Base_Path_in_Cat Found in lib : /lib/doc/Filters/autodoc_filters_lib.sh
+ How to use this function  
+  
+     No parameters are used for this function
+     This function is used to cut off all path information in doc's catalogues
+     Basic usage : autodoc_filter_line_BASE_PATH
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Filter_Base_Path_in_Cat ]
+ This function depend on : 
+                            Do_file_remove Found in lib : /lib/system_base/file/file_lib.sh
+                             Found in lib : 
+ How to use this function  
+  
+     BASE_FILE_TO_FILTER : use this var to set the file to filter
+     ${1} : Use this var to set BASE_FILE_TO_FILTER
+     Basic usage : Filter_Base_Path_in_Cat "File To filter"
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ document_filter_dep_tmp_cat ]
+ This function depend on : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 

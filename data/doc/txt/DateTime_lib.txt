@@ -1,0 +1,31 @@
+ Used lib : [ DateTime_lib.sh   ] 
+ Information for function : [ Get_horodate ]
+ This function depend on : 
+ How to use this function  
+  
+     Update GLB_HORODATE with the current date and time
+     Usage:
+     Get_horodate
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Get_dateDay() ]
+ This function depend on : 
+ How to use this function  
+  
+     Update GLB_DATEDAY with the current date and time
+     Usage:
+     Get_dateDay
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Get_UseDate() ]
+ This function depend on : 
+ How to use this function  
+  
+     Update GLB_USE_DATE with the current date and time
+     Usage:
+     Get_UseDate
+                                                 
+ ----------------------------------------------- 
+                                                 

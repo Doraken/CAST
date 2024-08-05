@@ -30,9 +30,7 @@ function main ()
 Function_Name="${FUNCNAME[0]}"
 Function_PATH="${Function_Name}"
 ######################################################
-Get_all_function_names_to_document 
-#init_all
-
+document_Base_menu
 #|# main execution
 
 #Install_Menu

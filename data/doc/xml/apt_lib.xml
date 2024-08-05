@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="autodoc.xsl"?>
+ <Library>
+ <LibraryName>apt_lib.sh</LibraryName>
+<Function>
+<FunctionName>Do_apt_autoupdate</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName>CTRL_Result_func</FunctionName>
+<FunctionLib>/lib/control_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Description : This function is used to update all package definition on debian like system.
+    
+     Var to set : none
+    
+     Base usage : Do_apt_autoupdate "
+    
+     Send Back : system updated package catalogue
+</DocText>
+</Function>
+<Function>
+<FunctionName>Do_apt_install_package</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName></FunctionName>
+<FunctionLib></FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>CTRL_Result_func</FunctionName>
+<FunctionLib>/lib/control_lib.sh</FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>Test_apt_package_presence</FunctionName>
+<FunctionLib>/lib/system_base/install/apt_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Description : This function is used to manage installation of apt packages on system.
+    
+     Var to set :
+     aptPackageToInstall : Use this var to set wiche package to install with apt
+     ${1} : Use this var to set [ aptPackageToInstall ]
+    
+     Base usage : Do_apt_install_package "My_package_to_install"
+    
+     Send Back : Installed package
+</DocText>
+</Function>
+<Function>
+<FunctionName>Do_apt_uninstall_package</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName></FunctionName>
+<FunctionLib></FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>CTRL_Result_func</FunctionName>
+<FunctionLib>/lib/control_lib.sh</FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>Test_apt_package_presence</FunctionName>
+<FunctionLib>/lib/system_base/install/apt_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Description : This function is used to manage uninstallation of apt packages on system.
+    
+     Var to set :
+     aptPackageToUnInstall Use this var to set which package to uninstall
+     ${1} : use this var to set aptPackageToUnInstall
+    
+     Basic use : Do_apt_install_package "My_package_to_uninstall"
+    
+     Send Back : Unsinstalled package
+</DocText>
+</Function>
+<Function>
+<FunctionName>Test_apt_package_presence</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName></FunctionName>
+<FunctionLib></FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>CTRL_Result_func</FunctionName>
+<FunctionLib>/lib/control_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Var to set : aptPackageToCheck
+    
+     Base usage : CTest_apt_package_presence PackageName
+    
+     Description : This function Check package instalation status.
+    
+     Send Back : Info and action ( execution of other fcntion to set many information about the system)
+</DocText>
+</Function>
+<Function>
+<FunctionName>Test_apt_package_presence_sub_i</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Description : This function is used with CTRL_Result_func as success or error result
+    
+     Var to set : None
+    
+     Base usage : Test_apt_package_presence_sub_i
+    
+     Send Back : aptPackageStatus seted at INSTALLED
+</DocText>
+</Function>
+<Function>
+<FunctionName>Test_apt_package_presence_sub_u</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Description : This function is used with CTRL_Result_func as success or error result
+    
+     Var to set : None
+    
+     Base usage : Test_apt_package_presence_sub_u
+    
+     Send Back : aptPackageStatus seted at NOT INSTALLED
+</DocText>
+</Function>
+ </Library>

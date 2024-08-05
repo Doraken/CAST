@@ -1,0 +1,60 @@
+ Used lib : [ CAST-Mnu-Chroot_Parameters_lib.sh   ] 
+ Information for function : [ CHROOT_base_size ]
+ This function depend on : 
+                            Banner Found in lib : /lib/user_interaction/sub/CAST-Mnu-Chroot_Parameters_lib.sh
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : CHROOT_base
+    
+     Description : This function manage the specific configuration file name.
+    
+     Send Back : None
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ CHROOT_Medium_size ]
+ This function depend on : 
+                            Banner Found in lib : /lib/user_interaction/sub/CAST-Mnu-Chroot_Parameters_lib.sh
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : CHROOT_Medium
+    
+     Description : This function manage the specific configuration file name.
+    
+     Send Back : None
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ CHROOT_big_size ]
+ This function depend on : 
+                            Banner Found in lib : /lib/user_interaction/sub/CAST-Mnu-Chroot_Parameters_lib.sh
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : CHROOT_big
+    
+     Description : This function manage the specific configuration file name.
+    
+     Send Back : None
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Banner ]
+ This function depend on : 
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : CHROOT_big
+    
+     Description : This function manage the specific configuration file name.
+    
+     Send Back : None
+                                                 
+ ----------------------------------------------- 
+                                                 

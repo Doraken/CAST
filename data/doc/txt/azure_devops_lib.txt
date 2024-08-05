@@ -1,0 +1,65 @@
+ Used lib : [ azure_devops_lib.sh   ] 
+ Information for function : [ azure_devops_init ]
+ This function depend on : 
+                            Set_new_directory Found in lib : /lib/system_base/directory_lib.sh
+                            get_azure_devops_credential Found in lib : /lib/azure/azure_devops_lib.sh
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ get_azure_devops_credential ]
+ This function depend on : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ get_azure_devops_organization ]
+ This function depend on : 
+                            get_azure_devops_credential Found in lib : /lib/azure/azure_devops_lib.sh
+                             Found in lib : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ get_all_azure_gits ]
+ This function depend on : 
+                            Do_get_git_clone Found in lib : /lib/git_lib.sh
+                            Set_new_directory Found in lib : /lib/system_base/directory_lib.sh
+                             Found in lib : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ get_object_type ]
+ This function depend on : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ get_index() ]
+ This function depend on : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ ask_questions() ]
+ This function depend on : 
+                            gen_env_code Found in lib : /lib/azure/azure_name-generator_lib.sh
+                            get_app_code Found in lib : /lib/azure/azure_name-generator_lib.sh
+                            get_localisation Found in lib : /lib/azure/azure_name-generator_lib.sh
+                             Found in lib : 
+                            gen_env_code Found in lib : /lib/azure/azure_name-generator_lib.sh
+                            get_app_code Found in lib : /lib/azure/azure_name-generator_lib.sh
+                            get_localisation Found in lib : /lib/azure/azure_name-generator_lib.sh
+                             Found in lib : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 

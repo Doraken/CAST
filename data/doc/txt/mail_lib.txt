@@ -1,0 +1,63 @@
+ Used lib : [ mail_lib.sh   ] 
+ Information for function : [ Mail_check_Mailler ]
+ This function depend on : 
+ How to use this function  
+  
+     Var to set : None
+     MS_User_reciever : Use this var to set mail to sent a mail
+     MS_User_Subject : Use this var to set to set subject of the mail
+     MS_User_Attached_File : Use this var to set to set wich file to send with mail
+     MS_User_Message : Use this var to set to set Message of the mail
+     ${1} : Use this var to set [ MS_User_reciever ]
+     ${2} : Use this var to set [ MS_User_Subject ]
+     ${3} : Use this var to set [ MS_User_Attached_File ]
+     ${4} : Use this var to set [ MS_User_Message ]
+    
+     Base usage : Mail_Send "MS_User_reciever" "MS_User_Subject" "MS_User_Attached_File" "MS_User_Message"
+    
+     Description : None
+    
+     Send Back : None
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Mail_check_att ]
+ This function depend on : 
+ How to use this function  
+  
+     Var to set : None
+     MCA_User_Attached_File : Use this var to set mail to sent a mail
+     ${1} : Use this var to set [ MS_User_reciever ]
+    
+     Base usage : Mail_Send "MS_User_reciever" "MS_User_Subject" "MS_User_Attached_File" "MS_User_Message"
+    
+     Description : None
+    
+     Send Back : None
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Mail_Send ]
+ This function depend on : 
+                            Mail_check_Mailler Found in lib : /lib/web/mail_lib.sh
+                             Found in lib : 
+ How to use this function  
+  
+     Var to set : None
+     MS_User_reciever : Use this var to set mail to sent a mail
+     MS_User_Subject : Use this var to set to set subject of the mail
+     MS_User_Attached_File : Use this var to set to set wich file to send with mail
+     MS_User_Message : Use this var to set to set Message of the mail
+     ${1} : Use this var to set [ MS_User_reciever ]
+     ${2} : Use this var to set [ MS_User_Subject ]
+     ${3} : Use this var to set [ MS_User_Attached_File ]
+     ${4} : Use this var to set [ MS_User_Message ]
+    
+     Base usage : Mail_Send "MS_User_reciever" "MS_User_Subject" "MS_User_Attached_File" "MS_User_Message"
+    
+     Description : None
+    
+     Send Back : None
+                                                 
+ ----------------------------------------------- 
+                                                 

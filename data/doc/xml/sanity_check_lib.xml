@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="autodoc.xsl"?>
+ <Library>
+ <LibraryName>sanity_check_lib.sh</LibraryName>
+<Function>
+<FunctionName>SANITY_CHECK_Base_env_directory_check</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName></FunctionName>
+<FunctionLib></FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>Set_new_directory</FunctionName>
+<FunctionLib>/lib/system_base/directory_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : SANITY_CHECK_Base_env_directory_check
+    
+     Description : This function check and create all mandatory directories needed for CAST execution
+    
+     Send Back : Directory
+</DocText>
+</Function>
+<Function>
+<FunctionName>SANITY_CHECK_Base_env_directory_check_specs</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName></FunctionName>
+<FunctionLib></FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>Set_new_directory</FunctionName>
+<FunctionLib>/lib/system_base/directory_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : SANITY_CHECK_Base_env_directory_check
+    
+     Description : This function check and create all mandatory directories needed for CAST execution
+    
+     Send Back : Directory
+</DocText>
+</Function>
+<Function>
+<FunctionName>SANITY_CHECK_Base_root_exec_check</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : SANITY_CHECK_Base_root_exec_check
+    
+     Description : This function check if you are using root to execute CAST
+     If active it will prompt for user confirmation and send back execution in root mode in system log
+    
+     Send Back : User Check
+</DocText>
+</Function>
+<Function>
+<FunctionName>SANITY_CHECK_Check_TMP_Directory</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : SANITY_CHECK_Check_TMP_Directory
+    
+     Description : This function check and create all mandatory writable directories needed for CAST execution
+    
+     Send Back : writables Directory
+</DocText>
+</Function>
+<Function>
+<FunctionName>SANITY_CHECK_Check_Language</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+</DocText>
+</Function>
+<Function>
+<FunctionName>SANITY_CHECK_cnf_file</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+</DocText>
+</Function>
+<Function>
+<FunctionName>SANITY_CHECK_tools</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName>Fil_Get_Items</FunctionName>
+<FunctionLib>/lib/system_base/file/file_lib.sh</FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>Set_tool_global_status</FunctionName>
+<FunctionLib>/lib/system_base/tool_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+</DocText>
+</Function>
+<Function>
+<FunctionName>SANITY_CHECK_Base_env_Users_And_Group</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : SANITY_CHECK_Base_env_Users_And_Group
+    
+     Description : This function check and create all mandatory directories needed for CAST execution
+    
+     Send Back : Directory
+</DocText>
+</Function>
+ </Library>

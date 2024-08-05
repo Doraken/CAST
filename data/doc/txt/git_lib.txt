@@ -1,0 +1,91 @@
+ Used lib : [ git_lib.sh   ] 
+ Information for function : [ Do_git_pull_or_update ]
+ This function depend on : 
+                             Found in lib : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Do_clone_sub_gits ]
+ This function depend on : 
+                            Do_clone_sub_gits Found in lib : /lib/git_lib.sh
+                            Do_git_update_dir Found in lib : /lib/git_lib.sh
+                            USER_Generic_continue_or_exit Found in lib : /lib/user_interaction/user_lib.sh
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Do_git_update_dir ]
+ This function depend on : 
+                             Found in lib : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Do_git_add_directory ]
+ This function depend on : 
+                            Do_git_init_gen Found in lib : /lib/git_lib.sh
+                            git_az_devops_repo_create Found in lib : /lib/git_lib.sh
+                             Found in lib : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Do_git_init_gen ]
+ This function depend on : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ git_az_devops_repo_create ]
+ This function depend on : 
+                             Found in lib : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Do_get_git_clone ]
+ This function depend on : 
+                            Do_get_git_clone Found in lib : /lib/git_lib.sh
+                            USER_Generic_continue_or_exit Found in lib : /lib/user_interaction/user_lib.sh
+                             Found in lib : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Do_clone_git_repo_to_local ]
+ This function depend on : 
+                             Found in lib : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Get_git_root() ]
+ This function depend on : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Get_git_organisation() ]
+ This function depend on : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Get_git_project() ]
+ This function depend on : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 

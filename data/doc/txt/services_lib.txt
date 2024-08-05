@@ -1,0 +1,210 @@
+ Used lib : [ services_lib.sh   ] 
+ Information for function : [ Do_service_enable_bootstart ]
+ This function depend on : 
+                            CTRL_Result_func Found in lib : /lib/control_lib.sh
+                            Test_service_ststus Found in lib : /lib/system_base/services_lib.sh
+                             Found in lib : 
+ How to use this function  
+  
+     Var to set :
+     AcivateServiceName : Use this var to set service name to activate at boot time
+     ${1} : Use this var to set [ AcivateServiceName ]
+    
+     Base usage : Do_service_enable_bootstart "ServiceNAme"
+    
+     Description : This function is used to activate service at boot time.
+    
+     Send Back : None
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Do_service_disable_bootstart ]
+ This function depend on : 
+                            CTRL_Result_func Found in lib : /lib/control_lib.sh
+                            Test_service_ststus Found in lib : /lib/system_base/services_lib.sh
+                             Found in lib : 
+ How to use this function  
+  
+     Var to set :
+     AcivateServiceName : Use this var to set service name to activate at boot time
+     ${1} : Use this var to set [ AcivateServiceName ]
+    
+     Base usage : Do_service_disable_bootstart "ServiceNAme"
+    
+     Description : This function is used to activate service at boot time.
+    
+     Send Back : None
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Test_service_ststus ]
+ This function depend on : 
+                             Found in lib : 
+ How to use this function  
+  
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Get_service_liste ]
+ This function depend on : 
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Get_service_liste
+    
+     Description : this function generate or regenerate list of all installed services
+    
+     Send Back : _activated_service as service array
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Get_service_status ]
+ This function depend on : 
+                             Found in lib : 
+ How to use this function  
+  
+     Var to set : _ServiceNAme
+    
+     Base usage : Get_service_liste
+    
+     Description : this function generate or regenerate list of all installed services
+    
+     Send Back : _activated_service as service array
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Do_service_stop ]
+ This function depend on : 
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Get_service_liste
+    
+     Description : this function generate or regenerate list of all installed services
+    
+     Send Back : _activated_service as service array
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Do_service_start ]
+ This function depend on : 
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Get_service_liste
+    
+     Description : this function generate or regenerate list of all installed services
+    
+     Send Back : _activated_service as service array
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Dummy_function ]
+ This function depend on : 
+ How to use this function  
+  
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+                                                 
+ ----------------------------------------------- 
+                                                 

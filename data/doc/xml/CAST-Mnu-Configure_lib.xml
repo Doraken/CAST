@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="autodoc.xsl"?>
+ <Library>
+ <LibraryName>CAST-Mnu-Configure_lib.sh</LibraryName>
+<Function>
+<FunctionName>Change_Specific_Configuration</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName>Menu_Change_Conf_item</FunctionName>
+<FunctionLib>/lib/user_interaction/menu_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : Change_Specific_Configuration
+    
+     Description : This function manage the specific configuration file name.
+    
+     Send Back : None
+</DocText>
+</Function>
+ </Library>

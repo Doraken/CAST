@@ -1,0 +1,48 @@
+ Used lib : [ document_xml_sub_lib.sh   ] 
+ Information for function : [ Document_Print_global_Print_xml ]
+ This function depend on : 
+                            Document_Print_function_xml Found in lib : /lib/doc/sub/document_xml_sub_lib.sh
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Document_Print_global_Print_xml
+    
+     Description : This fuction generate documentation xml output
+    
+     Send Back : xml flow
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Document_Print_function_xml ]
+ This function depend on : 
+                            Document_Print_Dependences_xml Found in lib : /lib/doc/sub/document_xml_sub_lib.sh
+                             Found in lib : 
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Document_Print_function_xml
+    
+     Description : This function is used whithout parameter and can only be called by
+     Document_Print_global_Print_xml
+    
+     Send Back : xml flow
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Document_Print_Dependences_xml ]
+ This function depend on : 
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Document_Print_Dependences_xml
+    
+     Description : This function is used whithout parameter and can only be called by
+     Document_Print_function_xml
+    
+     Send Back : xml flow
+                                                 
+ ----------------------------------------------- 
+                                                 

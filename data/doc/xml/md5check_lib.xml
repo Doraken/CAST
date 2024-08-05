@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="autodoc.xsl"?>
+ <Library>
+ <LibraryName>md5check_lib.sh</LibraryName>
+<Function>
+<FunctionName>MD5_Lib_Switch</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Var to set : None
+     Var used : Global_Tool_MD5_Status
+    
+     Base usage : MD5_Lib_Switch
+    
+     Description : this function for exit when md5sum bin is not present on the operating system
+    
+     Send Back : None
+</DocText>
+</Function>
+<Function>
+<FunctionName>Do_md5_create_sum</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName>MD5_Lib_Switch</FunctionName>
+<FunctionLib>/lib/system_base/md5check_lib.sh</FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>Test_file_presence</FunctionName>
+<FunctionLib>/lib/system_base/file/file_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Var to set :
+     ${1} : is used to store scaned file name
+     ${2} : is used to store ouput Type ( File to send md5 ouput to a file any other to keep it on console )
+     Var used : Global_Tool_MD5_Status
+    
+     Base usage : Do_md5_create_sum "My_File" "Ouput_type" "Ouput_Target"
+    
+     Description : this function launch md5sum to generate file hash
+    
+     Send Back : Console ouput or file ouput
+</DocText>
+</Function>
+<Function>
+<FunctionName>Test_md5_sum</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName>MD5_Lib_Switch</FunctionName>
+<FunctionLib>/lib/system_base/md5check_lib.sh</FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>Test_file_presence</FunctionName>
+<FunctionLib>/lib/system_base/file/file_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Var to set :
+     ${1} : is used to store scaned file name
+     ${2} : is used to store ouput Type ( File to send md5 ouput to a file any other to keep it on console )
+     Var used : Global_Tool_MD5_Status
+    
+     Base usage : Do_md5_create_sum "inputFile"
+    
+     Description : this function launch md5sum to check hass of a file
+    
+     Send Back : Console ouput or file ouput
+</DocText>
+</Function>
+ </Library>

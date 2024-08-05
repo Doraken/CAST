@@ -1,0 +1,17 @@
+ Used lib : [ document_html_sub_lib.sh   ] 
+ Information for function : [ Document_Print_function_man_page ]
+ This function depend on : 
+                             Found in lib : 
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Document_Print_function_man_page
+    
+     Description : This function is used whithout parameter and can only be called by
+    
+    
+     Send Back : html flow
+                                                 
+ ----------------------------------------------- 
+                                                 

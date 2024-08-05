@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="autodoc.xsl"?>
+ <Library>
+ <LibraryName>fifo_lib.sh</LibraryName>
+<Function>
+<FunctionName>Set_new_fifo</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName>Do_fifo_init</FunctionName>
+<FunctionLib>/lib/system_base/file/fifo_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     /Docker /alpine-en-3.20.0-1-tunned.log /bin /boot /dev /etc /home /init /lib /lib32 /lib64 /libx32 /lost+found /media /mnt /opt /proc /root /run /sbin /snap /sources /srv /sys /tmp /tools /usr /var
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh Set_new_fifo
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @author Arnaud Crampet
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @see fifo_lib::UnSet_fifo()
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @see fifo_lib::Do_fifo_init()
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @param name objectname 'fifo'
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @param attribut first attribut
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @param ... optional attribut
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh List of attributs:
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh - filename=... the filename of fifo
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh - eof="..." end of line (used to close the fifo)
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh Usage:
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh - Create a FIFO
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh Examples:
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh - Set_new_fifo my_fifo filename=/tmp/my_fifo
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh - Set_new_fifo my_fifo filename=/tmp/my_fifo eof="END_OF_FILE"
+     **/
+</DocText>
+</Function>
+<Function>
+<FunctionName>UnSet_fifo</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     /Docker /alpine-en-3.20.0-1-tunned.log /bin /boot /dev /etc /home /init /lib /lib32 /lib64 /libx32 /lost+found /media /mnt /opt /proc /root /run /sbin /snap /sources /srv /sys /tmp /tools /usr /var
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh UnSet_fifo
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @author Arnaud Crampet
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @see fifo_lib::Set_new_fifo()
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @param name objectname 'fifo'
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh Usage:
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh - Delete a FIFO
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh Examples:
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh - UnSet_fifo my_fifo
+     **/
+</DocText>
+</Function>
+<Function>
+<FunctionName>Do_fifo_init</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName></FunctionName>
+<FunctionLib></FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     /Docker /alpine-en-3.20.0-1-tunned.log /bin /boot /dev /etc /home /init /lib /lib32 /lib64 /libx32 /lost+found /media /mnt /opt /proc /root /run /sbin /snap /sources /srv /sys /tmp /tools /usr /var
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh Do_fifo_init
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @author Arnaud Crampet
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @see fifo_lib::Set_new_fifo()
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @param name objectname 'fifo'
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @param attribut first attribut
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @param ... optional attribut
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh List of attributs:
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh - filename=... the filename of fifo
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh - eof="..." end of line (used to close the fifo)
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh Usage:
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh - Initialise a FIFO (Doesn't create the fifo file)
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh Examples:
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh - Do_fifo_init my_fifo filename=/tmp/my_fifo
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh - Do_fifo_init my_fifo filename=/tmp/my_fifo eof="END_OF_FILE"
+     **/
+</DocText>
+</Function>
+<Function>
+<FunctionName>Get_fifo_line</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     /Docker /alpine-en-3.20.0-1-tunned.log /bin /boot /dev /etc /home /init /lib /lib32 /lib64 /libx32 /lost+found /media /mnt /opt /proc /root /run /sbin /snap /sources /srv /sys /tmp /tools /usr /var
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh Get_fifo_line
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @author Arnaud Crampet
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @see fifo_lib::Set_fifo_line()
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @param name objectname 'fifo'
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh Usage:
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh - Read a set of lines in the FIFO
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh Examples:
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh - Get_fifo_line my_fifo | wc -l
+     **/
+</DocText>
+</Function>
+<Function>
+<FunctionName>Set_fifo_line</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName></FunctionName>
+<FunctionLib></FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     /Docker /alpine-en-3.20.0-1-tunned.log /bin /boot /dev /etc /home /init /lib /lib32 /lib64 /libx32 /lost+found /media /mnt /opt /proc /root /run /sbin /snap /sources /srv /sys /tmp /tools /usr /var
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh Set_fifo_line
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @author Arnaud Crampet
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @see fifo_lib::Get_fifo_line()
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh @param name objectname 'fifo'
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh Usage:
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh - Write a set of lines in the FIFO
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh Examples:
+     autodoc.sh create_objname.sh install_base.sh readme.md script_template.sh - cat - | Get_fifo_line my_fifo
+     **/
+</DocText>
+</Function>
+ </Library>

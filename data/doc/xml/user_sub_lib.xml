@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="autodoc.xsl"?>
+ <Library>
+ <LibraryName>user_sub_lib.sh</LibraryName>
+<Function>
+<FunctionName>USER_Continue_ON_ERR</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName></FunctionName>
+<FunctionLib></FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>Menu_Build</FunctionName>
+<FunctionLib>/lib/user_interaction/menu_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     MSG_TO_Display : use this var to set the displayed message when an user action is needed
+     MSG_TO_Display : use this var to set the displayed message when an user action is needed
+</DocText>
+</Function>
+<Function>
+<FunctionName>Continue</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName>Menu_Build</FunctionName>
+<FunctionLib>/lib/user_interaction/menu_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     MSG_TO_Display : use this var to set the displayed message when an user action is needed
+</DocText>
+</Function>
+ </Library>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="autodoc.xsl"?>
+ <Library>
+ <LibraryName>xml_lib.sh</LibraryName>
+<Function>
+<FunctionName>XML_Get_Model</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName></FunctionName>
+<FunctionLib></FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>Do_file_sourcing_control</FunctionName>
+<FunctionLib>/lib/system_base/file/file_lib.sh</FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>Set_system_counter</FunctionName>
+<FunctionLib>/lib/system_base/system_lib.sh</FunctionLib>
+</FunctionDepend>
+<FunctionDepend>
+<FunctionName>XML_Get_Model_Sub_feeder_NOPOS</FunctionName>
+<FunctionLib>/lib/doc/xml_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     XML_Model_To_Use : Use this var to set which XML base model to use to generate XML CODE
+     ${1} : Use this var to set XML_Model_To_Use
+     XML_ARRAY_DATA : Use this var to set which liste of data to fiil in
+     ${2} : Use this var to set XML_ARRAY_DATA
+</DocText>
+</Function>
+<Function>
+<FunctionName>XML_Get_Model_Sub_feeder_POS</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Sub function of XML_Get_Model_Sub_feeder Do not call directly
+</DocText>
+</Function>
+<Function>
+<FunctionName>XML_Get_Model_Sub_feeder_NOPOS</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Sub function of XML_Get_Model_Sub_feeder Do not call directly
+</DocText>
+</Function>
+ </Library>

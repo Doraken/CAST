@@ -1,0 +1,10 @@
+ Used lib : [ sql_sub_lib.sh   ] 
+ Information for function : [ Do_SQL_Sub_connect_Server ]
+ This function depend on : 
+                            Get_system_random_,number Found in lib : /lib/system_base/system_lib.sh
+                            Test_file_presence Found in lib : /lib/system_base/file/file_lib.sh
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 

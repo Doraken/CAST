@@ -1,0 +1,8 @@
+ Used lib : [ azure_object-generator_lib.sh   ] 
+ Information for function : [ object_creation ]
+ This function depend on : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 

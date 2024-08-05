@@ -1,0 +1,103 @@
+ Used lib : [ lvm_device_lib.sh   ] 
+ Information for function : [ Do_lvm_device_create ]
+ This function depend on : 
+                            CTRL_Result_func Found in lib : /lib/control_lib.sh
+                            Test_lvm_device_presence Found in lib : /lib/system_base/file_system/lvm_device_lib.sh
+                             Found in lib : 
+ How to use this function  
+  
+     Var to set :
+     LVMDC_Name_lv : Use this var to set name of the created lv ( Mandatory )
+     LVMDC_Size_lv : Use this var to set size of the created lv ( Mandatory )
+     LVMDC_VG_NAME : Use this var to set name of the used vg ( Mandatory )
+     ${1} : Use this var to set [ LVMDC_Name_lv ]
+     ${2} : Use this var to set [ LVMDC_Size_lv ]
+     ${3} : Use this var to set [ LVMDC_VG_NAME ]
+    
+     Base usage : Do_lvm_device_create "LVMDC_Name_lv" "LVMDC_Size_lv" "LVMDC_VG_NAME"
+    
+     Description : This function is used to creat lvm logical volume
+    
+     Send Back : lvm logical volume
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Do_lvm_device_delete ]
+ This function depend on : 
+                            CTRL_Result_func Found in lib : /lib/control_lib.sh
+                             Found in lib : 
+ How to use this function  
+  
+     Var to set :
+     LVMDD_Name_lv : Use this var to set ( Mandatory )
+     LVMDD_VG_NAME : Use this var to set ( Mandatory )
+     ${1} : Use this var to set [ LVMDD_Name_lv ]
+     ${2} : Use this var to set [ LVMDD_VG_NAME ]
+    
+     Base usage : Do_lvm_device_delete "LVMDD_Name_lv" "LVMDD_VG_NAME"
+    
+     Description : This function is used to delete lvm logical volume
+    
+     Send Back : lvm logical volume deletion
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Test_lvm_device_presence ]
+ This function depend on : 
+                            CTRL_Result_func Found in lib : /lib/control_lib.sh
+                             Found in lib : 
+ How to use this function  
+  
+     Var to set :
+     LVMDEX_Name_lv : Use this var to set Logical volume name to check ( Mandatory )
+     LVMDEX_VG_NAME : Use this var to set Volume group name of the lv ( Mandatory )
+     LVMDEX_err_level : Use this var to set error level of the check ( Mandatory )
+     LVMDEX_On_Fail_Action : Use this var to set on chek fail action ( Optional )
+     LVMDEX_On_ok_Action : Use this var to set on check ok action ( Optional )
+     ${1} : Use this var to set [ LVMDEX_Name_lv ]
+     ${2} : Use this var to set [ LVMDEX_VG_NAME ]
+     ${3} : Use this var to set [ LVMDEX_err_level ]
+     ${4} : Use this var to set [ LVMDEX_On_Fail_Action ]
+     ${5} : Use this var to set [ LVMDEX_On_ok_Action ]
+    
+     Base usage : Do_lvm_device_delete "LVMDEX_Name_lv" "LVMDEX_VG_NAME" "LVMDEX_err_level" "LVMDEX_On_Fail_Action" "LVMDEX_On_ok_Action"
+    
+     Description : This function is used to check existance of a lvm logical volume
+    
+     Send Back : lvm logical volume Information and action
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Get_lvm_volume_group_status ]
+ This function depend on : 
+                             Found in lib : 
+ How to use this function  
+  
+     LVM_device_vg_name : Use this var to set the name of the checked VG
+     LVM_device_vg_Status_action : Use this var to set the action chek to do
+     ${1} : To set LVM_device_vg_name
+     ${2} : To set LVM_device_vg_Status_action
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Get_lvm_volume_volume_liste ]
+ This function depend on : 
+ How to use this function  
+  
+     This function is used to get full list of all LV device on the computer.
+     LVM_device_VAR : This var is user to store the name of var used to send back data.
+    
+     ${1} : To set LVM_device_vg_name
+     ${2} : To set LVM_device_vg_Status_action
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Loop_linker_format ]
+ This function depend on : 
+                             Found in lib : 
+                             Found in lib : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 

@@ -1,0 +1,159 @@
+ Used lib : [ report_lib.sh   ] 
+ Information for function : [ Report_Linux_get_os_release ]
+ This function depend on : 
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Report_Linux_get_os_release
+    
+     Description : This function is used to get kernel information about installed os
+    
+     Send Back : this function returne three vars GLOBALE_OS_TYPE , GLOBALE_OS_RELEASE , GLOBALE_OS_VERSION
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Report_Linux_get_os_Kernel_params ]
+ This function depend on : 
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Report_Linux_get_os_Kernel_params
+    
+     Description : This function is used to get kernel information about installed os
+    
+     Send Back : this function returne three vars GLOBALE_OS_TYPE , GLOBALE_OS_RELEASE , GLOBALE_OS_VERSION
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Report_Linux_get_os_IPV4_status ]
+ This function depend on : 
+ How to use this function  
+  
+     Var to set : None
+    
+     Base usage : Report_Linux_get_os_Kernel_params
+    
+     Description : This function is used to get kernel information about installed os
+    
+     Send Back : this function returne three vars GLOBALE_OS_TYPE , GLOBALE_OS_RELEASE , GLOBALE_OS_VERSION
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Repport_FS_State_ONE_Server ]
+ This function depend on : 
+                            HTML_Good_Html_Report_FS Found in lib : /lib/web/html_lib.sh
+                            Set_new_directory Found in lib : /lib/system_base/directory_lib.sh
+                            HTML_footer_report_gen Found in lib : /lib/web/html_lib.sh
+ How to use this function  
+  
+     Var to set :
+     RFSOS_PF_Name : Use this var to set plate forme name to use
+     : Use this var to set
+     ${1} : Use this var to set [ RFSOS_PF_Name ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Dummy_function ]
+ This function depend on : 
+ How to use this function  
+  
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+     Var to set : None
+     : Use this var to set
+     : Use this var to set
+     ${1} : Use this var to set [ ]
+     ${2} : Use this var to set [ ]
+    
+     Base usage : None
+    
+     Description : None
+    
+     Send Back : None
+                                                 
+ ----------------------------------------------- 
+                                                 

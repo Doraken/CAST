@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="autodoc.xsl"?>
+ <Library>
+ <LibraryName>CAST-Mnu_certificates_managment_lib.sh</LibraryName>
+<Function>
+<FunctionName>certificates_ROOT</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName>Menu_Get_items</FunctionName>
+<FunctionLib>/lib/user_interaction/menu_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : certificates_managment
+    
+     Description : this function launche the certificate managment sytem
+    
+     Send Back : Menu
+</DocText>
+</Function>
+<Function>
+<FunctionName>managed_domaines</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : certificates_managment
+    
+     Description : this function launche the certificate managment sytem
+    
+     Send Back : Menu
+</DocText>
+</Function>
+<Function>
+<FunctionName>managed_server</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : certificates_managment
+    
+     Description : this function launche the certificate managment sytem
+    
+     Send Back : Menu
+</DocText>
+</Function>
+<Function>
+<FunctionName>managed_mail</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : certificates_managment
+    
+     Description : this function launche the certificate managment sytem
+    
+     Send Back : Menu
+</DocText>
+</Function>
+<Function>
+<FunctionName>managed_users</FunctionName>
+<DependOn>
+</DependOn>
+<DocText>
+     Var to set : None
+    
+     Base usage : certificates_managment
+    
+     Description : this function launche the certificate managment sytem
+    
+     Send Back : Menu
+</DocText>
+</Function>
+ </Library>

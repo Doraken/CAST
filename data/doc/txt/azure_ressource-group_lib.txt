@@ -1,0 +1,61 @@
+ Used lib : [ azure_ressource-group_lib.sh   ] 
+ Information for function : [ generate_rg_config_file() ]
+ This function depend on : 
+                             Found in lib : 
+                             Found in lib : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ scan_resource_group() ]
+ This function depend on : 
+                             Found in lib : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ create_rg_config_dir ]
+ This function depend on : 
+                             Found in lib : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ create_rg_dir ]
+ This function depend on : 
+                            create_rg_dir Found in lib : /lib/azure/azure_ressource-group_lib.sh
+                             Found in lib : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ create_rg_subobject ]
+ This function depend on : 
+                             Found in lib : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ get_all_resource_group() ]
+ This function depend on : 
+                             Found in lib : 
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Check_ressource_group ]
+ This function depend on : 
+                            Check_ressource_group Found in lib : /lib/azure/azure_ressource-group_lib.sh
+                            USER_Generic_continue_or_exit Found in lib : /lib/user_interaction/user_lib.sh
+                            get_all_resource_group() Found in lib : /lib/azure/azure_ressource-group_lib.sh
+ How to use this function  
+  
+                                                 
+ ----------------------------------------------- 
+                                                 

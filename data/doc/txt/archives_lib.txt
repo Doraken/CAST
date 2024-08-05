@@ -1,0 +1,45 @@
+ Used lib : [ archives_lib.sh   ] 
+ Information for function : [ Do_archive_file_extract_tgz ]
+ This function depend on : 
+                            CTRL_Result_func Found in lib : /lib/control_lib.sh
+                            Test_file_presence Found in lib : /lib/system_base/file/file_lib.sh
+ How to use this function  
+  
+     Var to set :
+     AFET_Base_Param_File_Path : Use this var to set Base pathe of the file
+     AFET_Base_Param_File_To_EXTRACT : Use this var to set the name of the file to extract
+     AFET_Base_Param_File_To_Extract_ext : Use this var to set the extention of the file to extracte
+     ${1} : Use this var to set [ AFET_Base_Param_File_Path ]
+     ${2} : Use this var to set [ AFET_Base_Param_File_To_EXTRACT ]
+     ${3} : Use this var to set [ AFET_Base_Param_File_To_Extract_ext ]
+    
+     Base usage : Do_archive_file_extract_tgz "FULL_PATH_OF_THE_FILE" "ARCHIVE_FILENAME_WITHOUT_EXT" "ARCHIVE_EXT"
+    
+     Description : This function uncompress Tar.gz /tar.bz /tar files
+    
+     Send Back : uncompressed file
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Do_file_compress_tgz ]
+ This function depend on : 
+                            Test_file_presence Found in lib : /lib/system_base/file/file_lib.sh
+                             Found in lib : 
+ How to use this function  
+  
+     Var to set :
+     AFCT_Base_Param_File_Path_to_Compress : Use this var to set Base pathe of the file
+     AFCT_Base_Param_Compressed_FileName : Use this var to set the name of the archive file to create
+     AFCT_Base_Param_Compressed_FileName_ext : Use this var to set the extention of the archive file to extracte
+     ${1} : Use this var to set [ AFCT_Base_Param_File_Path_to_Compress ]
+     ${2} : Use this var to set [ AFCT_Base_Param_Compressed_FileName ]
+     ${3} : Use this var to set [ AFCT_Base_Param_Compressed_FileName_ext ]
+    
+     Base usage : Do_file_compress_tgz "AFCT_Base_Param_File_Path_to_Compress" "AFCT_Base_Param_Compressed_FileName" "AFCT_Base_Param_Compressed_FileName_ext"
+    
+     Description : This function compress tar.gz / tar.bz / tar files
+    
+     Send Back : Compressed file
+                                                 
+ ----------------------------------------------- 
+                                                 

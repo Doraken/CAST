@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="autodoc.xsl"?>
+ <Library>
+ <LibraryName>workspace_lib.sh</LibraryName>
+<Function>
+<FunctionName>Ctrl_Depth</FunctionName>
+<DependOn>
+<FunctionDepend>
+<FunctionName>Ctrl_Depth</FunctionName>
+<FunctionLib>/lib/workspace_lib.sh</FunctionLib>
+</FunctionDepend>
+</DependOn>
+<DocText>
+     Ctrl_Depth : use this var to
+</DocText>
+</Function>
+ </Library>

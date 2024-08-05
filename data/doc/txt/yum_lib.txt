@@ -1,0 +1,83 @@
+ Used lib : [ yum_lib.sh   ] 
+ Information for function : [ Do_yum_install_package ]
+ This function depend on : 
+                            CTRL_Result_func Found in lib : /lib/control_lib.sh
+                            Test_yum_package_presence Found in lib : /lib/system_base/install/yum_lib.sh
+                             Found in lib : 
+ How to use this function  
+  
+     Description : This function is used to manage installation of yum packages on system.
+    
+     Var to set :
+     YumPackageToInstall : Use this var to set wiche package to install with yum
+     ${1} : Use this var to set [ YumPackageToInstall ]
+    
+     Base usage : Do_yum_install_package "My_package_to_install"
+    
+     Send Back : Installed package
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Do_yum_uninstall_package ]
+ This function depend on : 
+                            CTRL_Result_func Found in lib : /lib/control_lib.sh
+                            Test_yum_package_presence Found in lib : /lib/system_base/install/yum_lib.sh
+                             Found in lib : 
+ How to use this function  
+  
+     Description : This function is used to manage uninstallation of yum packages on system.
+    
+     Var to set :
+     YumPackageToUnInstall Use this var to set which package to uninstall
+     ${1} : use this var to set YumPackageToUnInstall
+    
+     Basic use : Do_yum_install_package "My_package_to_uninstall"
+    
+     Send Back : Unsinstalled package
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Test_yum_package_presence ]
+ This function depend on : 
+                            CTRL_Result_func Found in lib : /lib/control_lib.sh
+                             Found in lib : 
+ How to use this function  
+  
+     Var to set : YumPackageToCheck
+    
+     Base usage : CTest_yum_package_presence PackageName
+    
+     Description : This function Check package instalation status.
+    
+     Send Back : Info and action ( execution of other fcntion to set many information about the system)
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Test_yum_package_presence_sub_i ]
+ This function depend on : 
+ How to use this function  
+  
+     Description : This function is used with CTRL_Result_func as success or error result
+    
+     Var to set : None
+    
+     Base usage : Test_yum_package_presence_sub_i
+    
+     Send Back : YumPackageStatus seted at INSTALLED
+                                                 
+ ----------------------------------------------- 
+                                                 
+ Information for function : [ Test_yum_package_presence_sub_u ]
+ This function depend on : 
+ How to use this function  
+  
+     Description : This function is used with CTRL_Result_func as success or error result
+    
+     Var to set : None
+    
+     Base usage : Test_yum_package_presence_sub_u
+    
+     Send Back : YumPackageStatus seted at NOT INSTALLED
+                                                 
+ ----------------------------------------------- 
+                                                 
