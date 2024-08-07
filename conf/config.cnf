@@ -65,137 +65,143 @@ Function_PATH="${Function_Name}"
     Base_Dir_Scripts_LOG="${Base_Dir_Scripts}/logs" ###_ DIR_To_CHECK_TMP
     printf  "${GLB_PRINTCOL_4}" "default log directory set to" ": [" "${Base_Dir_Scripts_LOG}" "]"
     
-    #|# [Base_Dir_Scripts_Tmp] define Directory for temporary files
-    Base_Dir_Scripts_Tmp="${Base_Dir_Scripts}/tmp" ###_ DIR_To_CHECK_TMP
+    #|# [BDir_Tmp] define Directory for temporary files
+    BDir_Tmp="${Base_Dir_Scripts}/tmp" ###_ DIR_To_CHECK_TMP
      printf  "${GLB_PRINTCOL_4}" "default tmp directory set to" ": ["  "${Base_Dir_Scripts_CNF}" "]"
     
     #|# [Base_Dir_Scripts_BCK] define Directory for backup files
     Base_Dir_Scripts_BCK="${Base_Dir_Scripts}/backup" ###_ DIR_To_CHECK_TMP
     printf  "${GLB_PRINTCOL_4}" "default beckup directory set to" ": ["  "${Base_Dir_Scripts_BCK}" "]"
     
-    #|# [Base_Dir_Scripts_Data] define Main directory for data files
-    Base_Dir_Scripts_Data="${Base_Dir_Scripts}/data" ###_ DIR_To_CHECK_TMP
-    printf  "${GLB_PRINTCOL_4}" "default data directory set to" ": [" "${Base_Dir_Scripts_Data}" "]"
+    #|# [Base_Dir_Data] define Main directory for data files
+    Base_Dir_Data="${Base_Dir_Scripts}/data" ###_ DIR_To_CHECK_TMP
+    printf  "${GLB_PRINTCOL_4}" "default data directory set to" ": [" "${Base_Dir_Data}" "]"
     
-    #|# [Base_Dir_Scripts_SQL] define Directory for SQL files
-    Base_Dir_Scripts_SQL="${Base_Dir_Scripts_Data}/sql" ###_ DIR_To_CHECK
+    #|# [BDir_Data_Definition] define Main directory for data files plateforme def
+    BDir_Data_Definition="${Base_Dir_Data}/definitions" ###_ DIR_To_CHECK_TMP
+    printf  "${GLB_PRINTCOL_4}" "default data directory set to" ": [" "${Base_Dir_Data}" "]"
 
-    #|# [Base_Dir_Scripts_GIT] define Directory for git files
-    Base_Dir_Scripts_GIT="${Base_Dir_Scripts_Data}/git" ###_ DIR_To_CHECK
 
-    #|# [Base_Dir_Scripts_GIT_devops_azure] define Directory for git azure devops files
-    Base_Dir_Scripts_GIT_devops_azure="${Base_Dir_Scripts_GIT}/azure" ###_ DIR_To_CHECK
+
+    #|# [BDir_Data_Definition_sql] define Directory for SQL files
+    BDir_Data_Definition_sql="${Base_Dir_Data}/sql" ###_ DIR_To_CHECK
+
+    #|# [BDir_Data_GIT] define Directory for git files
+    BDir_Data_GIT="${Base_Dir_Data}/git" ###_ DIR_To_CHECK
+
+    #|# [BDir_Data_Plateformes_Infrastruture_Azure] define Directory for git azure devops files
+    BDir_Data_Plateformes_Infrastruture_Azure="${BDir_Data_GIT}/azure" ###_ DIR_To_CHECK
     
-    #|# [Base_Dir_Scripts_Tmp_Auto_Lib] define Temporary directory for auto library scripts
-    Base_Dir_Scripts_Tmp_Auto_Lib="${Base_Dir_Scripts_Tmp}/auto_lib" ###_ DIR_To_CHECK_TMP
+    #|# [BDir_Tmp_Auto_Lib] define Temporary directory for auto library scripts
+    BDir_Tmp_Auto_Lib="${BDir_Tmp}/auto_lib" ###_ DIR_To_CHECK_TMP
     
     #|# [Base_Dir_Scripts_Fifo] define Temporary directory for FIFO files
-    Base_Dir_Scripts_Fifo="${Base_Dir_Scripts_Tmp}/fifo" ###_ DIR_To_CHECK_TMP
+    Base_Dir_Scripts_Fifo="${BDir_Tmp}/fifo" ###_ DIR_To_CHECK_TMP
     
     #|# [Base_Dir_Conf_Rec] define Temporary directory for received config files
-    Base_Dir_Conf_Rec="${Base_Dir_Scripts_Tmp}/conf_file_rec" ###_ DIR_To_CHECK_TMP
+    Base_Dir_Conf_Rec="${BDir_Tmp}/conf_file_rec" ###_ DIR_To_CHECK_TMP
     
     #|# [Base_Dir_Conf_Gen] define Temporary directory for generated config files
-    Base_Dir_Conf_Gen="${Base_Dir_Scripts_Tmp}/conf_file_gen" ###_ DIR_To_CHECK_TMP
+    Base_Dir_Conf_Gen="${BDir_Tmp}/conf_file_gen" ###_ DIR_To_CHECK_TMP
     
-    #|# [Base_Dir_Scripts_data_Expect] define Directory for expect scripts
-    Base_Dir_Scripts_data_Expect="${Base_Dir_Scripts_Data}/expect" ###_ DIR_To_CHECK
+    #|# [BDir_Data_System_Expect] define Directory for expect scripts
+    BDir_Data_System_Expect="${Base_Dir_Data}/expect" ###_ DIR_To_CHECK
     
-    #|# [Base_Dir_Scripts_data_Expect_Uploads] define Directory for uploaded expect scripts
-    Base_Dir_Scripts_data_Expect_Uploads="${Base_Dir_Scripts_data_Expect}/uploaded_scripts" ###_ DIR_To_CHECK
+    #|# [BDir_Data_System_Expect_Uploads] define Directory for uploaded expect scripts
+    BDir_Data_System_Expect_Uploads="${BDir_Data_System_Expect}/uploaded_scripts" ###_ DIR_To_CHECK
     
-    #|# [Base_Dir_Scripts_data_Expects_cmd] define Directory for expect command scripts
-    Base_Dir_Scripts_data_Expects_cmd="${Base_Dir_Scripts_data_Expect}/cmd" ###_ DIR_To_CHECK
+    #|# [BDir_Data_System_Expects_cmd] define Directory for expect command scripts
+    BDir_Data_System_Expects_cmd="${BDir_Data_System_Expect}/cmd" ###_ DIR_To_CHECK
     
-    #|# [Base_Dir_Scripts_Data_Def] define Directory for definition files
-    Base_Dir_Scripts_Data_Def="${Base_Dir_Scripts_Data}/def" ###_ DIR_To_CHECK
+    #|# [BDir_Data_Def] define Directory for definition files
+    BDir_Data_Def="${Base_Dir_Data}/def" ###_ DIR_To_CHECK
     
-    #|# [Base_Dir_Scripts_Data_Def_pf] define Directory for specific platform definitions
-    Base_Dir_Scripts_Data_Def_pf="${Base_Dir_Scripts_Data_Def}/pf" ###_ DIR_To_CHECK
+    #|# [BDir_Data_Def_pf] define Directory for specific platform definitions
+    BDir_Data_Def_pf="${BDir_Data_Def}/pf" ###_ DIR_To_CHECK
     
-    #|# [Base_Dir_Scripts_Data_Templates] define Directory for template files
-    Base_Dir_Scripts_Data_Templates="${Base_Dir_Scripts_Data}/templates" ###_ DIR_To_CHECK
+    #|# [BDir_Data_Templates] define Directory for template files
+    BDir_Data_Templates="${Base_Dir_Data}/templates" ###_ DIR_To_CHECK
     
-    #|# [Base_Dir_Scripts_Data_Templates_sql] define Directory for SQL templates
-    Base_Dir_Scripts_Data_Templates_sql="${Base_Dir_Scripts_Data_Templates}/sql" ###_ DIR_To_CHECK
+    #|# [BDir_Data_Templates_sql] define Directory for SQL templates
+   BDir_Data_Definition_sql="${BDir_Data_Templates}/sql" ###_ DIR_To_CHECK
     
-    #|# [Base_Dir_Scripts_Data_Templates_xml] define Directory for XML templates
-    Base_Dir_Scripts_Data_Templates_xml="${Base_Dir_Scripts_Data_Templates}/xml" ###_ DIR_To_CHECK
+    #|# [BDir_Data_Templates_xml] define Directory for XML templates
+   BDir_Data_Definition_xml="${BDir_Data_Templates}/xml" ###_ DIR_To_CHECK
     
-    #|# [Base_Dir_Scripts_Data_Templates_html] define Directory for HTML templates
-    Base_Dir_Scripts_Data_Templates_html="${Base_Dir_Scripts_Data_Templates}/html" ###_ DIR_To_CHECK
+    #|# [BDir_Data_Templates_html] define Directory for HTML templates
+   BDir_Data_Definition_html="${BDir_Data_Templates}/html" ###_ DIR_To_CHECK
     
-    #|# [Base_Dir_Scripts_Data_Templates_mail] define Directory for email templates
-    Base_Dir_Scripts_Data_Templates_mail="${Base_Dir_Scripts_Data_Templates}/mail" ###_ DIR_To_CHECK
+    #|# [BDir_Data_Templates_mail] define Directory for email templates
+   BDir_Data_Definition_mail="${BDir_Data_Templates}/mail" ###_ DIR_To_CHECK
     
-    #|# [Base_Dir_Scripts_Data_Catalogs] define Directory for catalog files
-    Base_Dir_Scripts_Data_Catalogs="${Base_Dir_Scripts_Data}/catalogue" ###_ DIR_To_CHECK
+    #|# [BDir_Data_Catalogs] define Directory for catalog files
+    BDir_Data_Catalogs="${Base_Dir_Data}/catalogue" ###_ DIR_To_CHECK
     
-    #|# [Base_Dir_Scripts_Data_Packages] define Directory for packages
-    Base_Dir_Scripts_Data_Packages="${Base_Dir_Scripts_Data}/packages" ###_ DIR_To_CHECK_TMP
+    #|# [BDir_Data_Packages] define Directory for packages
+    BDir_Data_Packages="${Base_Dir_Data}/packages" ###_ DIR_To_CHECK_TMP
     
-    #|# [Base_Dir_Scripts_Data_Packages_inits] define Directory for package initialization files
-    Base_Dir_Scripts_Data_Packages_inits="${Base_Dir_Scripts_Data_Packages}/inits" ###_ DIR_To_CHECK_TMP
+    #|# [BDir_Data_Packages_inits] define Directory for package initialization files
+    BDir_Data_Packages_inits="${BDir_Data_Packages}/inits" ###_ DIR_To_CHECK_TMP
     
-    #|# [Base_Dir_Scripts_Data_Xml] define Directory for XML files
-    Base_Dir_Scripts_Data_Xml="${Base_Dir_Scripts_Data}/xml" ###_ DIR_To_CHECK_TMP
+    #|# [BDir_Data_Xml] define Directory for XML files
+    BDir_Data_Xml="${Base_Dir_Data}/xml" ###_ DIR_To_CHECK_TMP
     
-    #|# [Base_Dir_Scripts_Data_Xml_DEF] define Directory for XML definitions
-    Base_Dir_Scripts_Data_Xml_DEF="${Base_Dir_Scripts_Data_Xml}/xml_def" ###_ DIR_To_CHECK
+    #|# [BDir_Data_Xml_DEF] define Directory for XML definitions
+    BDir_Data_Xml_DEF="${BDir_Data_Xml}/xml_def" ###_ DIR_To_CHECK
     
-    #|# [Base_Dir_Scripts_Data_Web] define Directory for web files
-    Base_Dir_Scripts_Data_Web="${Base_Dir_Scripts_Data}/web" ###_ DIR_To_CHECK
+    #|# [BDir_Data_Web] define Directory for web files
+    BDir_Data_Web="${Base_Dir_Data}/web" ###_ DIR_To_CHECK
     
-    #|# [Base_Dir_Scripts_Data_Web_Php] define Directory for PHP web files
-    Base_Dir_Scripts_Data_Web_Php="${Base_Dir_Scripts_Data_Web}/php" ###_ DIR_To_CHECK
+    #|# [BDir_Data_Web_Php] define Directory for PHP web files
+    BDir_Data_Web_Php="${BDir_Data_Web}/php" ###_ DIR_To_CHECK
     
-    #|# [Base_Dir_Scripts_Data_Web_Html] define Directory for HTML web files
-    Base_Dir_Scripts_Data_Web_Html="${Base_Dir_Scripts_Data_Web}/html" ###_ DIR_To_CHECK
+    #|# [BDir_Data_Web_Html] define Directory for HTML web files
+    BDir_Data_Web_Html="${BDir_Data_Web}/html" ###_ DIR_To_CHECK
     
-    #|# [Base_Dir_Scripts_Data_Doc] define Directory for documentation files
-    Base_Dir_Scripts_Data_Doc="${Base_Dir_Scripts_Data}/doc" ###_ DIR_To_CHECK_TMP
+    #|# [BDir_Data_Doc] define Directory for documentation files
+    BDir_Data_Doc="${Base_Dir_Data}/doc" ###_ DIR_To_CHECK_TMP
     
-    #|# [Base_Dir_Scripts_Data_doc_xml] define Directory for XML documentation files
-    Base_Dir_Scripts_Data_doc_xml="${Base_Dir_Scripts_Data_Doc}/xml" ###_ DIR_To_CHECK_TMP
+    #|# [BDir_Data_doc_xml] define Directory for XML documentation files
+    BDir_Data_doc_xml="${BDir_Data_Doc}/xml" ###_ DIR_To_CHECK_TMP
     
-    #|# [Base_Dir_Scripts_Data_doc_txt] define Directory for text documentation files
-    Base_Dir_Scripts_Data_doc_txt="${Base_Dir_Scripts_Data_Doc}/txt" ###_ DIR_To_CHECK_TMP
+    #|# [BDir_Data_doc_txt] define Directory for text documentation files
+    BDir_Data_doc_txt="${BDir_Data_Doc}/txt" ###_ DIR_To_CHECK_TMP
     
-    #|# [Base_Dir_Scripts_Data_doc_man_html] define Directory for HTML manual files
-    Base_Dir_Scripts_Data_doc_man_html="${Base_Dir_Scripts_Data_Doc}/man-html" ###_ DIR_To_CHECK_TMP
+    #|# [BDir_Data_doc_man_html] define Directory for HTML manual files
+    BDir_Data_doc_man_html="${BDir_Data_Doc}/man-html" ###_ DIR_To_CHECK_TMP
     
-    #|# [Base_Dir_Scripts_Data_Reports] define Directory for report files
-    Base_Dir_Scripts_Data_Reports="${Base_Dir_Scripts_Data}/reports" ###_ DIR_To_CHECK_TMP
+    #|# [BDir_Data_Reports] define Directory for report files
+    BDir_Data_Reports="${Base_Dir_Data}/reports" ###_ DIR_To_CHECK_TMP
     
-    #|# [Base_Dir_Scripts_Data_Reports_txt] define Directory for text report files
-    Base_Dir_Scripts_Data_Reports_txt="${Base_Dir_Scripts_Data_Reports}/txt" ###_ DIR_To_CHECK_TMP
+    #|# [BDir_Data_Reports_txt] define Directory for text report files
+    BDir_Data_Reports_txt="${BDir_Data_Reports}/txt" ###_ DIR_To_CHECK_TMP
     
-    #|# [Base_Dir_Scripts_Data_Reports_html] define Directory for HTML report files
-    Base_Dir_Scripts_Data_Reports_html="${Base_Dir_Scripts_Data_Reports}/html" ###_ DIR_To_CHECK_TMP
+    #|# [BDir_Data_Reports_html] define Directory for HTML report files
+    BDir_Data_Reports_html="${BDir_Data_Reports}/html" ###_ DIR_To_CHECK_TMP
     
-    #|# [Base_Dir_Scripts_Data_Get_From_PF] define Directory for pulled data files
-    Base_Dir_Scripts_Data_Get_From_PF="${Base_Dir_Scripts_Data}/pull" ###_ DIR_To_CHECK_TMP
+    #|# [BDir_Data_Get_From_PF] define Directory for pulled data files
+    BDir_Data_Get_From_PF="${Base_Dir_Data}/pull" ###_ DIR_To_CHECK_TMP
     
-    #|# [Base_Dir_Scripts_Data_Html] define Directory for HTML files in reports
-    Base_Dir_Scripts_Data_Html="${Base_Dir_Scripts_Data_Reports}/html" ###_ DIR_To_CHECK_TMP
+    #|# [BDir_Data_Html] define Directory for HTML files in reports
+    BDir_Data_Html="${BDir_Data_Reports}/html" ###_ DIR_To_CHECK_TMP
     
-    #|# [Base_Dir_Scripts_Data_PKI] define Directory for PKI files
-    Base_Dir_Scripts_Data_PKI="${Base_Dir_Scripts_Data}/pki" ###_ DIR_To_CHECK_TMP
+    #|# [BDir_Data_PKI] define Directory for PKI files
+    BDir_Data_PKI="${Base_Dir_Data}/pki" ###_ DIR_To_CHECK_TMP
     
-    #|# [Base_Dir_Scripts_Data_PKI_config] define Directory for PKI configuration files
-    Base_Dir_Scripts_Data_PKI_config="${Base_Dir_Scripts_Data_PKI}/etc" ###_ DIR_To_CHECK_TMP
+    #|# [BDir_Data_PKI_config] define Directory for PKI configuration files
+    BDir_Data_PKI_config="${BDir_Data_PKI}/etc" ###_ DIR_To_CHECK_TMP
     
-    #|# [Base_Dir_Scripts_Data_PKI_certificate] define Directory for PKI certificates
-    Base_Dir_Scripts_Data_PKI_certificate="${Base_Dir_Scripts_Data_PKI}/certificate" ###_ DIR_To_CHECK_TMP
+    #|# [BDir_Data_PKI_certificate] define Directory for PKI certificates
+    BDir_Data_PKI_certificate="${BDir_Data_PKI}/certificate" ###_ DIR_To_CHECK_TMP
     
-    #|# [Base_Dir_Scripts_Data_PKI_certificate_root] define Directory for root CA certificates
-    Base_Dir_Scripts_Data_PKI_certificate_root="${Base_Dir_Scripts_Data_PKI_certificate}/root-ca" ###_ DIR_To_CHECK_TMP
+    #|# [BDir_Data_PKI_certificate_root] define Directory for root CA certificates
+    BDir_Data_PKI_certificate_root="${BDir_Data_PKI_certificate}/root-ca" ###_ DIR_To_CHECK_TMP
     
-    #|# [Base_Dir_Scripts_Data_PKI_certificate_intermediate] define Directory for intermediate CA certificates
-    Base_Dir_Scripts_Data_PKI_certificate_intermediate="${Base_Dir_Scripts_Data_PKI}/intermediate" ###_ DIR_To_CHECK_TMP
+    #|# [BDir_Data_PKI_certificate_intermediate] define Directory for intermediate CA certificates
+    BDir_Data_PKI_certificate_intermediate="${BDir_Data_PKI}/intermediate" ###_ DIR_To_CHECK_TMP
     
-    #|# [Base_Dir_Scripts_Data_PKI_certificate_server] define Directory for server certificates
-    Base_Dir_Scripts_Data_PKI_certificate_server="${Base_Dir_Scripts_Data_PKI}/servers" ###_ DIR_To_CHECK_TMP
+    #|# [BDir_Data_PKI_certificate_server] define Directory for server certificates
+    BDir_Data_PKI_certificate_server="${BDir_Data_PKI}/servers" ###_ DIR_To_CHECK_TMP
     source_sub_config 
     #set_vars_env
     get_resources

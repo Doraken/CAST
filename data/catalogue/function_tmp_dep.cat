@@ -41,7 +41,7 @@ librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/automated_check/rebuider_lib
 librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/automated_check/rebuider_lib.sh;function;SUB_rebuild_catalogue_File_SPEC_cat;Item;Get_file_type
 librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/automated_check/rebuider_lib.sh;function;SUB_rebuild_catalogue_File_SPEC_cat;Item;Get_system_random_,number
 librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/automated_check/rebuider_lib.sh;function;SUB_rebuild_catalogue_File_SPEC_cat;Item;MSG_DISPLAY
-librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/automated_check/rebuider_lib.sh;function;SUB_rebuild_catalogue_File_SPEC_cat;Item;TMP_file_cat=${Base_Dir_Scripts_Tmp}/${EXTERNAL_randomized_var}_spec_cat.cat
+librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/automated_check/rebuider_lib.sh;function;SUB_rebuild_catalogue_File_SPEC_cat;Item;TMP_file_cat=${BDir_Tmp}/${EXTERNAL_randomized_var}_spec_cat.cat
 librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/automated_check/rebuider_lib.sh;function;SUB_rebuild_catalogue_File_SPEC_cat;Item;clear
 librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/automated_check/rebuider_lib.sh;function;SUB_rebuild_catalogue_File_SPEC_cat;Item;date
 librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/automated_check/rebuider_lib.sh;function;SUB_rebuild_catalogue_File_SPEC_cat;Item;echo
@@ -739,8 +739,8 @@ librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/document_lib.sh;function
 librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/document_lib.sh;function;Do_document_catalogue_refine;Item;Function_PATH="${Function_PATH}/${Function_Name}"
 librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/document_lib.sh;function;Do_document_catalogue_refine;Item;Get_system_random_,number
 librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/document_lib.sh;function;Do_document_catalogue_refine;Item;MSG_DISPLAY
-librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/document_lib.sh;function;Do_document_catalogue_refine;Item;Tmp_file_cat_refine="${Base_Dir_Scripts_Tmp}/${EXTERNAL_randomized_var}_func_dep_cat.cat"
-librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/document_lib.sh;function;Do_document_catalogue_refine;Item;Tmp_file_cat_refine="${Base_Dir_Scripts_Tmp}/${EXTERNAL_randomized_var}_func_doc_cat.cat"
+librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/document_lib.sh;function;Do_document_catalogue_refine;Item;Tmp_file_cat_refine="${BDir_Tmp}/${EXTERNAL_randomized_var}_func_dep_cat.cat"
+librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/document_lib.sh;function;Do_document_catalogue_refine;Item;Tmp_file_cat_refine="${BDir_Tmp}/${EXTERNAL_randomized_var}_func_doc_cat.cat"
 librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/document_lib.sh;function;Do_document_catalogue_refine;Item;cat
 librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/document_lib.sh;function;Do_document_catalogue_refine;Item;echo
 librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/document_lib.sh;function;Do_document_catalogue_to_xml;Item;###############
@@ -885,7 +885,7 @@ librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/menu/document_menu_lib.s
 librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/sub/document_html_sub_lib.sh;function;Document_Print_function_man_page;Item;###############
 librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/sub/document_html_sub_lib.sh;function;Document_Print_function_man_page;Item;####################################################
 librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/sub/document_html_sub_lib.sh;function;Document_Print_function_man_page;Item;DPFMP_Base_File_name="$(
-librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/sub/document_html_sub_lib.sh;function;Document_Print_function_man_page;Item;Document_doc_man="${Base_Dir_Scripts_Data_doc_man_html}/${DPFMP_Base_File_name}.html"
+librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/sub/document_html_sub_lib.sh;function;Document_Print_function_man_page;Item;Document_doc_man="${BDir_Data_doc_man_html}/${DPFMP_Base_File_name}.html"
 librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/sub/document_html_sub_lib.sh;function;Document_Print_function_man_page;Item;Function_Name="${FUNCNAME[0]}"
 librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/sub/document_html_sub_lib.sh;function;Document_Print_function_man_page;Item;Function_PATH="$(
 librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/sub/document_html_sub_lib.sh;function;Document_Print_function_man_page;Item;Function_PATH="${Function_PATH}/${Function_Name}"
@@ -913,7 +913,7 @@ librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/sub/document_txt_sub_lib
 librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/sub/document_txt_sub_lib.sh;function;Document_Print_global_Print_txt;Item;###############
 librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/sub/document_txt_sub_lib.sh;function;Document_Print_global_Print_txt;Item;####################################################
 librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/sub/document_txt_sub_lib.sh;function;Document_Print_global_Print_txt;Item;Document_Print_function_txt
-librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/sub/document_txt_sub_lib.sh;function;Document_Print_global_Print_txt;Item;Document_doc_txt="${Base_Dir_Scripts_Data_doc_txt}/$(
+librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/sub/document_txt_sub_lib.sh;function;Document_Print_global_Print_txt;Item;Document_doc_txt="${BDir_Data_doc_txt}/$(
 librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/sub/document_txt_sub_lib.sh;function;Document_Print_global_Print_txt;Item;Function_Name="${FUNCNAME[0]}"
 librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/sub/document_txt_sub_lib.sh;function;Document_Print_global_Print_txt;Item;Function_PATH="$(
 librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/sub/document_txt_sub_lib.sh;function;Document_Print_global_Print_txt;Item;Function_PATH="${Function_PATH}/${Function_Name}"
@@ -946,7 +946,7 @@ librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/sub/document_xml_sub_lib
 librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/sub/document_xml_sub_lib.sh;function;Document_Print_global_Print_xml;Item;###############
 librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/sub/document_xml_sub_lib.sh;function;Document_Print_global_Print_xml;Item;####################################################
 librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/sub/document_xml_sub_lib.sh;function;Document_Print_global_Print_xml;Item;Document_Print_function_xml
-librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/sub/document_xml_sub_lib.sh;function;Document_Print_global_Print_xml;Item;Document_doc_xml="${Base_Dir_Scripts_Data_doc_xml}/$(
+librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/sub/document_xml_sub_lib.sh;function;Document_Print_global_Print_xml;Item;Document_doc_xml="${BDir_Data_doc_xml}/$(
 librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/sub/document_xml_sub_lib.sh;function;Document_Print_global_Print_xml;Item;Function_Name="${FUNCNAME[0]}"
 librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/sub/document_xml_sub_lib.sh;function;Document_Print_global_Print_xml;Item;Function_PATH="$(
 librairy;/home/doraken/bfm_dev_env/doraken/CAST/lib/doc/sub/document_xml_sub_lib.sh;function;Document_Print_global_Print_xml;Item;Function_PATH="${Function_PATH}/${Function_Name}"

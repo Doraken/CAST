@@ -12,11 +12,11 @@
 ####
 # INFO
 
-Base_Catalog_function="${Base_Dir_Scripts_Data_Catalogs}/function.cat"                  # Is_A_Catalog_FLAG
-Base_Catalog_function_depend="${Base_Dir_Scripts_Data_Catalogs}/function_deps.cat"      # Is_A_Catalog_FLAG
-Base_Catalog_function_docs="${Base_Dir_Scripts_Data_Catalogs}/function_docs.cat"        # Is_A_Catalog_FLAG
-Base_Catalog_function_TMP_dep="${Base_Dir_Scripts_Data_Catalogs}/function_tmp_dep.cat"  # Is_A_Catalog_FLAG
-Base_Catalog_function_Final="${Base_Dir_Scripts_Data_Catalogs}/Final_function_deps.cat" # Is_A_Catalog_FLAG
+Base_Catalog_function="${BDir_Data_Catalogs}/function.cat"                  # Is_A_Catalog_FLAG
+Base_Catalog_function_depend="${BDir_Data_Catalogs}/function_deps.cat"      # Is_A_Catalog_FLAG
+Base_Catalog_function_docs="${BDir_Data_Catalogs}/function_docs.cat"        # Is_A_Catalog_FLAG
+Base_Catalog_function_TMP_dep="${BDir_Data_Catalogs}/function_tmp_dep.cat"  # Is_A_Catalog_FLAG
+Base_Catalog_function_Final="${BDir_Data_Catalogs}/Final_function_deps.cat" # Is_A_Catalog_FLAG
 
 TOPrintFormat="XML"
 ConfigState="OK"

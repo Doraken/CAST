@@ -66,137 +66,137 @@
             <fileline lineNumber="62">    Base_Dir_Scripts_LOG="${Base_Dir_Scripts}/logs" ###_ DIR_To_CHECK_TMP</fileline>
             <fileline lineNumber="63">    printf  "${GLB_PRINTCOL_4}" "default log directory set to" ": [" "${Base_Dir_Scripts_LOG}" "]"</fileline>
             <fileline lineNumber="64" />
-            <fileline lineNumber="65">    #|# [Base_Dir_Scripts_Tmp] define Directory for temporary files</fileline>
-            <fileline lineNumber="66">    Base_Dir_Scripts_Tmp="${Base_Dir_Scripts}/tmp" ###_ DIR_To_CHECK_TMP</fileline>
+            <fileline lineNumber="65">    #|# [BDir_Tmp] define Directory for temporary files</fileline>
+            <fileline lineNumber="66">    BDir_Tmp="${Base_Dir_Scripts}/tmp" ###_ DIR_To_CHECK_TMP</fileline>
             <fileline lineNumber="67">     printf  "${GLB_PRINTCOL_4}" "default tmp directory set to" ": ["  "${Base_Dir_Scripts_CNF}" "]"</fileline>
             <fileline lineNumber="68" />
             <fileline lineNumber="69">    #|# [Base_Dir_Scripts_BCK] define Directory for backup files</fileline>
             <fileline lineNumber="70">    Base_Dir_Scripts_BCK="${Base_Dir_Scripts}/backup" ###_ DIR_To_CHECK_TMP</fileline>
             <fileline lineNumber="71">    printf  "${GLB_PRINTCOL_4}" "default beckup directory set to" ": ["  "${Base_Dir_Scripts_BCK}" "]"</fileline>
             <fileline lineNumber="72" />
-            <fileline lineNumber="73">    #|# [Base_Dir_Scripts_Data] define Main directory for data files</fileline>
-            <fileline lineNumber="74">    Base_Dir_Scripts_Data="${Base_Dir_Scripts}/data" ###_ DIR_To_CHECK_TMP</fileline>
-            <fileline lineNumber="75">    printf  "${GLB_PRINTCOL_4}" "default data directory set to" ": [" "${Base_Dir_Scripts_Data}" "]"</fileline>
+            <fileline lineNumber="73">    #|# [Base_Dir_Data] define Main directory for data files</fileline>
+            <fileline lineNumber="74">    Base_Dir_Data="${Base_Dir_Scripts}/data" ###_ DIR_To_CHECK_TMP</fileline>
+            <fileline lineNumber="75">    printf  "${GLB_PRINTCOL_4}" "default data directory set to" ": [" "${Base_Dir_Data}" "]"</fileline>
             <fileline lineNumber="76" />
-            <fileline lineNumber="77">    #|# [Base_Dir_Scripts_SQL] define Directory for SQL files</fileline>
-            <fileline lineNumber="78">    Base_Dir_Scripts_SQL="${Base_Dir_Scripts_Data}/sql" ###_ DIR_To_CHECK</fileline>
+            <fileline lineNumber="77">    #|# [BDir_Data_Definition_sql] define Directory for SQL files</fileline>
+            <fileline lineNumber="78">    BDir_Data_Definition_sql="${Base_Dir_Data}/sql" ###_ DIR_To_CHECK</fileline>
             <fileline lineNumber="79" />
-            <fileline lineNumber="80">    #|# [Base_Dir_Scripts_GIT] define Directory for git files</fileline>
-            <fileline lineNumber="81">    Base_Dir_Scripts_GIT="${Base_Dir_Scripts_Data}/git" ###_ DIR_To_CHECK</fileline>
+            <fileline lineNumber="80">    #|# [BDir_Data_GIT] define Directory for git files</fileline>
+            <fileline lineNumber="81">    BDir_Data_GIT="${Base_Dir_Data}/git" ###_ DIR_To_CHECK</fileline>
             <fileline lineNumber="82" />
-            <fileline lineNumber="83">    #|# [Base_Dir_Scripts_GIT_devops_azure] define Directory for git azure devops files</fileline>
-            <fileline lineNumber="84">    Base_Dir_Scripts_GIT_devops_azure="${Base_Dir_Scripts_GIT}/azure" ###_ DIR_To_CHECK</fileline>
+            <fileline lineNumber="83">    #|# [BDir_Data_Plateformes_Infrastruture_Azure] define Directory for git azure devops files</fileline>
+            <fileline lineNumber="84">    BDir_Data_Plateformes_Infrastruture_Azure="${BDir_Data_GIT}/azure" ###_ DIR_To_CHECK</fileline>
             <fileline lineNumber="85" />
-            <fileline lineNumber="86">    #|# [Base_Dir_Scripts_Tmp_Auto_Lib] define Temporary directory for auto library scripts</fileline>
-            <fileline lineNumber="87">    Base_Dir_Scripts_Tmp_Auto_Lib="${Base_Dir_Scripts_Tmp}/auto_lib" ###_ DIR_To_CHECK_TMP</fileline>
+            <fileline lineNumber="86">    #|# [BDir_Tmp_Auto_Lib] define Temporary directory for auto library scripts</fileline>
+            <fileline lineNumber="87">    BDir_Tmp_Auto_Lib="${BDir_Tmp}/auto_lib" ###_ DIR_To_CHECK_TMP</fileline>
             <fileline lineNumber="88" />
             <fileline lineNumber="89">    #|# [Base_Dir_Scripts_Fifo] define Temporary directory for FIFO files</fileline>
-            <fileline lineNumber="90">    Base_Dir_Scripts_Fifo="${Base_Dir_Scripts_Tmp}/fifo" ###_ DIR_To_CHECK_TMP</fileline>
+            <fileline lineNumber="90">    Base_Dir_Scripts_Fifo="${BDir_Tmp}/fifo" ###_ DIR_To_CHECK_TMP</fileline>
             <fileline lineNumber="91" />
             <fileline lineNumber="92">    #|# [Base_Dir_Conf_Rec] define Temporary directory for received config files</fileline>
-            <fileline lineNumber="93">    Base_Dir_Conf_Rec="${Base_Dir_Scripts_Tmp}/conf_file_rec" ###_ DIR_To_CHECK_TMP</fileline>
+            <fileline lineNumber="93">    Base_Dir_Conf_Rec="${BDir_Tmp}/conf_file_rec" ###_ DIR_To_CHECK_TMP</fileline>
             <fileline lineNumber="94" />
             <fileline lineNumber="95">    #|# [Base_Dir_Conf_Gen] define Temporary directory for generated config files</fileline>
-            <fileline lineNumber="96">    Base_Dir_Conf_Gen="${Base_Dir_Scripts_Tmp}/conf_file_gen" ###_ DIR_To_CHECK_TMP</fileline>
+            <fileline lineNumber="96">    Base_Dir_Conf_Gen="${BDir_Tmp}/conf_file_gen" ###_ DIR_To_CHECK_TMP</fileline>
             <fileline lineNumber="97" />
-            <fileline lineNumber="98">    #|# [Base_Dir_Scripts_data_Expect] define Directory for expect scripts</fileline>
-            <fileline lineNumber="99">    Base_Dir_Scripts_data_Expect="${Base_Dir_Scripts_Data}/expect" ###_ DIR_To_CHECK</fileline>
+            <fileline lineNumber="98">    #|# [BDir_Data_System_Expect] define Directory for expect scripts</fileline>
+            <fileline lineNumber="99">    BDir_Data_System_Expect="${Base_Dir_Data}/expect" ###_ DIR_To_CHECK</fileline>
             <fileline lineNumber="100" />
-            <fileline lineNumber="101">    #|# [Base_Dir_Scripts_data_Expect_Uploads] define Directory for uploaded expect scripts</fileline>
-            <fileline lineNumber="102">    Base_Dir_Scripts_data_Expect_Uploads="${Base_Dir_Scripts_data_Expect}/uploaded_scripts" ###_ DIR_To_CHECK</fileline>
+            <fileline lineNumber="101">    #|# [BDir_Data_System_Expect_Uploads] define Directory for uploaded expect scripts</fileline>
+            <fileline lineNumber="102">    BDir_Data_System_Expect_Uploads="${BDir_Data_System_Expect}/uploaded_scripts" ###_ DIR_To_CHECK</fileline>
             <fileline lineNumber="103" />
-            <fileline lineNumber="104">    #|# [Base_Dir_Scripts_data_Expects_cmd] define Directory for expect command scripts</fileline>
-            <fileline lineNumber="105">    Base_Dir_Scripts_data_Expects_cmd="${Base_Dir_Scripts_data_Expect}/cmd" ###_ DIR_To_CHECK</fileline>
+            <fileline lineNumber="104">    #|# [BDir_Data_System_Expects_cmd] define Directory for expect command scripts</fileline>
+            <fileline lineNumber="105">    BDir_Data_System_Expects_cmd="${BDir_Data_System_Expect}/cmd" ###_ DIR_To_CHECK</fileline>
             <fileline lineNumber="106" />
-            <fileline lineNumber="107">    #|# [Base_Dir_Scripts_Data_Def] define Directory for definition files</fileline>
-            <fileline lineNumber="108">    Base_Dir_Scripts_Data_Def="${Base_Dir_Scripts_Data}/def" ###_ DIR_To_CHECK</fileline>
+            <fileline lineNumber="107">    #|# [BDir_Data_Def] define Directory for definition files</fileline>
+            <fileline lineNumber="108">    BDir_Data_Def="${Base_Dir_Data}/def" ###_ DIR_To_CHECK</fileline>
             <fileline lineNumber="109" />
-            <fileline lineNumber="110">    #|# [Base_Dir_Scripts_Data_Def_pf] define Directory for specific platform definitions</fileline>
-            <fileline lineNumber="111">    Base_Dir_Scripts_Data_Def_pf="${Base_Dir_Scripts_Data_Def}/pf" ###_ DIR_To_CHECK</fileline>
+            <fileline lineNumber="110">    #|# [BDir_Data_Def_pf] define Directory for specific platform definitions</fileline>
+            <fileline lineNumber="111">    BDir_Data_Def_pf="${BDir_Data_Def}/pf" ###_ DIR_To_CHECK</fileline>
             <fileline lineNumber="112" />
-            <fileline lineNumber="113">    #|# [Base_Dir_Scripts_Data_Templates] define Directory for template files</fileline>
-            <fileline lineNumber="114">    Base_Dir_Scripts_Data_Templates="${Base_Dir_Scripts_Data}/templates" ###_ DIR_To_CHECK</fileline>
+            <fileline lineNumber="113">    #|# [BDir_Data_Templates] define Directory for template files</fileline>
+            <fileline lineNumber="114">    BDir_Data_Templates="${Base_Dir_Data}/templates" ###_ DIR_To_CHECK</fileline>
             <fileline lineNumber="115" />
-            <fileline lineNumber="116">    #|# [Base_Dir_Scripts_Data_Templates_sql] define Directory for SQL templates</fileline>
-            <fileline lineNumber="117">    Base_Dir_Scripts_Data_Templates_sql="${Base_Dir_Scripts_Data_Templates}/sql" ###_ DIR_To_CHECK</fileline>
+            <fileline lineNumber="116">    #|# [BDir_Data_Templates_sql] define Directory for SQL templates</fileline>
+            <fileline lineNumber="117">   BDir_Data_Definition_sql="${BDir_Data_Templates}/sql" ###_ DIR_To_CHECK</fileline>
             <fileline lineNumber="118" />
-            <fileline lineNumber="119">    #|# [Base_Dir_Scripts_Data_Templates_xml] define Directory for XML templates</fileline>
-            <fileline lineNumber="120">    Base_Dir_Scripts_Data_Templates_xml="${Base_Dir_Scripts_Data_Templates}/xml" ###_ DIR_To_CHECK</fileline>
+            <fileline lineNumber="119">    #|# [BDir_Data_Templates_xml] define Directory for XML templates</fileline>
+            <fileline lineNumber="120">   BDir_Data_Definition_xml="${BDir_Data_Templates}/xml" ###_ DIR_To_CHECK</fileline>
             <fileline lineNumber="121" />
-            <fileline lineNumber="122">    #|# [Base_Dir_Scripts_Data_Templates_html] define Directory for HTML templates</fileline>
-            <fileline lineNumber="123">    Base_Dir_Scripts_Data_Templates_html="${Base_Dir_Scripts_Data_Templates}/html" ###_ DIR_To_CHECK</fileline>
+            <fileline lineNumber="122">    #|# [BDir_Data_Templates_html] define Directory for HTML templates</fileline>
+            <fileline lineNumber="123">   BDir_Data_Definition_html="${BDir_Data_Templates}/html" ###_ DIR_To_CHECK</fileline>
             <fileline lineNumber="124" />
-            <fileline lineNumber="125">    #|# [Base_Dir_Scripts_Data_Templates_mail] define Directory for email templates</fileline>
-            <fileline lineNumber="126">    Base_Dir_Scripts_Data_Templates_mail="${Base_Dir_Scripts_Data_Templates}/mail" ###_ DIR_To_CHECK</fileline>
+            <fileline lineNumber="125">    #|# [BDir_Data_Templates_mail] define Directory for email templates</fileline>
+            <fileline lineNumber="126">   BDir_Data_Definition_mail="${BDir_Data_Templates}/mail" ###_ DIR_To_CHECK</fileline>
             <fileline lineNumber="127" />
-            <fileline lineNumber="128">    #|# [Base_Dir_Scripts_Data_Catalogs] define Directory for catalog files</fileline>
-            <fileline lineNumber="129">    Base_Dir_Scripts_Data_Catalogs="${Base_Dir_Scripts_Data}/catalogue" ###_ DIR_To_CHECK</fileline>
+            <fileline lineNumber="128">    #|# [BDir_Data_Catalogs] define Directory for catalog files</fileline>
+            <fileline lineNumber="129">    BDir_Data_Catalogs="${Base_Dir_Data}/catalogue" ###_ DIR_To_CHECK</fileline>
             <fileline lineNumber="130" />
-            <fileline lineNumber="131">    #|# [Base_Dir_Scripts_Data_Packages] define Directory for packages</fileline>
-            <fileline lineNumber="132">    Base_Dir_Scripts_Data_Packages="${Base_Dir_Scripts_Data}/packages" ###_ DIR_To_CHECK_TMP</fileline>
+            <fileline lineNumber="131">    #|# [BDir_Data_Packages] define Directory for packages</fileline>
+            <fileline lineNumber="132">    BDir_Data_Packages="${Base_Dir_Data}/packages" ###_ DIR_To_CHECK_TMP</fileline>
             <fileline lineNumber="133" />
-            <fileline lineNumber="134">    #|# [Base_Dir_Scripts_Data_Packages_inits] define Directory for package initialization files</fileline>
-            <fileline lineNumber="135">    Base_Dir_Scripts_Data_Packages_inits="${Base_Dir_Scripts_Data_Packages}/inits" ###_ DIR_To_CHECK_TMP</fileline>
+            <fileline lineNumber="134">    #|# [BDir_Data_Packages_inits] define Directory for package initialization files</fileline>
+            <fileline lineNumber="135">    BDir_Data_Packages_inits="${BDir_Data_Packages}/inits" ###_ DIR_To_CHECK_TMP</fileline>
             <fileline lineNumber="136" />
-            <fileline lineNumber="137">    #|# [Base_Dir_Scripts_Data_Xml] define Directory for XML files</fileline>
-            <fileline lineNumber="138">    Base_Dir_Scripts_Data_Xml="${Base_Dir_Scripts_Data}/xml" ###_ DIR_To_CHECK_TMP</fileline>
+            <fileline lineNumber="137">    #|# [BDir_Data_Xml] define Directory for XML files</fileline>
+            <fileline lineNumber="138">    BDir_Data_Xml="${Base_Dir_Data}/xml" ###_ DIR_To_CHECK_TMP</fileline>
             <fileline lineNumber="139" />
-            <fileline lineNumber="140">    #|# [Base_Dir_Scripts_Data_Xml_DEF] define Directory for XML definitions</fileline>
-            <fileline lineNumber="141">    Base_Dir_Scripts_Data_Xml_DEF="${Base_Dir_Scripts_Data_Xml}/xml_def" ###_ DIR_To_CHECK</fileline>
+            <fileline lineNumber="140">    #|# [BDir_Data_Xml_DEF] define Directory for XML definitions</fileline>
+            <fileline lineNumber="141">    BDir_Data_Xml_DEF="${BDir_Data_Xml}/xml_def" ###_ DIR_To_CHECK</fileline>
             <fileline lineNumber="142" />
-            <fileline lineNumber="143">    #|# [Base_Dir_Scripts_Data_Web] define Directory for web files</fileline>
-            <fileline lineNumber="144">    Base_Dir_Scripts_Data_Web="${Base_Dir_Scripts_Data}/web" ###_ DIR_To_CHECK</fileline>
+            <fileline lineNumber="143">    #|# [BDir_Data_Web] define Directory for web files</fileline>
+            <fileline lineNumber="144">    BDir_Data_Web="${Base_Dir_Data}/web" ###_ DIR_To_CHECK</fileline>
             <fileline lineNumber="145" />
-            <fileline lineNumber="146">    #|# [Base_Dir_Scripts_Data_Web_Php] define Directory for PHP web files</fileline>
-            <fileline lineNumber="147">    Base_Dir_Scripts_Data_Web_Php="${Base_Dir_Scripts_Data_Web}/php" ###_ DIR_To_CHECK</fileline>
+            <fileline lineNumber="146">    #|# [BDir_Data_Web_Php] define Directory for PHP web files</fileline>
+            <fileline lineNumber="147">    BDir_Data_Web_Php="${BDir_Data_Web}/php" ###_ DIR_To_CHECK</fileline>
             <fileline lineNumber="148" />
-            <fileline lineNumber="149">    #|# [Base_Dir_Scripts_Data_Web_Html] define Directory for HTML web files</fileline>
-            <fileline lineNumber="150">    Base_Dir_Scripts_Data_Web_Html="${Base_Dir_Scripts_Data_Web}/html" ###_ DIR_To_CHECK</fileline>
+            <fileline lineNumber="149">    #|# [BDir_Data_Web_Html] define Directory for HTML web files</fileline>
+            <fileline lineNumber="150">    BDir_Data_Web_Html="${BDir_Data_Web}/html" ###_ DIR_To_CHECK</fileline>
             <fileline lineNumber="151" />
-            <fileline lineNumber="152">    #|# [Base_Dir_Scripts_Data_Doc] define Directory for documentation files</fileline>
-            <fileline lineNumber="153">    Base_Dir_Scripts_Data_Doc="${Base_Dir_Scripts_Data}/doc" ###_ DIR_To_CHECK_TMP</fileline>
+            <fileline lineNumber="152">    #|# [BDir_Data_Doc] define Directory for documentation files</fileline>
+            <fileline lineNumber="153">    BDir_Data_Doc="${Base_Dir_Data}/doc" ###_ DIR_To_CHECK_TMP</fileline>
             <fileline lineNumber="154" />
-            <fileline lineNumber="155">    #|# [Base_Dir_Scripts_Data_doc_xml] define Directory for XML documentation files</fileline>
-            <fileline lineNumber="156">    Base_Dir_Scripts_Data_doc_xml="${Base_Dir_Scripts_Data_Doc}/xml" ###_ DIR_To_CHECK_TMP</fileline>
+            <fileline lineNumber="155">    #|# [BDir_Data_doc_xml] define Directory for XML documentation files</fileline>
+            <fileline lineNumber="156">    BDir_Data_doc_xml="${BDir_Data_Doc}/xml" ###_ DIR_To_CHECK_TMP</fileline>
             <fileline lineNumber="157" />
-            <fileline lineNumber="158">    #|# [Base_Dir_Scripts_Data_doc_txt] define Directory for text documentation files</fileline>
-            <fileline lineNumber="159">    Base_Dir_Scripts_Data_doc_txt="${Base_Dir_Scripts_Data_Doc}/txt" ###_ DIR_To_CHECK_TMP</fileline>
+            <fileline lineNumber="158">    #|# [BDir_Data_doc_txt] define Directory for text documentation files</fileline>
+            <fileline lineNumber="159">    BDir_Data_doc_txt="${BDir_Data_Doc}/txt" ###_ DIR_To_CHECK_TMP</fileline>
             <fileline lineNumber="160" />
-            <fileline lineNumber="161">    #|# [Base_Dir_Scripts_Data_doc_man_html] define Directory for HTML manual files</fileline>
-            <fileline lineNumber="162">    Base_Dir_Scripts_Data_doc_man_html="${Base_Dir_Scripts_Data_Doc}/man-html" ###_ DIR_To_CHECK_TMP</fileline>
+            <fileline lineNumber="161">    #|# [BDir_Data_doc_man_html] define Directory for HTML manual files</fileline>
+            <fileline lineNumber="162">    BDir_Data_doc_man_html="${BDir_Data_Doc}/man-html" ###_ DIR_To_CHECK_TMP</fileline>
             <fileline lineNumber="163" />
-            <fileline lineNumber="164">    #|# [Base_Dir_Scripts_Data_Reports] define Directory for report files</fileline>
-            <fileline lineNumber="165">    Base_Dir_Scripts_Data_Reports="${Base_Dir_Scripts_Data}/reports" ###_ DIR_To_CHECK_TMP</fileline>
+            <fileline lineNumber="164">    #|# [BDir_Data_Reports] define Directory for report files</fileline>
+            <fileline lineNumber="165">    BDir_Data_Reports="${Base_Dir_Data}/reports" ###_ DIR_To_CHECK_TMP</fileline>
             <fileline lineNumber="166" />
-            <fileline lineNumber="167">    #|# [Base_Dir_Scripts_Data_Reports_txt] define Directory for text report files</fileline>
-            <fileline lineNumber="168">    Base_Dir_Scripts_Data_Reports_txt="${Base_Dir_Scripts_Data_Reports}/txt" ###_ DIR_To_CHECK_TMP</fileline>
+            <fileline lineNumber="167">    #|# [BDir_Data_Reports_txt] define Directory for text report files</fileline>
+            <fileline lineNumber="168">    BDir_Data_Reports_txt="${BDir_Data_Reports}/txt" ###_ DIR_To_CHECK_TMP</fileline>
             <fileline lineNumber="169" />
-            <fileline lineNumber="170">    #|# [Base_Dir_Scripts_Data_Reports_html] define Directory for HTML report files</fileline>
-            <fileline lineNumber="171">    Base_Dir_Scripts_Data_Reports_html="${Base_Dir_Scripts_Data_Reports}/html" ###_ DIR_To_CHECK_TMP</fileline>
+            <fileline lineNumber="170">    #|# [BDir_Data_Reports_html] define Directory for HTML report files</fileline>
+            <fileline lineNumber="171">    BDir_Data_Reports_html="${BDir_Data_Reports}/html" ###_ DIR_To_CHECK_TMP</fileline>
             <fileline lineNumber="172" />
-            <fileline lineNumber="173">    #|# [Base_Dir_Scripts_Data_Get_From_PF] define Directory for pulled data files</fileline>
-            <fileline lineNumber="174">    Base_Dir_Scripts_Data_Get_From_PF="${Base_Dir_Scripts_Data}/pull" ###_ DIR_To_CHECK_TMP</fileline>
+            <fileline lineNumber="173">    #|# [BDir_Data_Get_From_PF] define Directory for pulled data files</fileline>
+            <fileline lineNumber="174">    BDir_Data_Get_From_PF="${Base_Dir_Data}/pull" ###_ DIR_To_CHECK_TMP</fileline>
             <fileline lineNumber="175" />
-            <fileline lineNumber="176">    #|# [Base_Dir_Scripts_Data_Html] define Directory for HTML files in reports</fileline>
-            <fileline lineNumber="177">    Base_Dir_Scripts_Data_Html="${Base_Dir_Scripts_Data_Reports}/html" ###_ DIR_To_CHECK_TMP</fileline>
+            <fileline lineNumber="176">    #|# [BDir_Data_Html] define Directory for HTML files in reports</fileline>
+            <fileline lineNumber="177">    BDir_Data_Html="${BDir_Data_Reports}/html" ###_ DIR_To_CHECK_TMP</fileline>
             <fileline lineNumber="178" />
-            <fileline lineNumber="179">    #|# [Base_Dir_Scripts_Data_PKI] define Directory for PKI files</fileline>
-            <fileline lineNumber="180">    Base_Dir_Scripts_Data_PKI="${Base_Dir_Scripts_Data}/pki" ###_ DIR_To_CHECK_TMP</fileline>
+            <fileline lineNumber="179">    #|# [BDir_Data_PKI] define Directory for PKI files</fileline>
+            <fileline lineNumber="180">    BDir_Data_PKI="${Base_Dir_Data}/pki" ###_ DIR_To_CHECK_TMP</fileline>
             <fileline lineNumber="181" />
-            <fileline lineNumber="182">    #|# [Base_Dir_Scripts_Data_PKI_config] define Directory for PKI configuration files</fileline>
-            <fileline lineNumber="183">    Base_Dir_Scripts_Data_PKI_config="${Base_Dir_Scripts_Data_PKI}/etc" ###_ DIR_To_CHECK_TMP</fileline>
+            <fileline lineNumber="182">    #|# [BDir_Data_PKI_config] define Directory for PKI configuration files</fileline>
+            <fileline lineNumber="183">    BDir_Data_PKI_config="${BDir_Data_PKI}/etc" ###_ DIR_To_CHECK_TMP</fileline>
             <fileline lineNumber="184" />
-            <fileline lineNumber="185">    #|# [Base_Dir_Scripts_Data_PKI_certificate] define Directory for PKI certificates</fileline>
-            <fileline lineNumber="186">    Base_Dir_Scripts_Data_PKI_certificate="${Base_Dir_Scripts_Data_PKI}/certificate" ###_ DIR_To_CHECK_TMP</fileline>
+            <fileline lineNumber="185">    #|# [BDir_Data_PKI_certificate] define Directory for PKI certificates</fileline>
+            <fileline lineNumber="186">    BDir_Data_PKI_certificate="${BDir_Data_PKI}/certificate" ###_ DIR_To_CHECK_TMP</fileline>
             <fileline lineNumber="187" />
-            <fileline lineNumber="188">    #|# [Base_Dir_Scripts_Data_PKI_certificate_root] define Directory for root CA certificates</fileline>
-            <fileline lineNumber="189">    Base_Dir_Scripts_Data_PKI_certificate_root="${Base_Dir_Scripts_Data_PKI_certificate}/root-ca" ###_ DIR_To_CHECK_TMP</fileline>
+            <fileline lineNumber="188">    #|# [BDir_Data_PKI_certificate_root] define Directory for root CA certificates</fileline>
+            <fileline lineNumber="189">    BDir_Data_PKI_certificate_root="${BDir_Data_PKI_certificate}/root-ca" ###_ DIR_To_CHECK_TMP</fileline>
             <fileline lineNumber="190" />
-            <fileline lineNumber="191">    #|# [Base_Dir_Scripts_Data_PKI_certificate_intermediate] define Directory for intermediate CA certificates</fileline>
-            <fileline lineNumber="192">    Base_Dir_Scripts_Data_PKI_certificate_intermediate="${Base_Dir_Scripts_Data_PKI}/intermediate" ###_ DIR_To_CHECK_TMP</fileline>
+            <fileline lineNumber="191">    #|# [BDir_Data_PKI_certificate_intermediate] define Directory for intermediate CA certificates</fileline>
+            <fileline lineNumber="192">    BDir_Data_PKI_certificate_intermediate="${BDir_Data_PKI}/intermediate" ###_ DIR_To_CHECK_TMP</fileline>
             <fileline lineNumber="193" />
-            <fileline lineNumber="194">    #|# [Base_Dir_Scripts_Data_PKI_certificate_server] define Directory for server certificates</fileline>
-            <fileline lineNumber="195">    Base_Dir_Scripts_Data_PKI_certificate_server="${Base_Dir_Scripts_Data_PKI}/servers" ###_ DIR_To_CHECK_TMP</fileline>
+            <fileline lineNumber="194">    #|# [BDir_Data_PKI_certificate_server] define Directory for server certificates</fileline>
+            <fileline lineNumber="195">    BDir_Data_PKI_certificate_server="${BDir_Data_PKI}/servers" ###_ DIR_To_CHECK_TMP</fileline>
             <fileline lineNumber="196">    source_sub_config </fileline>
             <fileline lineNumber="197">    set_vars_env</fileline>
             <fileline lineNumber="198">    get_resources</fileline>
@@ -426,11 +426,11 @@
             <fileline lineNumber="12">####</fileline>
             <fileline lineNumber="13"># INFO</fileline>
             <fileline lineNumber="14" />
-            <fileline lineNumber="15">Base_Catalog_function="${Base_Dir_Scripts_Data_Catalogs}/function.cat"                  # Is_A_Catalog_FLAG</fileline>
-            <fileline lineNumber="16">Base_Catalog_function_depend="${Base_Dir_Scripts_Data_Catalogs}/function_deps.cat"      # Is_A_Catalog_FLAG</fileline>
-            <fileline lineNumber="17">Base_Catalog_function_docs="${Base_Dir_Scripts_Data_Catalogs}/function_docs.cat"        # Is_A_Catalog_FLAG</fileline>
-            <fileline lineNumber="18">Base_Catalog_function_TMP_dep="${Base_Dir_Scripts_Data_Catalogs}/function_tmp_dep.cat"  # Is_A_Catalog_FLAG</fileline>
-            <fileline lineNumber="19">Base_Catalog_function_Final="${Base_Dir_Scripts_Data_Catalogs}/Final_function_deps.cat" # Is_A_Catalog_FLAG</fileline>
+            <fileline lineNumber="15">Base_Catalog_function="${BDir_Data_Catalogs}/function.cat"                  # Is_A_Catalog_FLAG</fileline>
+            <fileline lineNumber="16">Base_Catalog_function_depend="${BDir_Data_Catalogs}/function_deps.cat"      # Is_A_Catalog_FLAG</fileline>
+            <fileline lineNumber="17">Base_Catalog_function_docs="${BDir_Data_Catalogs}/function_docs.cat"        # Is_A_Catalog_FLAG</fileline>
+            <fileline lineNumber="18">Base_Catalog_function_TMP_dep="${BDir_Data_Catalogs}/function_tmp_dep.cat"  # Is_A_Catalog_FLAG</fileline>
+            <fileline lineNumber="19">Base_Catalog_function_Final="${BDir_Data_Catalogs}/Final_function_deps.cat" # Is_A_Catalog_FLAG</fileline>
             <fileline lineNumber="20" />
             <fileline lineNumber="21">TOPrintFormat="XML"</fileline>
             <fileline lineNumber="22">ConfigState="OK"</fileline>
@@ -2467,13 +2467,13 @@
             <fileline lineNumber="225" />
             <fileline lineNumber="226" />
             <fileline lineNumber="227" />
-            <fileline lineNumber="228">Tmp_file_cat_refine="${Base_Dir_Scripts_Tmp}/${EXTERNAL_randomized_var}_func_dep_cat.cat"</fileline>
+            <fileline lineNumber="228">Tmp_file_cat_refine="${BDir_Tmp}/${EXTERNAL_randomized_var}_func_dep_cat.cat"</fileline>
             <fileline lineNumber="229">cat ${Base_Catalog_function_depend} | sort -u &gt; ${Tmp_file_cat_refine}</fileline>
             <fileline lineNumber="230">cat ${Tmp_file_cat_refine} &gt; ${Base_Catalog_function_depend}</fileline>
             <fileline lineNumber="231" />
             <fileline lineNumber="232">Get_system_random_,number</fileline>
             <fileline lineNumber="233" />
-            <fileline lineNumber="234">Tmp_file_cat_refine="${Base_Dir_Scripts_Tmp}/${EXTERNAL_randomized_var}_func_doc_cat.cat"</fileline>
+            <fileline lineNumber="234">Tmp_file_cat_refine="${BDir_Tmp}/${EXTERNAL_randomized_var}_func_doc_cat.cat"</fileline>
             <fileline lineNumber="235">cat ${Base_Catalog_function_docs} | sort -u &gt; ${Tmp_file_cat_refine}</fileline>
             <fileline lineNumber="236">cat ${Tmp_file_cat_refine} &gt; ${Base_Catalog_function_docs}</fileline>
             <fileline lineNumber="237" />
@@ -3016,31 +3016,31 @@
             <fileline lineNumber="84">MSG_DISPLAY "debug" "0" "current function path : [ ${Function_PATH} ]  | function Name [ ${Function_Name} ] "</fileline>
             <fileline lineNumber="85" />
             <fileline lineNumber="86" />
-            <fileline lineNumber="87">egrep -v ";Item;;$"     ${Base_Catalog_function_TMP_dep} &gt; ${Base_Dir_Scripts_Tmp}/filter_cat.tmp &amp;&amp; cat    ${Base_Dir_Scripts_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
-            <fileline lineNumber="88">egrep -v ";Item;$"      ${Base_Catalog_function_TMP_dep} &gt; ${Base_Dir_Scripts_Tmp}/filter_cat.tmp &amp;&amp; cat    ${Base_Dir_Scripts_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
-            <fileline lineNumber="89">egrep -v ";Item;;$"     ${Base_Catalog_function_TMP_dep} &gt; ${Base_Dir_Scripts_Tmp}/filter_cat.tmp &amp;&amp; cat    ${Base_Dir_Scripts_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
-            <fileline lineNumber="90">egrep -v ";Item;.$"     ${Base_Catalog_function_TMP_dep} &gt; ${Base_Dir_Scripts_Tmp}/filter_cat.tmp &amp;&amp; cat    ${Base_Dir_Scripts_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
-            <fileline lineNumber="91">egrep -v ";Item;###$"   ${Base_Catalog_function_TMP_dep} &gt; ${Base_Dir_Scripts_Tmp}/filter_cat.tmp &amp;&amp; cat    ${Base_Dir_Scripts_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
-            <fileline lineNumber="92">egrep -v ";Item;\=$"    ${Base_Catalog_function_TMP_dep} &gt; ${Base_Dir_Scripts_Tmp}/filter_cat.tmp &amp;&amp; cat    ${Base_Dir_Scripts_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
-            <fileline lineNumber="93">egrep -v ";Item;\[$"    ${Base_Catalog_function_TMP_dep} &gt; ${Base_Dir_Scripts_Tmp}/filter_cat.tmp &amp;&amp; cat    ${Base_Dir_Scripts_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
-            <fileline lineNumber="94">egrep -v ";Item;\]$"    ${Base_Catalog_function_TMP_dep} &gt; ${Base_Dir_Scripts_Tmp}/filter_cat.tmp &amp;&amp; cat    ${Base_Dir_Scripts_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
-            <fileline lineNumber="95">egrep -v ";Item;\*$"    ${Base_Catalog_function_TMP_dep} &gt; ${Base_Dir_Scripts_Tmp}/filter_cat.tmp &amp;&amp; cat    ${Base_Dir_Scripts_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
-            <fileline lineNumber="96">egrep -v ";Item;:$"     ${Base_Catalog_function_TMP_dep} &gt; ${Base_Dir_Scripts_Tmp}/filter_cat.tmp &amp;&amp; cat    ${Base_Dir_Scripts_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
-            <fileline lineNumber="97">egrep -v ";Item;eval$"  ${Base_Catalog_function_TMP_dep} &gt; ${Base_Dir_Scripts_Tmp}/filter_cat.tmp &amp;&amp; cat    ${Base_Dir_Scripts_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
-            <fileline lineNumber="98">egrep -v ";Item;if$"    ${Base_Catalog_function_TMP_dep} &gt; ${Base_Dir_Scripts_Tmp}/filter_cat.tmp &amp;&amp; cat    ${Base_Dir_Scripts_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
-            <fileline lineNumber="99">egrep -v ";Item;then$"  ${Base_Catalog_function_TMP_dep} &gt; ${Base_Dir_Scripts_Tmp}/filter_cat.tmp &amp;&amp; cat    ${Base_Dir_Scripts_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
-            <fileline lineNumber="100">egrep -v ";Item;else$"  ${Base_Catalog_function_TMP_dep} &gt; ${Base_Dir_Scripts_Tmp}/filter_cat.tmp &amp;&amp; cat    ${Base_Dir_Scripts_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
-            <fileline lineNumber="101">egrep -v ";Item;fi$"    ${Base_Catalog_function_TMP_dep} &gt; ${Base_Dir_Scripts_Tmp}/filter_cat.tmp &amp;&amp; cat    ${Base_Dir_Scripts_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
-            <fileline lineNumber="102">egrep -v ";Item;for$"   ${Base_Catalog_function_TMP_dep} &gt; ${Base_Dir_Scripts_Tmp}/filter_cat.tmp &amp;&amp; cat    ${Base_Dir_Scripts_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
-            <fileline lineNumber="103">egrep -v ";Item;do$"    ${Base_Catalog_function_TMP_dep} &gt; ${Base_Dir_Scripts_Tmp}/filter_cat.tmp &amp;&amp; cat    ${Base_Dir_Scripts_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
-            <fileline lineNumber="104">egrep -v ";Item;done$"  ${Base_Catalog_function_TMP_dep} &gt; ${Base_Dir_Scripts_Tmp}/filter_cat.tmp &amp;&amp; cat    ${Base_Dir_Scripts_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
-            <fileline lineNumber="105">egrep -v ";Item;while$" ${Base_Catalog_function_TMP_dep} &gt; ${Base_Dir_Scripts_Tmp}/filter_cat.tmp &amp;&amp; cat    ${Base_Dir_Scripts_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
-            <fileline lineNumber="106">egrep -v ";Item;case$"  ${Base_Catalog_function_TMP_dep} &gt; ${Base_Dir_Scripts_Tmp}/filter_cat.tmp &amp;&amp; cat    ${Base_Dir_Scripts_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
-            <fileline lineNumber="107">egrep -v ";Item;export$"  ${Base_Catalog_function_TMP_dep} &gt; ${Base_Dir_Scripts_Tmp}/filter_cat.tmp &amp;&amp; cat    ${Base_Dir_Scripts_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
-            <fileline lineNumber="108">egrep -v ";Item;############$"     ${Base_Catalog_function_TMP_dep} &gt; ${Base_Dir_Scripts_Tmp}/filter_cat.tmp &amp;&amp; cat    ${Base_Dir_Scripts_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
-            <fileline lineNumber="109">egrep -v ";Item;######################################################$"     ${Base_Catalog_function_TMP_dep} &gt; ${Base_Dir_Scripts_Tmp}/filter_cat.tmp &amp;&amp; cat    ${Base_Dir_Scripts_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
+            <fileline lineNumber="87">egrep -v ";Item;;$"     ${Base_Catalog_function_TMP_dep} &gt; ${BDir_Tmp}/filter_cat.tmp &amp;&amp; cat    ${BDir_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
+            <fileline lineNumber="88">egrep -v ";Item;$"      ${Base_Catalog_function_TMP_dep} &gt; ${BDir_Tmp}/filter_cat.tmp &amp;&amp; cat    ${BDir_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
+            <fileline lineNumber="89">egrep -v ";Item;;$"     ${Base_Catalog_function_TMP_dep} &gt; ${BDir_Tmp}/filter_cat.tmp &amp;&amp; cat    ${BDir_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
+            <fileline lineNumber="90">egrep -v ";Item;.$"     ${Base_Catalog_function_TMP_dep} &gt; ${BDir_Tmp}/filter_cat.tmp &amp;&amp; cat    ${BDir_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
+            <fileline lineNumber="91">egrep -v ";Item;###$"   ${Base_Catalog_function_TMP_dep} &gt; ${BDir_Tmp}/filter_cat.tmp &amp;&amp; cat    ${BDir_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
+            <fileline lineNumber="92">egrep -v ";Item;\=$"    ${Base_Catalog_function_TMP_dep} &gt; ${BDir_Tmp}/filter_cat.tmp &amp;&amp; cat    ${BDir_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
+            <fileline lineNumber="93">egrep -v ";Item;\[$"    ${Base_Catalog_function_TMP_dep} &gt; ${BDir_Tmp}/filter_cat.tmp &amp;&amp; cat    ${BDir_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
+            <fileline lineNumber="94">egrep -v ";Item;\]$"    ${Base_Catalog_function_TMP_dep} &gt; ${BDir_Tmp}/filter_cat.tmp &amp;&amp; cat    ${BDir_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
+            <fileline lineNumber="95">egrep -v ";Item;\*$"    ${Base_Catalog_function_TMP_dep} &gt; ${BDir_Tmp}/filter_cat.tmp &amp;&amp; cat    ${BDir_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
+            <fileline lineNumber="96">egrep -v ";Item;:$"     ${Base_Catalog_function_TMP_dep} &gt; ${BDir_Tmp}/filter_cat.tmp &amp;&amp; cat    ${BDir_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
+            <fileline lineNumber="97">egrep -v ";Item;eval$"  ${Base_Catalog_function_TMP_dep} &gt; ${BDir_Tmp}/filter_cat.tmp &amp;&amp; cat    ${BDir_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
+            <fileline lineNumber="98">egrep -v ";Item;if$"    ${Base_Catalog_function_TMP_dep} &gt; ${BDir_Tmp}/filter_cat.tmp &amp;&amp; cat    ${BDir_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
+            <fileline lineNumber="99">egrep -v ";Item;then$"  ${Base_Catalog_function_TMP_dep} &gt; ${BDir_Tmp}/filter_cat.tmp &amp;&amp; cat    ${BDir_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
+            <fileline lineNumber="100">egrep -v ";Item;else$"  ${Base_Catalog_function_TMP_dep} &gt; ${BDir_Tmp}/filter_cat.tmp &amp;&amp; cat    ${BDir_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
+            <fileline lineNumber="101">egrep -v ";Item;fi$"    ${Base_Catalog_function_TMP_dep} &gt; ${BDir_Tmp}/filter_cat.tmp &amp;&amp; cat    ${BDir_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
+            <fileline lineNumber="102">egrep -v ";Item;for$"   ${Base_Catalog_function_TMP_dep} &gt; ${BDir_Tmp}/filter_cat.tmp &amp;&amp; cat    ${BDir_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
+            <fileline lineNumber="103">egrep -v ";Item;do$"    ${Base_Catalog_function_TMP_dep} &gt; ${BDir_Tmp}/filter_cat.tmp &amp;&amp; cat    ${BDir_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
+            <fileline lineNumber="104">egrep -v ";Item;done$"  ${Base_Catalog_function_TMP_dep} &gt; ${BDir_Tmp}/filter_cat.tmp &amp;&amp; cat    ${BDir_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
+            <fileline lineNumber="105">egrep -v ";Item;while$" ${Base_Catalog_function_TMP_dep} &gt; ${BDir_Tmp}/filter_cat.tmp &amp;&amp; cat    ${BDir_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
+            <fileline lineNumber="106">egrep -v ";Item;case$"  ${Base_Catalog_function_TMP_dep} &gt; ${BDir_Tmp}/filter_cat.tmp &amp;&amp; cat    ${BDir_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
+            <fileline lineNumber="107">egrep -v ";Item;export$"  ${Base_Catalog_function_TMP_dep} &gt; ${BDir_Tmp}/filter_cat.tmp &amp;&amp; cat    ${BDir_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
+            <fileline lineNumber="108">egrep -v ";Item;############$"     ${Base_Catalog_function_TMP_dep} &gt; ${BDir_Tmp}/filter_cat.tmp &amp;&amp; cat    ${BDir_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
+            <fileline lineNumber="109">egrep -v ";Item;######################################################$"     ${Base_Catalog_function_TMP_dep} &gt; ${BDir_Tmp}/filter_cat.tmp &amp;&amp; cat    ${BDir_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
             <fileline lineNumber="110" />
-            <fileline lineNumber="111">sort -u  ${Base_Catalog_function_TMP_dep}                &gt; ${Base_Dir_Scripts_Tmp}/filter_cat.tmp &amp;&amp; cat    ${Base_Dir_Scripts_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
+            <fileline lineNumber="111">sort -u  ${Base_Catalog_function_TMP_dep}                &gt; ${BDir_Tmp}/filter_cat.tmp &amp;&amp; cat    ${BDir_Tmp}/filter_cat.tmp  &gt; ${Base_Catalog_function_TMP_dep}</fileline>
             <fileline lineNumber="112">############### Stack_TRACE_BUILDER ################</fileline>
             <fileline lineNumber="113">Function_PATH="$( dirname ${Function_PATH} )"</fileline>
             <fileline lineNumber="114">####################################################</fileline>
@@ -3078,7 +3078,7 @@
             <fileline lineNumber="22" />
             <fileline lineNumber="23">for Libraries_geted in $( cat ${Base_Catalog_function} | awk -F ";" '{ print $2 }' | sort -u )</fileline>
             <fileline lineNumber="24">      do</fileline>
-            <fileline lineNumber="25">        Document_doc_xml="${Base_Dir_Scripts_Data_doc_xml}/$( echo  ${Libraries_geted} | awk -F "/" '{ print $NF}' | awk -F "." '{ print $1".xml"}' )"</fileline>
+            <fileline lineNumber="25">        Document_doc_xml="${BDir_Data_doc_xml}/$( echo  ${Libraries_geted} | awk -F "/" '{ print $NF}' | awk -F "." '{ print $1".xml"}' )"</fileline>
             <fileline lineNumber="26">        New_Lib_Name="$(echo ${Libraries_geted} | awk -F "/" '{ print $NF}')" &gt; ${Document_doc_xml}</fileline>
             <fileline lineNumber="27">        echo  "&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;"                &gt;&gt; ${Document_doc_xml}</fileline>
             <fileline lineNumber="28">        echo  "&lt;?xml-stylesheet type=\"text/xsl\" href=\"autodoc.xsl\"?&gt;" &gt;&gt; ${Document_doc_xml}</fileline>
@@ -3188,7 +3188,7 @@
             <fileline lineNumber="21" />
             <fileline lineNumber="22">for Libraries_geted in $( cat ${Base_Catalog_function} | awk -F ";" '{ print $2 }' | sort -u )</fileline>
             <fileline lineNumber="23">      do</fileline>
-            <fileline lineNumber="24">        Document_doc_txt="${Base_Dir_Scripts_Data_doc_txt}/$( echo  ${Libraries_geted} | awk -F "/" '{ print $NF}' | awk -F "." '{ print $1".txt"}' )"</fileline>
+            <fileline lineNumber="24">        Document_doc_txt="${BDir_Data_doc_txt}/$( echo  ${Libraries_geted} | awk -F "/" '{ print $NF}' | awk -F "." '{ print $1".txt"}' )"</fileline>
             <fileline lineNumber="25">        New_Lib_Name="$(echo ${Libraries_geted} | awk -F "/" '{ print $NF}')"</fileline>
             <fileline lineNumber="26">        echo  " Used lib : [ ${New_Lib_Name}   ] "  &gt; ${Document_doc_txt}</fileline>
             <fileline lineNumber="27">        Document_Print_function_txt</fileline>
@@ -3325,7 +3325,7 @@
             <fileline lineNumber="27">      for Function_geted in $( cat ${Base_Catalog_function} | grep ${New_Lib_Name} | awk -F ";" '{ print $4 }' )</fileline>
             <fileline lineNumber="28">          do</fileline>
             <fileline lineNumber="29">             DPFMP_Base_File_name="$( echo  ${Function_geted} | awk -F "." '{ print $1 }' )"</fileline>
-            <fileline lineNumber="30">             Document_doc_man="${Base_Dir_Scripts_Data_doc_man_html}/${DPFMP_Base_File_name}.html"</fileline>
+            <fileline lineNumber="30">             Document_doc_man="${BDir_Data_doc_man_html}/${DPFMP_Base_File_name}.html"</fileline>
             <fileline lineNumber="31">             echo  "&lt;HTML&gt;"                                                                                   &gt;&gt; ${Document_doc_man}</fileline>
             <fileline lineNumber="32">             echo  "    &lt;BODY&gt;"                                                                               &gt;&gt; ${Document_doc_man}</fileline>
             <fileline lineNumber="33">             echo  "       &lt;PRE&gt;&lt;!-- Manpage converted by pcd autodoc by Arnaud Crampet  --&gt;&lt;/PRE&gt;"           &gt;&gt; ${Document_doc_man}</fileline>
@@ -3383,7 +3383,7 @@
             <fileline lineNumber="31">if [ ${XML_Conf_init} = "0" ]</fileline>
             <fileline lineNumber="32">   then </fileline>
             <fileline lineNumber="33">       MSG_DISPLAY "debug" "0" "XML base definition file Sourced [ Sourcing ]"</fileline>
-            <fileline lineNumber="34">   	   Do_file_sourcing_control "xml_base_def.def" "${Base_Dir_Scripts_Data_Xml_DEF}"</fileline>
+            <fileline lineNumber="34">   	   Do_file_sourcing_control "xml_base_def.def" "${BDir_Data_Xml_DEF}"</fileline>
             <fileline lineNumber="35">       MSG_DISPLAY "debug" "0" "XML base definition file Sourced [ OK ]"</fileline>
             <fileline lineNumber="36">       XML_Conf_init="1"</fileline>
             <fileline lineNumber="37">   else</fileline>
@@ -4319,7 +4319,7 @@
             <fileline lineNumber="163">MSG_DISPLAY "debug" "0" "current function path : [ ${Function_PATH} ]  | function Name [ ${Function_Name} ] "</fileline>
             <fileline lineNumber="164" />
             <fileline lineNumber="165">Get_system_random_,number</fileline>
-            <fileline lineNumber="166">TMP_file_cat=${Base_Dir_Scripts_Tmp}/${EXTERNAL_randomized_var}_spec_cat.cat</fileline>
+            <fileline lineNumber="166">TMP_file_cat=${BDir_Tmp}/${EXTERNAL_randomized_var}_spec_cat.cat</fileline>
             <fileline lineNumber="167">date &gt;&gt; ${TMP_file_cat}</fileline>
             <fileline lineNumber="168">iterate_count="0"</fileline>
             <fileline lineNumber="169">for CHROOT_file in $(cat ${catalogue_used}) </fileline>
@@ -6010,7 +6010,7 @@
             <fileline lineNumber="24">MSG_DISPLAY "debug" "0" "current function path : [ ${Function_PATH} ]  | function Name [ ${Function_Name} ] "</fileline>
             <fileline lineNumber="25" />
             <fileline lineNumber="26" />
-            <fileline lineNumber="27">. ${Base_Dir_Scripts_Data_Def}/Chroots/Small.ChrtDef</fileline>
+            <fileline lineNumber="27">. ${BDir_Data_Def}/Chroots/Small.ChrtDef</fileline>
             <fileline lineNumber="28">Banner</fileline>
             <fileline lineNumber="29">############### Stack_TRACE_BUILDER ################</fileline>
             <fileline lineNumber="30">Function_PATH="$( dirname ${Function_PATH} )"</fileline>
@@ -6033,7 +6033,7 @@
             <fileline lineNumber="47">MSG_DISPLAY "debug" "0" "current function path : [ ${Function_PATH} ]  | function Name [ ${Function_Name} ] "</fileline>
             <fileline lineNumber="48" />
             <fileline lineNumber="49" />
-            <fileline lineNumber="50">. ${Base_Dir_Scripts_Data_Def}/Chroots/Medium.ChrtDef</fileline>
+            <fileline lineNumber="50">. ${BDir_Data_Def}/Chroots/Medium.ChrtDef</fileline>
             <fileline lineNumber="51">Banner</fileline>
             <fileline lineNumber="52">############### Stack_TRACE_BUILDER ################</fileline>
             <fileline lineNumber="53">Function_PATH="$( dirname ${Function_PATH} )"</fileline>
@@ -6056,7 +6056,7 @@
             <fileline lineNumber="70">MSG_DISPLAY "debug" "0" "current function path : [ ${Function_PATH} ]  | function Name [ ${Function_Name} ] "</fileline>
             <fileline lineNumber="71" />
             <fileline lineNumber="72" />
-            <fileline lineNumber="73">. ${Base_Dir_Scripts_Data_Def}/Chroots/Big.ChrtDef</fileline>
+            <fileline lineNumber="73">. ${BDir_Data_Def}/Chroots/Big.ChrtDef</fileline>
             <fileline lineNumber="74" />
             <fileline lineNumber="75">Banner</fileline>
             <fileline lineNumber="76">############### Stack_TRACE_BUILDER ################</fileline>
@@ -8983,8 +8983,8 @@
             <fileline lineNumber="12">Function_PATH="${Function_PATH}/${Function_Name}"</fileline>
             <fileline lineNumber="13">######################################################</fileline>
             <fileline lineNumber="14" />
-            <fileline lineNumber="15">Set_new_directory "${Base_Dir_Scripts_GIT_devops_azure}/${infra_organization}" </fileline>
-            <fileline lineNumber="16">Set_new_directory "${Base_Dir_Scripts_GIT_devops_azure}/${application_organization}" </fileline>
+            <fileline lineNumber="15">Set_new_directory "${BDir_Data_Plateformes_Infrastruture_Azure}/${infra_organization}" </fileline>
+            <fileline lineNumber="16">Set_new_directory "${BDir_Data_Plateformes_Infrastruture_Azure}/${application_organization}" </fileline>
             <fileline lineNumber="17" />
             <fileline lineNumber="18">get_azure_devops_credential</fileline>
             <fileline lineNumber="19" />
@@ -9085,7 +9085,7 @@
             <fileline lineNumber="114">    do</fileline>
             <fileline lineNumber="115">        MSG_DISPLAY "info" "0" "    Project ${project}"</fileline>
             <fileline lineNumber="116" />
-            <fileline lineNumber="117">        Set_new_directory "${Base_Dir_Scripts_GIT_devops_azure}/${organization}/${project}"</fileline>
+            <fileline lineNumber="117">        Set_new_directory "${BDir_Data_Plateformes_Infrastruture_Azure}/${organization}/${project}"</fileline>
             <fileline lineNumber="118">        # Get the list of repositories for the current project</fileline>
             <fileline lineNumber="119">        repo_list=$(az repos list --project "${project}" --query "[].name" -o tsv)</fileline>
             <fileline lineNumber="120" />
@@ -9100,7 +9100,7 @@
             <fileline lineNumber="129">            for repo in ${repo_list}</fileline>
             <fileline lineNumber="130">            do</fileline>
             <fileline lineNumber="131">                MSG_DISPLAY "info" "0" " Repository: ${repo}"</fileline>
-            <fileline lineNumber="132">                Do_get_git_clone "git@${GIT_SSH_URL}:v3/${organization}/${project}" " ${Base_Dir_Scripts_GIT_devops_azure}/${organization}/${project}" "${repo}"</fileline>
+            <fileline lineNumber="132">                Do_get_git_clone "git@${GIT_SSH_URL}:v3/${organization}/${project}" " ${BDir_Data_Plateformes_Infrastruture_Azure}/${organization}/${project}" "${repo}"</fileline>
             <fileline lineNumber="133">            done</fileline>
             <fileline lineNumber="134">        fi</fileline>
             <fileline lineNumber="135">    done</fileline>
@@ -11022,7 +11022,7 @@
             <fileline lineNumber="53">last_att_loop=$(cat ${Base_Chroot_catalog_file} | grep last_loop | awk '{ print $2 }')</fileline>
             <fileline lineNumber="54">New_att_loop=$(expr ${last_att_loop} + 1) </fileline>
             <fileline lineNumber="55">echo "${Chroot_Name}| created on $(date) | | |D|" &gt;&gt; ${Base_Chroot_catalog_file}</fileline>
-            <fileline lineNumber="56">echo " echo \" regenerating configuration loop device for ${Chroot_Name}\"" &gt;&gt; ${Base_Dir_Scripts_Tmp_Auto_Lib}/Loop_configuration.ksh</fileline>
+            <fileline lineNumber="56">echo " echo \" regenerating configuration loop device for ${Chroot_Name}\"" &gt;&gt; ${BDir_Tmp_Auto_Lib}/Loop_configuration.ksh</fileline>
             <fileline lineNumber="57">for Loops_to_map in ${Loops_File_Liste}</fileline>
             <fileline lineNumber="58">do </fileline>
             <fileline lineNumber="59">   echo "losetup /dev/loop${New_att_loop} ${Loops_to_map}"</fileline>
@@ -11246,7 +11246,7 @@
             <fileline lineNumber="192">last_att_loop=$(cat ${Base_Chroot_catalog_file} | grep last_loop | awk '{ print $2 }')</fileline>
             <fileline lineNumber="193">New_att_loop=$(expr ${last_att_loop} + 1) </fileline>
             <fileline lineNumber="194">echo "${Chroot_Name}| created on $(date) | | |D|" &gt;&gt; ${Base_Chroot_catalog_file}</fileline>
-            <fileline lineNumber="195">echo " echo \" regenerating configuration loop device for ${Chroot_Name}\"" &gt;&gt; ${Base_Dir_Scripts_Tmp_Auto_Lib}/Loop_configuration.ksh</fileline>
+            <fileline lineNumber="195">echo " echo \" regenerating configuration loop device for ${Chroot_Name}\"" &gt;&gt; ${BDir_Tmp_Auto_Lib}/Loop_configuration.ksh</fileline>
             <fileline lineNumber="196">for Loops_to_map in ${Loops_File_Liste}</fileline>
             <fileline lineNumber="197">do </fileline>
             <fileline lineNumber="198">   echo "losetup /dev/loop${New_att_loop} ${Loops_to_map}"</fileline>
